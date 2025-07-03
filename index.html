@@ -3,194 +3,820 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Joyjit Chatterjee - AI Innovator & Global Data Scientist</title>
+    <title>Dr. Joyjit Chatterjee - AI Leader & Data Scientist</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a73e8;
+            --secondary: #34a853;
+            --accent: #ea4335;
+            --dark: #202124;
+            --light: #f8f9fa;
+            --text: #5f6368;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 10px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }
-        header {
-            background-color: #4a90e2;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            margin-bottom: 1em;
-        }
-        h1 {
-            margin-bottom: 0.2em;
-        }
-        nav {
-            background-color: #333;
-            padding: 0.5em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav ul li {
-            margin: 0.5em;
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
         }
-        nav ul li a {
-            color: white;
+
+        .nav-links a {
             text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
         }
-        section {
-            margin-bottom: 2em;
+
+        .nav-links a:hover {
+            color: var(--primary);
         }
-        h2 {
-            color: #4a90e2;
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 0.3em;
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
         }
-        .achievement-card, .timeline-item, .publication-card {
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            padding: 1em;
-            margin-bottom: 1em;
+
+        .nav-links a:hover::after {
+            width: 100%;
         }
-        .skill-tag {
-            display: inline-block;
-            background-color: #4a90e2;
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
             color: white;
-            padding: 0.3em 0.6em;
-            border-radius: 15px;
-            margin: 0.2em;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e0e0e0;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 20px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: calc(50% - 40px);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: 30px;
+            width: calc(50% - 40px);
+            text-align: right;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-date {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-date {
+            right: 0;
+            text-align: left;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px #e0e0e0;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .skill-list {
+            list-style: none;
+            text-align: left;
+            color: var(--text);
+        }
+
+        .skill-list li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .skill-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        /* Achievements */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .achievement-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .achievement-card::before {
+            content: '🏆';
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 3rem;
+            opacity: 0.2;
+        }
+
+        .achievement-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+            }
+            
+            .timeline-date {
+                position: static;
+                width: auto;
+                text-align: left !important;
+                margin-bottom: 10px;
+            }
+            
+            .timeline-dot {
+                left: 20px;
+            }
+        }
+
+        /* Floating Animation for Hero Elements */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dr. Joyjit Chatterjee</h1>
-        <p>AI Innovator | Forbes 30 Under 30 Europe | Global Data Scientist</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h3>Dr. Joyjit Chatterjee</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Dr. Chatterjee</h2>
-            <p>Dr. Joyjit Chatterjee is a dedicated AI innovator and global data scientist, recognized in the Forbes 30 Under 30 Europe list for Manufacturing and Industry. His work focuses on developing AI solutions that aim to enhance energy efficiency and optimize manufacturing processes.</p>
-            
-            <p>Currently serving as an IT & Digital Data Scientist - Continuous Improvement at Reckitt, a multinational FMCG company, Dr. Chatterjee contributes to supply chain optimization through applied AI solutions. His efforts are directed towards minimizing waste, optimizing quality, and enhancing productivity.</p>
-            
-            <p>In his previous role as an R&D Data Scientist (KTP Associate) at Reckitt, Dr. Chatterjee developed AI models for shelf-life prediction and optimization of healthcare formulations. This project received the "Certificate of Excellence - Outstanding" from Innovate UK and was highlighted as a KTP success story by Ashorne Hill.</p>
-            
-            <p>Dr. Chatterjee's expertise extends to the renewable energy sector, where he has contributed to data-driven operations and maintenance in the wind industry. His work in this area earned him the Green Talents Award from the German government and has been featured in global platforms such as the World Economic Forum and IEEE.</p>
-            
-            <p>Recognized as a Global Talent by UKRI and the UK Home Office, Dr. Chatterjee offers voluntary AI advice to various sectors and has served as an expert reviewer on European Commission projects.</p>
-            
-            <p>Dr. Chatterjee's academic journey includes a PhD in Computer Science from the University of Hull, UK, focusing on explainable AI for wind turbine maintenance. He also holds a PGDip in Research Training from Hull, a Professional Certificate in AI from Oxford, and a CPD Course in Business from Cambridge. His academic foundation was laid at Amity University, India, where he earned a Gold Medal in B.Tech Electronics & Communication Engineering.</p>
-            
-            <p>As an active contributor to the academic community, Dr. Chatterjee has published in top-tier AI and engineering venues, including conferences like NeurIPS and KDD, and journals from Wiley, Elsevier, and Cambridge University Press. He has also filed patents and shared his insights through talks on global platforms.</p>
-            
-            <p>Dr. Chatterjee's international experience includes roles as a Visiting Researcher at the University of Bremen, Germany, and Tamkang University, Taiwan. He regularly serves on committees for leading conferences and journals, bringing a global perspective to these academic forums.</p>
-            
-            <p>A certified Scrum Master and avid globetrotter, Dr. Chatterjee continually seeks new challenges. His accolades include the Best International Knowledge Exchange Award, PhD Scholarship, Employability Award from Hull, grants from IEEE and Microsoft, and the Young Researcher Award from IEEE UK & Ireland.</p>
-            
-            <p>Dr. Chatterjee's research interests span cutting-edge areas of AI, including Deep Learning, Natural Language Processing, Knowledge Graphs, Causal Inference, and Time-Series Analysis. Through his work, he strives to contribute to innovation across industries and promote a more efficient, sustainable future.</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Dr. Joyjit Chatterjee</h1>
+            <p class="tagline">AI Leader | Forbes 30 Under 30 | Green Talents Awardee | Innovation Catalyst</p>
+            <div class="badges">
+                <span class="badge">Lead Data Scientist @ EPAM</span>
+                <span class="badge">Forbes 30 Under 30 Europe</span>
+                <span class="badge">Green Talents (German Govt.)</span>
+                <span class="badge">Visiting Academic</span>
+                <span class="badge">PhD in AI</span>
+                <span class="badge">CEng (I)</span>
+            </div>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="https://drive.google.com/file/d/1gNmFTu1u1Dnh_Hym4X8TG2dCAq6gvZSN/view?usp=sharing" target="_blank" class="btn btn-secondary">
+                    <span>📄</span> Full CV
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section id="experience">
-            <h2>Career Journey</h2>
-            <div class="timeline-item">
-                <h3>IT & Digital Data Scientist (Supply Chain) - Continuous Improvement</h3>
-                <h4>Reckitt</h4>
-                <p>Oct 2023 - Present</p>
-                <ul>
-                    <li>Developing AI-driven solutions for optimizing supply chain and manufacturing processes.</li>
-                    <li>Created a holistic manufacturing data model for Continued Process Verification (CPV), identifying key factors to reduce waste and save costs.</li>
-                    <li>Contributing to the uptake of a "data & AI first" approach for continuous improvement across manufacturing stages and QC processes.</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <h3>R&D Data Scientist (KTP Associate)</h3>
-                <h4>Reckitt</h4>
-                <p>Oct 2021 - Sep 2023</p>
-                <ul>
-                    <li>Developed an AI app for shelf-life prediction, resulting in significant cost and time savings.</li>
-                    <li>Contributed to the transformation of Reckitt's AI landscape in R&D applications.</li>
-                    <li>Received Certificate of Excellence - Outstanding from Innovate UK for project outcomes.</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <h3>Postdoctoral Researcher</h3>
-                <h4>University of Hull, UK</h4>
-                <p>Oct 2021 - Oct 2023</p>
-                <ul>
-                    <li>Conducted R&D in hybrid AI models for pharmaceutical and nutraceutical product development.</li>
-                    <li>Mentored PhD students and delivered guest lectures in AI/ML.</li>
-                </ul>
-            </div>
-        </section>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Professional Journey</h2>
+            <p class="section-intro">
+                Driving high-impact AI products for digital transformation in safety-critical industries, 
+                with experience spanning Fortune 500 companies, leading universities, and governmental organizations.
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2025 - Present</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Lead Data Scientist</h3>
+                        <h4>EPAM Systems, London, UK</h4>
+                        <p>Leading AI/ML solutions for Fortune 500 & FTSE 250 clients. Key projects include:</p>
+                        <ul>
+                            <li>Reckitt Benckiser: GenAI platform for R&D with agentic workflows</li>
+                            <li>Syngenta Group: AI workshops for 100+ IT champions</li>
+                            <li>Supporting innovations for Barry Callebaut, Cleveland Clinic, Qatar Airways</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <section id="skills">
-            <h2>Expertise & Skills</h2>
-            <p>Dr. Chatterjee's skill set encompasses cutting-edge AI technologies and industry applications, enabling the development of accurate, scalable, and transparent AI solutions:</p>
-            <h3>Core AI & ML</h3>
-            <span class="skill-tag">Deep Learning</span>
-            <span class="skill-tag">Machine Learning</span>
-            <span class="skill-tag">Natural Language Processing</span>
-            <span class="skill-tag">Computer Vision</span>
-            <h3>Advanced Techniques</h3>
-            <span class="skill-tag">Explainable AI</span>
-            <span class="skill-tag">Transfer Learning</span>
-            <span class="skill-tag">Causal Inference</span>
-            <span class="skill-tag">Time Series Analysis</span>
-            <h3>Tools & Frameworks</h3>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">Scikit-learn</span>
-            <h3>Data & Analytics</h3>
-            <span class="skill-tag">Big Data Analytics</span>
-            <span class="skill-tag">Data Visualization</span>
-            <span class="skill-tag">Statistical Analysis</span>
-            <span class="skill-tag">Predictive Modeling</span>
-        </section>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2021 - Dec 2024</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>IT & Digital Data Scientist</h3>
+                        <h4>Reckitt Benckiser Group PLC, Hull, UK</h4>
+                        <p>Developed holistic manufacturing data models for CPV, achieving:</p>
+                        <ul>
+                            <li>Potential savings of £300k/year through predictive analytics</li>
+                            <li>2k+ kWh/year energy savings through AI-driven stability predictions</li>
+                            <li>Certificate of Excellence from Innovate UK for KTP project</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <section id="publications">
-            <h2>Selected Publications</h2>
-            <p>For a complete list of Dr. Chatterjee's publications, please visit his <a href="https://scholar.google.co.uk/citations?user=kjWYrm4AAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
-            <div class="publication-card">
-                <h3>Automated Question-Answering for Interactive Decision Support in Operations & Maintenance of Wind Turbines</h3>
-                <p>Chatterjee, J., Dethlefs, N. | IEEE Access, 2022</p>
-            </div>
-            <div class="publication-card">
-                <h3>Scientometric review of artificial intelligence for operations & maintenance of wind turbines: The past, present and future</h3>
-                <p>Chatterjee, J., Dethlefs, N. | Renewable and Sustainable Energy Reviews, 2021</p>
-            </div>
-            <div class="publication-card">
-                <h3>Deep learning with knowledge transfer for explainable anomaly prediction in wind turbines</h3>
-                <p>Chatterjee, J., Dethlefs, N. | Wind Energy, 2020</p>
-            </div>
-        </section>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2021 - Oct 2023</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Postdoctoral Researcher</h3>
+                        <h4>University of Hull, UK</h4>
+                        <p>Pursued R&D in hybrid AI models combining laboratory data with chemistry facts for pharmaceutical development. Collaborated with Reckitt on commercial applications.</p>
+                    </div>
+                </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:joyjitece@gmail.com">joyjitece@gmail.com</a></p>
-            <p>LinkedIn: <a href="http://www.linkedin.com/in/joyjitchatterjee" target="_blank">www.linkedin.com/in/joyjitchatterjee</a></p>
-            <p>Google Scholar: <a href="https://scholar.google.co.uk/citations?user=kjWYrm4AAAAJ&hl=en" target="_blank">View Profile</a></p>
-        </section>
-    </main>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2018 - Sep 2021</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>PhD Researcher</h3>
+                        <h4>University of Hull, UK</h4>
+                        <p>Developed explainable AI techniques for wind turbine maintenance, reducing O&M costs through anomaly prediction and maintenance planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Dr. Joyjit Chatterjee. Website created with assistance of Dr. Chatterjee's CV & Claude 3.5 Sonnet Generative AI model.</p>
-    </footer>
+    <!-- Skills Section -->
+    <section id="skills" style="background: var(--light);">
+        <div class="container">
+            <h2>Technical Expertise</h2>
+            <p class="section-intro">
+                Comprehensive skillset spanning AI/ML, data science, and strategic leadership
+            </p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <ul class="skill-list">
+                        <li>Generative AI & LLMs</li>
+                        <li>Explainable AI (XAI)</li>
+                        <li>Deep Learning</li>
+                        <li>Predictive Analytics</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Python, R, SQL</li>
+                        <li>Azure OpenAI Service</li>
+                        <li>LangChain, RAG, Agentic AI</li>
+                        <li>TensorFlow, PyTorch</li>
+                        <li>Cloud Platforms (Azure, GCP)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <ul class="skill-list">
+                        <li>Statistical Analysis</li>
+                        <li>Time Series Analysis</li>
+                        <li>Causal Inference</li>
+                        <li>Data Visualization</li>
+                        <li>Big Data Analytics</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Leadership</h3>
+                    <ul class="skill-list">
+                        <li>Strategic AI Consulting</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Technical Team Management</li>
+                        <li>Stakeholder Engagement</li>
+                        <li>Innovation Strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Recognition & Awards</h2>
+            <p class="section-intro">
+                International recognition for contributions to AI, sustainability, and innovation
+            </p>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>Forbes 30 Under 30 Europe</h3>
+                    <p>Manufacturing and Industry category (May 2022) for impactful work on AI products in manufacturing and energy processes</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Green Talents Award</h3>
+                    <p>German Federal Ministry of Education and Research (2021) - Among 25 outstanding scientists selected globally</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Certificate of Excellence</h3>
+                    <p>Outstanding grade from Innovate UK for Knowledge Transfer Partnership project with Reckitt</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>University Gold Medalist</h3>
+                    <p>B.Tech in Electronics & Communication Engineering with 9.68/10 CGPA - University Topper</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Young Researcher Award</h3>
+                    <p>IEEE UK & Ireland Section (April 2019) for contributions to AI research</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Best International Knowledge Exchange</h3>
+                    <p>University of Hull (June 2023) for global collaborations and impact in KTP project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" style="background: var(--light);">
+        <div class="container">
+            <h2>Research & Publications</h2>
+            <p class="section-intro">
+                Active contributor to academic research and industry knowledge sharing
+            </p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://scholar.google.co.uk/citations?user=kjWYrm4AAAAJ&hl=en" target="_blank" class="btn btn-primary">
+                    <span>📚</span> View All Publications on Google Scholar
+                </a>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h3 style="text-align: center; margin-bottom: 30px;">Editorial & Review Activities</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Co-Editor</h4>
+                        <p>Wiley book: "Renewable Energy Transition with AI: Challenge Driven Solutions" (2025)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Conference Committee</h4>
+                        <p>NeurIPS, IJCNN, ICLR, ICML, WindTech 2023</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Journal Reviewer</h4>
+                        <p>Expert Systems with Applications, Lancet Digital Health, Applied AI, and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-intro">
+                Let's connect and explore opportunities for collaboration
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <a href="mailto:joyjit_chatterjee@epam.com">joyjit_chatterjee@epam.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>💼 LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/joyjitchatterjee" target="_blank">
+                        linkedin.com/in/joyjitchatterjee
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📄 Full CV</h3>
+                    <a href="https://drive.google.com/file/d/1gNmFTu1u1Dnh_Hym4X8TG2dCAq6gvZSN/view?usp=sharing" target="_blank">
+                        View Complete CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Timeline animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Add hover effect to skill cards
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Mobile menu toggle (you can add a hamburger menu here if needed)
+        // For now, the navigation will be hidden on mobile as per the CSS
+    </script>
 </body>
 </html>
