@@ -17,6 +17,13 @@ images and captions are in `content/media.json`. `index.html`, `research.html`, 
    workshop contribution was a main-conference paper, an application was a granted
    patent, attendance was a speech, or potential savings were realised savings.
    Do not mark a past announced event completed without evidence.
+   Check every supplied CV section, including extramural engagements, academic
+   examining, aptitude colloquia, editorial service and committee roles. These
+   can be important credentials even when no date is supplied. Preserve their
+   precise role (invited expert, committee member, organiser, attendee or speaker)
+   without inventing dates or implying a thesis-defence role. Record academic
+   examining under academic service, and note each section's coverage or deliberate
+   omissions in the refresh report.
 4. Run `python3 scripts/refresh_cv.py --run '<run>' --candidate '<run>/candidate.json' --apply`.
    Resolve actual evidence conflicts before applying. Do not use `--allow-removals`
    unless the user requested the removals or corrections clearly justify them.

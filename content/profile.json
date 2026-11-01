@@ -1020,8 +1020,15 @@
     },
     {
       "id": "reviews",
-      "title": "Editorial & reviewing service",
+      "title": "Academic, editorial & reviewing service",
       "items": [
+        {
+          "title": "Invited Expert — Doctoral Examination (Aptitude Colloquium) Committee",
+          "organization": "ETH Zurich",
+          "date": "",
+          "summary": "Invited expert on a doctoral examination (aptitude colloquium) committee at ETH Zurich.",
+          "source": "cv-full-2026"
+        },
         {
           "title": "Editorship",
           "organization": "",
