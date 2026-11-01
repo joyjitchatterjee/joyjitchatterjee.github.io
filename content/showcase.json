@@ -13,7 +13,17 @@
       },
       "source": "cv-full-2026",
       "url": "profile.html#experience",
-      "label": "Experience & responsibilities"
+      "label": "Experience & responsibilities",
+      "highlights": [
+        {
+          "label": "Direct client delivery at EPAM",
+          "text": "Reckitt · Syngenta Group"
+        },
+        {
+          "label": "Pre-sales and use-case discovery support",
+          "text": "Qatar Airways · Unilever · Barry Callebaut · Brussels Airport Company · Cleveland Clinic Abu Dhabi · Adidas · Co-op · Currys · PPG Industries"
+        }
+      ]
     },
     {
       "id": "rd-product",
@@ -21,14 +31,15 @@
       "title": "From laboratory research to a production application",
       "summary": "Shelf-life prediction for healthcare products, developed through an Innovate UK Knowledge Transfer Partnership.",
       "contribution": "Led the AI workstream across models, interfaces and deployment, collaborating with R&D scientists, engineers and UI/UX specialists. Supported uptake through leadership engagement and skills transfer.",
-      "outcome": "Outstanding KTP rating. Potential annual savings of $780k and 10,000 laboratory hours.",
+      "outcome": "Outstanding KTP rating for the $200k jointly funded project. Evaluation demonstrated potential annual savings of $780k and 10,000 laboratory hours.",
       "record": {
         "section": "experience",
         "title": "IT & Digital Data Scientist - R&D / KTP Associate"
       },
       "source": "cv-full-2026",
       "url": "https://www.hull.ac.uk/collaborate/services-for-business/work-with-our-experts",
-      "label": "University of Hull partnership story"
+      "label": "University of Hull partnership story",
+      "highlights": []
     },
     {
       "id": "manufacturing",
@@ -36,14 +47,20 @@
       "title": "Making manufacturing data useful for decisions",
       "summary": "Predictive and causal analytics for process verification, quality and operational planning.",
       "contribution": "Connected manufacturing, quality and process data; supported causal AI adoption across factories; developed logistics and capacity-planning tools and engaged quality and IT leadership.",
-      "outcome": "Predictive analytics demonstrated potential savings of £300k per year. Contributed to waste reduction in major UK factories.",
+      "outcome": "Contributed to approximately 30% waste reduction in major UK factories. Predictive analytics demonstrated savings potential of up to £300k per year in evaluation.",
       "record": {
         "section": "experience",
         "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"
       },
       "source": "cv-full-2026",
       "url": "profile.html#experience",
-      "label": "Experience & responsibilities"
+      "label": "Experience & responsibilities",
+      "highlights": [
+        {
+          "label": "Supporting a multi-billion-pound portfolio",
+          "text": "Nurofen · Strepsils · Airborne"
+        }
+      ]
     }
   ],
   "credentials": [
@@ -297,5 +314,11 @@
   "featured_publications": [
     "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance",
     "Structuring the Last Mile with ReActV: Tool-Augmented Delivery Planning with Verification"
+  ],
+  "featured_certifications": [
+    "Claude Certified Architect (Foundations)",
+    "OpenAI Consultative Solutions Practitioner",
+    "Google Cloud Generative AI Leader",
+    "Professional Agile Leadership (PAL-1)"
   ]
 }

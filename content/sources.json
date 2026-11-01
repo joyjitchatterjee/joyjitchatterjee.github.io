@@ -191,5 +191,11 @@
     "url": "https://doi.org/10.1145/3795513.3810458",
     "kind": "public web",
     "accessed": "2026-11-01"
+  },
+  {
+    "id": "user-savings-clarification-2026",
+    "kind": "user clarification",
+    "label": "User confirmed both savings figures were demonstrated potential in an evaluation, not realised savings.",
+    "accessed": "2026-11-01"
   }
 ]

@@ -118,3 +118,18 @@ them in the extraction context, and reports changed source records for editorial
 review. It does not autonomously rewrite media or case-study prose. The record
 checks prevent known highlights from disappearing; they do not replace reading
 all sections of each newly supplied CV.
+
+## Summaries with full detail
+
+Each career record can contain sourced `details` groups (a heading and points).
+Readers can open individual entries or use **Expand all details** on the profile.
+Links from homepage case studies open the corresponding full career entry.
+Printing expands all detail and restores the reader's previous state afterwards.
+The native disclosures work without JavaScript; expanding all entries, automatic
+opening from links and print-state restoration are progressive enhancements.
+
+Homepage case-study details are rendered from the profile itself. Future CV
+imports preserve these groups and reject silent reductions in their point counts,
+as well as deleted historical records. Protected highlights remain in the coverage
+ledger. The full archive now includes the CV's technical skills, named corporate
+involvement, funding, CPD events and earlier awards alongside major achievements.

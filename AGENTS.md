@@ -106,3 +106,25 @@ sentences as appropriate; do not substitute double hyphens. This preference also
 applies to displayed titles: retain their wording while normalising punctuation.
 Update exact-title references in showcase and coverage together when needed.
 Date ranges may retain en dashes.
+
+## Detailed career evidence
+
+Every profile record now has a `details` array, with groups containing `heading`,
+`points` and `source`. Keep the summary readable and retain substantive supporting
+information in these groups, including named companies, the precise involvement,
+technologies, project stages, teams, audiences and outcomes. A one-line credential
+may have an empty array when no additional evidence exists. The full profile,
+research page and homepage case studies render these groups as native disclosures.
+Homepage case details are drawn from the same profile record, so they stay in sync.
+
+Do not summarise away detail during later CV refreshes. The import guard rejects
+missing detail groups or reductions in their point counts unless intentionally
+reviewed. This is a structural protection; still review semantic coverage. Update
+`docs/content-audit.md` when auditing a new full CV. Preserve earlier awards,
+funding, training activities and the complete skills section in the archive.
+
+The user confirmed on 1 November 2026 that the £300k/year manufacturing and
+$780k/year R&D figures are potential savings demonstrated in evaluation. Use that
+precise distinction; do not describe them as achieved or realised savings without
+new evidence. The approximately 30% waste reduction is a separately reported
+contribution and must not be presented as sole attribution.

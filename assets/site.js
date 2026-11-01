@@ -24,3 +24,42 @@ if (search && kind) {
   kind.addEventListener('change', filter);
 }
 document.getElementById('print-profile')?.addEventListener('click', () => window.print());
+
+const careerDetails = [...document.querySelectorAll('[data-cv-details]')];
+const expandDetails = document.getElementById('expand-details');
+function syncDetailsButton() {
+  if (!expandDetails) return;
+  const allOpen = careerDetails.length > 0 && careerDetails.every(item => item.open);
+  expandDetails.textContent = allOpen ? 'Collapse all details' : 'Expand all details';
+  expandDetails.setAttribute('aria-pressed', String(allOpen));
+}
+expandDetails?.addEventListener('click', () => {
+  const open = !careerDetails.every(item => item.open);
+  careerDetails.forEach(item => { item.open = open; });
+  syncDetailsButton();
+});
+careerDetails.forEach(item => item.addEventListener('toggle', syncDetailsButton));
+function revealLinkedDetails() {
+  let id;
+  try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (!target) return;
+  const details = target.matches('[data-cv-details]') ? [target] : [...target.querySelectorAll('[data-cv-details]')];
+  details.forEach(item => { item.open = true; });
+  syncDetailsButton();
+}
+window.addEventListener('hashchange', revealLinkedDetails);
+revealLinkedDetails();
+let printDetailState = null;
+window.addEventListener('beforeprint', () => {
+  if (printDetailState !== null) return;
+  printDetailState = careerDetails.map(item => item.open);
+  careerDetails.forEach(item => { item.open = true; });
+});
+window.addEventListener('afterprint', () => {
+  if (printDetailState === null) return;
+  careerDetails.forEach((item, index) => { item.open = printDetailState[index]; });
+  printDetailState = null;
+  syncDetailsButton();
+});

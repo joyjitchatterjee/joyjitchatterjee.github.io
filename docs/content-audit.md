@@ -1,4 +1,51 @@
-# Portfolio content audit — 1 November 2026
+# Detailed coverage update, 1 November 2026
+
+This update supersedes the earlier decision to leave small awards and routine
+CPD activities out of the career archive. The homepage remains selective, but
+substantive supporting information is now accessible through expandable details.
+
+- All ten employment roles and both visiting appointments have sourced detail
+  groups. EPAM names every company listed in the CV and distinguishes delivery
+  for Reckitt/Syngenta from pre-sales and use-case support for the nine named
+  organisations. Reckitt detail includes brands, datasets, technologies,
+  executive engagement, mentoring, operational tools and adjacent initiatives.
+- Education retains research context, supervision and examination, and training
+  credits. Technical skills now cover all 16 source bullets in 14 readable groups,
+  preserving the CV's stated proficiency levels.
+- Added 21 archive records: six earlier awards, fourteen training/participation
+  records, and Green Talents research-stay funding. Enriched scholarship dates,
+  organisations and amounts and disambiguated two generic University of Hull entries.
+- Added 53 supporting detail expansions across other records, including conference
+  and workshop service, journal reviewing, named event audiences, publication
+  presentation context and training distinctions. All 51 publications, 27 website
+  talks, three patent applications and sixteen professional certifications remain.
+- User clarification: both monetary savings figures represent potential demonstrated
+  in evaluation. The homepage now says this explicitly. The roughly 30% waste
+  reduction remains a contribution reported in the supplied CV.
+- Homepage metrics, named organisational involvement and selected AI/leadership
+  certifications are visible alongside the existing recognition. Case-study
+  disclosures use the same details as the profile, eliminating duplicate prose.
+- Every supplied source section was mapped. Privacy-sensitive contact/referee
+  details and repetitive narrative are excluded. The obsolete Publons URL is not
+  promoted as a working destination. Machine Intelligence Labs naming remains as
+  inherited pending a precise authoritative name; no membership upgrade is made.
+- The Power Available Hackathon has conflicting October/November dates across CV
+  sections, so its participation/funding records use 2019. An inconsistent ECIS
+  edition is not reproduced. Workshop and main-track roles remain distinct.
+
+Details are rendered into HTML and accessible through native controls; an expand-all
+control, direct-entry links and print expansion provide additional navigation.
+Import checks reject missing groups and reduced point counts. They do not prove
+semantic completeness; future CVs still require section-by-section review.
+
+The existing primary public-source links and original photographs are retained.
+Browser inventory remained empty, so desktop/mobile visual review is unavailable.
+Content rendering, deep-link behaviour, print state and expansion controls are
+covered by automated checks.
+
+## Earlier audit and public-source decisions
+
+# Portfolio content audit, 1 November 2026
 
 Purpose: present evidence of AI leadership, AI product development, innovation
 strategy and enterprise operations, while preserving the broader career record.

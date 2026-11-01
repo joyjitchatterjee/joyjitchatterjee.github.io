@@ -64,7 +64,7 @@ Return a complete profile preserving the schema. Preserve previously documented 
 For every new or materially changed record, use the supplied CV source_id. Keep existing source IDs on unchanged records. Do not invent metrics, DOIs, links, awards, dates or achievements. Distinguish potential savings from realised savings, patent applications from granted patents, guest attendance from speaking, and workshop papers from main-conference papers.
 Set updated to the supplied as_of date. Future events are upcoming, never completed. If an earlier event remains upcoming but is now in the past without evidence of completion, use past-scheduled, not completed. Never infer attendance from an announcement alone.
 Keep editorial prose concise and factual. Do not use em dashes or double hyphens as punctuation in website text; use commas, colons, parentheses or separate sentences. Retain title wording while normalising punctuation to this preference. Update headline/intro/about when warranted. Preserve contact links unless the CV explicitly supplies a replacement. Exclude home address, private phone numbers, birth dates, signatures, referees' contact details and confidential client information. Do not copy or expose the raw CV.
-Keep the positioning centred on evidenced AI leadership, AI products, innovation strategy and enterprise operations; never add job-seeking language or invent seniority. Preserve the curated focus and impact items unless contradicted by new evidence. Additional sections can hold patents, service, memberships or other relevant records. Keep certifications up to date. Audit every supplied CV section, including extramural engagements, academic examining, aptitude colloquia and committee service. Preserve the precise role and allow a blank date when none is supplied. In notes, summarize coverage and deliberate omissions by CV section. Media is maintained separately; do not invent photos or captions.
+Keep the positioning centred on evidenced AI leadership, AI products, innovation strategy and enterprise operations; never add job-seeking language or invent seniority. Preserve the curated focus and impact items unless contradicted by new evidence. Additional sections can hold patents, service, memberships or other relevant records. Keep certifications up to date. Audit every supplied CV section, including extramural engagements, academic examining, aptitude colloquia and committee service. Preserve the precise role and allow a blank date when none is supplied. In notes, summarize coverage and deliberate omissions by CV section. Every record has a details array. Keep its concise summary, and use sourced detail groups (heading, points, source) to capture all substantive responsibilities, projects, named organisations, technologies, audiences, outcomes and supporting information from the CV. Do not replace detail groups with a summary or silently shorten them. Preserve the distinction between direct client delivery, pre-sales support and organisations represented at events. For a simple one-line credential with no further evidence, details can be empty. Preserve technical skills, funding, CPD activities and earlier awards. Media is maintained separately; do not invent photos or captions.
 The editorial_showcase and protected_coverage describe existing homepage evidence and important retained credentials. Preserve their referenced records; flag changed facts or stronger new evidence in notes so the editorial homepage can be reconciled separately. Check business/leadership development, academic service, committee roles and public contributions explicitly, not only employment and publications. Do not remove public-source corrections (such as verified publication authors) simply because a shorter CV omits them.
 notes should list the meaningful changes. unresolved should contain only actual conflicts, ambiguity or proposed removals needing review; otherwise use [].
 '''
@@ -109,6 +109,19 @@ def removals(before,after):
     extra={x['id']:{i['title'] for i in x['items']} for x in after['additional']}
     for section in before['additional']:
         missing.extend(section['id']+': '+x['title'] for x in section['items'] if x['title'] not in extra.get(section['id'],set()))
+    def record_map(profile):
+        result={key:{x['title']:x for x in profile[key]} for key in ['experience','appointments','education','publications','talks','awards','certifications']}
+        result.update({'additional.'+section['id']:{x['title']:x for x in section['items']} for section in profile['additional']})
+        return result
+    old_records=record_map(before);new_records=record_map(after)
+    for section,records in old_records.items():
+        for title,record in records.items():
+            new_record=new_records.get(section,{}).get(title)
+            if new_record is None:continue
+            new_groups={x['heading']:x['points'] for x in new_record.get('details',[])}
+            for group in record.get('details',[]):
+                if group['heading'] not in new_groups or len(new_groups[group['heading']])<len(group['points']):
+                    missing.append(section+': '+title+' (reduced details: '+group['heading']+')')
     return missing
 
 def evaluate(run,candidate,apply=False,allow_removals=False):
