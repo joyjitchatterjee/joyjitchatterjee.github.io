@@ -13,7 +13,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from validate import validate_profile,validate_media,validate_showcase
+from validate import validate_profile,validate_media,validate_showcase,validate_downloads
 from refresh_cv import extract,removals,compare
 from build import e
 
@@ -74,6 +74,15 @@ class ContentTests(unittest.TestCase):
     def test_empty_detail_group_rejected(self):
         self.profile['experience'][0]['details'][0]['points']=[]
         with self.assertRaisesRegex(ValueError,'Empty detail'):validate_profile(self.profile)
+    def test_downloads_validate_against_the_original_pdf(self):
+        downloads=json.loads((ROOT/'content/downloads.json').read_text())
+        validate_downloads(downloads,self.profile)
+        downloads[0]['sha256']='0'*64
+        with self.assertRaisesRegex(ValueError,'PDF integrity mismatch'):validate_downloads(downloads,self.profile)
+    def test_download_cannot_escape_the_paper_directory(self):
+        downloads=json.loads((ROOT/'content/downloads.json').read_text())
+        downloads[0]['file']='content/profile.json'
+        with self.assertRaisesRegex(ValueError,'Invalid local PDF path'):validate_downloads(downloads,self.profile)
     def test_docx_extraction(self):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'my CV.docx'
@@ -117,15 +126,17 @@ class PipelineTests(unittest.TestCase):
         self.assertTrue((self.run/'report.md').exists())
         self.assertIn(self.metadata['sources'][0]['id'],(self.root/'content/sources.json').read_text())
     def test_import_preserves_curated_media_and_flags_changed_case(self):
+        downloads=(self.root/'content/downloads.json').read_bytes()
         showcase=(self.root/'content/showcase.json').read_bytes()
         media=(self.root/'content/media.json').read_bytes()
         self.result['profile']['experience'][0]['summary']+=' New delivery responsibilities.'
         self.apply()
+        self.assertEqual(downloads,(self.root/'content/downloads.json').read_bytes())
         self.assertEqual(showcase,(self.root/'content/showcase.json').read_bytes())
         self.assertEqual(media,(self.root/'content/media.json').read_bytes())
         self.assertIn('Reconcile content/showcase.json with changed record: Lead Data Scientist',(self.run/'report.md').read_text())
         homepage=(self.root/'index.html').read_text()
-        for text in ['ETH Zurich','Aptitude Colloquium','British Data Awards','Low to Grow','WindTurbine-QAKG']:
+        for text in ['ETH Zurich','Aptitude Colloquium','British Data Awards','Low to Grow','Read PDF']:
             self.assertIn(text,homepage)
     def test_unresolved_leaves_content_untouched(self):
         before=(self.root/'content/profile.json').read_bytes();self.result['unresolved']=['Conflicting dates.'];self.apply(ok=False)

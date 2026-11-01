@@ -1,0 +1,17 @@
+[
+  {
+    "id": "glow-2026",
+    "publication_title": "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance",
+    "file": "assets/papers/glow-2026-power-line-om.pdf",
+    "preview": "assets/images/glow-2026-paper-preview.png",
+    "preview_width": 708,
+    "preview_height": 1000,
+    "summary": "A graph-grounded, physics-aware agent combines visual evidence, engineering knowledge and simulation to support traceable power-line inspection and maintenance decisions.",
+    "pages": 15,
+    "bytes": 12266357,
+    "sha256": "9ffaa18f2793d791f3cc866eafa6c2aaac04a1fa426b120f49b5938133dc4d6f",
+    "source_url": "https://temp-iswc26-workshops.netlify.app/glow-paper6.pdf",
+    "licence": "CC BY 4.0",
+    "added": "2026-11-01"
+  }
+]

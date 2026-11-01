@@ -133,3 +133,19 @@ imports preserve these groups and reject silent reductions in their point counts
 as well as deleted historical records. Protected highlights remain in the coverage
 ledger. The full archive now includes the CV's technical skills, named corporate
 involvement, funding, CPD events and earlier awards alongside major achievements.
+
+## Shareable publication PDFs
+
+Visit [Publication downloads](https://joyjitchatterjee.github.io/research.html#downloads)
+to read, download or copy a permanent link to selected papers. The GLOW 2026 paper
+is stored unchanged at `assets/papers/glow-2026-power-line-om.pdf`, with its original
+source and CC BY 4.0 attribution retained.
+
+Give Codex a paper PDF or direct PDF URL and ask to add it to publication downloads.
+It can save the file, inspect it, render a first-page preview and register metadata
+in `content/downloads.json`. Builds check the publication reference, file location,
+PDF signature, byte count and SHA-256. CV imports preserve this collection, and
+isolated builds copy the PDFs with the other public assets.
+
+GitHub is now a footer link and optional supporting resource on the research page.
+It is no longer a primary navigation action or homepage section.

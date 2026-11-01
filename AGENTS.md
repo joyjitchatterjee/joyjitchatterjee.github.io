@@ -128,3 +128,24 @@ $780k/year R&D figures are potential savings demonstrated in evaluation. Use tha
 precise distinction; do not describe them as achieved or realised savings without
 new evidence. The approximately 30% waste reduction is a separately reported
 contribution and must not be presented as sole attribution.
+
+## Publication downloads and GitHub prominence
+
+Keep GitHub as a secondary professional link in the footer and an optional research
+resource. Do not restore it as a primary navigation action or a large homepage
+section. Publications, enterprise work and professional credentials lead the site.
+
+Public paper PDFs are stored in `assets/papers/`, with immutable descriptive paths
+for sharing. `content/downloads.json` maps each local file to its exact publication
+title, source URL, licence, SHA-256, byte/page counts and first-page preview. It is
+curated separately from CV imports and must be preserved. Validate the actual PDF,
+read its title/authors/licence and visually inspect its first page before adding
+it. Preserve the supplied PDF unchanged. Retain the original source link and full
+authorship. Never put raw CVs into this downloads collection.
+
+The research page renders read/download controls and a copyable permanent link;
+the corresponding publication also gets a PDF link on the homepage and research
+list. To add another paper, store its PDF and preview and add a matching catalogue
+entry, then build/check. Keep the catalogue reference valid if a publication title
+is deliberately corrected. Do not replace working local downloads with transient
+external links during CV refreshes.
