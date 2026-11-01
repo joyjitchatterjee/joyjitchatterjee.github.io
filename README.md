@@ -1,12 +1,12 @@
 # Joyjit Chatterjee — CV-driven personal website
 
-A static, accessible portfolio for [joyjitchatterjee.github.io](https://joyjitchatterjee.github.io), with local LinkedIn photos, searchable publications and a printable career profile. No API key or server is exposed to visitors.
+A static, accessible portfolio for [joyjitchatterjee.github.io](https://joyjitchatterjee.github.io), with local LinkedIn and Bluesky photos, searchable publications and a printable career profile. No API key or server is exposed to visitors.
 
 ## The simplest update: attach your CV in Codex
 
 Open **this repository** in Codex, attach your new PDF or DOCX and say:
 
-> Refresh my website from this CV. Preserve historical achievements and the LinkedIn gallery. Check the changes and publish them to GitHub Pages.
+> Refresh my website from this CV. Preserve historical achievements and the social-post gallery. Check the changes and publish them to GitHub Pages.
 
 Codex reads `AGENTS.md`, extracts the CV, updates structured content, validates it, rebuilds the pages and follows the requested publishing step. If you only want a draft, say “prepare a draft update” instead. A short CV supplements the existing record; it does not wipe older publications and talks. Supply the full CV too when available.
 
@@ -74,13 +74,25 @@ Open `http://127.0.0.1:8765`. Check the homepage, publication search/type filter
 
 Publications and the career record are rendered into HTML: readers and search engines do not need JavaScript. Search and type filters work together. The mobile menu has keyboard support and an expanded state; motion respects system preferences. The profile page can be printed or saved as PDF. The existing historical HTML file is retained in Git for reference.
 
-## Adding LinkedIn photos
+## Adding LinkedIn and Bluesky photos
 
 No additional LinkedIn connection was needed for the initial portrait and Loughborough lecture image. They were downloaded from a public post and visually checked; original links are in the content files. Images are served locally so an expiring LinkedIn image URL cannot break the portfolio.
 
 For more photos, give Codex a specific post URL. If LinkedIn blocks public access, open the post in a connected browser where you are already signed in, or provide the image and post link directly. Do not share passwords or cookies. The current LinkedIn people-search connector cannot read all your posts or download their images. There is no unattended LinkedIn scraper or scheduled feed synchronization in this project.
 
-To add a photo manually: save it in `assets/images/`, add an entry to `content/media.json` matching the existing record, then build. Keep the event's actual date/role, an accurate alt description and a link to the originating post. CV updates preserve this gallery.
+Bluesky is also a source: [joyjitchat.bsky.social](https://bsky.app/profile/joyjitchat.bsky.social).
+Public posts and images were accessible without login. The gallery now includes
+the GLOW/ISWC presentation, House of Lords visit and Queen Mary invited talk,
+with direct source links and accurate attendance/speaking labels. The GLOW photo
+confirms the presentation date as 25 October 2026. The existing Loughborough
+LinkedIn photo is retained. Bluesky also corroborates that ReActV was an ABIS
+workshop contribution, rather than a main-conference presentation.
+
+Codex can consult Bluesky during later updates using the public author-feed API
+documented in `AGENTS.md`. This is an on-demand evidence source, not a scheduled
+feed mirror. Only relevant professional material is curated into the portfolio.
+
+To add a photo manually: save it in `assets/images/`, add an entry to `content/media.json` matching the existing record, then build. Keep the event's actual date/role, an accurate alt description, the image width and height, and a link to the originating post. CV updates preserve this gallery.
 
 ## Initial update (1 November 2026)
 

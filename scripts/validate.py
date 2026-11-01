@@ -28,7 +28,7 @@ def validate_profile(profile,extra_sources=()):
     for k in ['name','role','headline','intro','about']:
         if not profile[k].strip():raise ValueError(f'{k} cannot be empty')
     if not re.fullmatch(r'[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+',profile['email']):raise ValueError('Invalid email')
-    for k in ['linkedin','scholar','github']:web_url(profile[k])
+    for k in ['linkedin','scholar','github','bluesky']:web_url(profile[k])
     known={s['id'] for s in json.loads((ROOT/'content/sources.json').read_text())}|set(extra_sources)
     def walk(x):
         if isinstance(x,dict):
@@ -60,6 +60,9 @@ def validate_media(media):
     for item in media:
         if not item.get('alt','').strip():raise ValueError('Image needs alt text')
         web_url(item['source_url'])
+        web_url(item['source_image_url'])
+        for dimension in ['width','height']:
+            if type(item.get(dimension)) is not int or not 0<item[dimension]<=20000:raise ValueError('Invalid image dimensions')
         path=(ROOT/item['image']).resolve()
         if not path.is_relative_to(ROOT/'assets/images') or not path.is_file():raise ValueError('Invalid local image path')
     return media

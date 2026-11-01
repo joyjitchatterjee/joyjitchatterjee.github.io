@@ -28,7 +28,7 @@ images and captions are in `content/media.json`. `index.html`, `research.html`, 
    a branch and provide a reviewable diff or draft PR. Authorization already given
    by the user applies; do not ask them to repeat it.
 
-## LinkedIn imagery
+## LinkedIn and Bluesky imagery
 
 Use public posts or the user's authenticated browser when available and authorized.
 The LinkedIn people-search connector does not supply a post feed or photos.
@@ -38,6 +38,21 @@ its post URL, original image URL, date accessed, precise caption and alt text to
 `content/media.json`. Reject generic LinkedIn logos and promotional placeholders.
 Keep photos outside the CV update so later CV imports cannot erase the gallery.
 Use truthful event roles and dates; never generate a photograph of a claimed event.
+Record each image's actual width and height in media.json.
+
+Bluesky profile: https://bsky.app/profile/joyjitchat.bsky.social
+Public posts are accessible without login through
+`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed` with
+`actor=joyjitchat.bsky.social`, `filter=posts_no_replies` and `limit=100`.
+Follow the returned cursor when needed. Inspect the post author: reposted items
+must not be attributed to Joyjit. Photos can appear in embed.images or gallery
+embed.items; select actual images, not videos or generic external previews.
+Store each selected post's public URL, publication date and original image URL.
+Use post text and photos to distinguish delivered talks from announcements or
+attendance; don't use a post's publication date as an event date without evidence.
+The supplied current CV takes precedence over stale social-profile biographies.
+Do not let an older Bluesky bio revert Distinguished Visiting Fellow to Visiting
+Academic. Retain both Bluesky and LinkedIn links during future CV refreshes.
 
 ## Publishing and privacy
 

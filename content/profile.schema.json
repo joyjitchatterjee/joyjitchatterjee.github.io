@@ -428,6 +428,10 @@
         "additionalProperties": false
       },
       "maxItems": 500
+    },
+    "bluesky": {
+      "type": "string",
+      "maxLength": 12000
     }
   },
   "required": [
@@ -451,7 +455,8 @@
     "awards",
     "certifications",
     "impact",
-    "additional"
+    "additional",
+    "bluesky"
   ],
   "additionalProperties": false
 }

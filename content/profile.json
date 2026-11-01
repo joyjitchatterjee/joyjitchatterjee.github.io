@@ -148,12 +148,12 @@
     },
     {
       "title": "Structuring the Last Mile with ReActV: Tool-Augmented Delivery Planning with Verification",
-      "venue": "ACM Web Science Conference Companion",
+      "venue": "ABIS workshop at ACM Web Science 2026; ACM Web Science Conference Companion",
       "authors": "Chatterjee, J., Gamtenadze, D., Marar, A., Agarwal, P.",
       "date": "May 2026",
       "type": "conference",
       "url": "",
-      "source": "cv-full-2026"
+      "source": "bluesky-reactv"
     },
     {
       "title": "Laying the foundations for context-aware and AI-ready fault diagnosis with the Operations Ontology",
@@ -588,11 +588,18 @@
       "source": "linkedin-profile-2026"
     },
     {
+      "title": "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance",
+      "venue": "GLOW workshop at ISWC 2026, Bari, Italy",
+      "date": "25 Oct 2026",
+      "status": "completed",
+      "source": "bluesky-glow"
+    },
+    {
       "title": "Autonomous Vehicles: Legal & Ethical Frameworks in Autonomous Vehicle Technology",
       "venue": "House of Lords, UK Parliament — invited guest at an evidence session",
-      "date": "Oct 2026",
+      "date": "19 Oct 2026",
       "status": "attended",
-      "source": "cv-full-2026"
+      "source": "bluesky-parliament"
     },
     {
       "title": "Knowledge Representation and Reasoning in AI for Safety-Critical Engineering Applications",
@@ -1621,5 +1628,6 @@
         }
       ]
     }
-  ]
+  ],
+  "bluesky": "https://bsky.app/profile/joyjitchat.bsky.social"
 }
