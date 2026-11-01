@@ -7,7 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 def check(value,schema,path='$'):
-    types={'object':dict,'array':list,'string':str}
+    types={'object':dict,'array':list,'string':str,'integer':int}
     if not isinstance(value,types[schema['type']]):raise ValueError(f'{path}: expected {schema["type"]}')
     if isinstance(value,dict):
         expected=set(schema['required'])
@@ -16,7 +16,7 @@ def check(value,schema,path='$'):
     elif isinstance(value,list):
         if len(value)>schema.get('maxItems',1000):raise ValueError(f'{path}: too many items')
         for i,v in enumerate(value):check(v,schema['items'],f'{path}[{i}]')
-    else:
+    elif isinstance(value,str):
         if len(value)>schema.get('maxLength',20000):raise ValueError(f'{path}: too long')
         if 'enum' in schema and value not in schema['enum']:raise ValueError(f'{path}: unsupported value {value}')
 def web_url(url):
@@ -54,6 +54,7 @@ def validate_profile(profile,extra_sources=()):
             date=dt.date(int(match[3]),months[match[2]],int(match[1] or 1))
             if talk['status']=='upcoming' and ((match[1] and date<asof) or (date.year,date.month)<(asof.year,asof.month)):raise ValueError('Past announcement needs completed/attended evidence or past-scheduled status: '+talk['title'])
             if date>asof and talk['status'] in ['completed','attended']:raise ValueError('Future event cannot be completed: '+talk['title'])
+    validate_coverage(profile)
     return profile
 
 def validate_media(media):
@@ -66,7 +67,51 @@ def validate_media(media):
         path=(ROOT/item['image']).resolve()
         if not path.is_relative_to(ROOT/'assets/images') or not path.is_file():raise ValueError('Invalid local image path')
     return media
+def profile_record(profile,reference):
+    section=reference['section']
+    if section.startswith('additional.'):
+        items=next((x['items'] for x in profile['additional'] if x['id']==section.split('.',1)[1]),[])
+    else:
+        items=profile.get(section,[])
+    matches=[x for x in items if isinstance(x,dict) and x.get('title')==reference['title']]
+    if len(matches)!=1:raise ValueError('Missing or ambiguous protected record: '+reference['title'])
+    return matches[0]
+
+def validate_coverage(profile):
+    for item in json.loads((ROOT/'content/coverage.json').read_text()):
+        profile_record(profile,item['record'])
+        if item['surface'] not in ['index.html','profile.html','research.html']:raise ValueError('Invalid coverage surface')
+
+def validate_showcase(showcase,profile):
+    check(showcase,json.loads((ROOT/'content/showcase.schema.json').read_text()))
+    known={x['id'] for x in json.loads((ROOT/'content/sources.json').read_text())}
+    ids=[]
+    def walk(item):
+        if isinstance(item,list):
+            for x in item:walk(x)
+        elif isinstance(item,dict):
+            if 'source' in item and item['source'] not in known:raise ValueError('Unknown showcase source')
+            if 'record' in item:profile_record(profile,item['record'])
+            if 'id' in item:
+                if not re.fullmatch(r'[a-z][a-z0-9-]*',item['id']):raise ValueError('Invalid showcase ID')
+                ids.append(item['id'])
+            if 'url' in item:
+                url=item['url']
+                if url.startswith('https://'):web_url(url)
+                elif not re.fullmatch(r'(profile|research)\.html#[a-z][a-z0-9-]*',url):raise ValueError('Unsafe showcase URL: '+url)
+            if 'image' in item and item['image']['path']:
+                im=item['image'];web_url(im['source_url']);dt.date.fromisoformat(im['accessed'])
+                path=(ROOT/im['path']).resolve()
+                if not path.is_relative_to(ROOT/'assets/images') or not path.is_file():raise ValueError('Missing showcase image')
+                if not im['alt'].strip() or any(type(im[k]) is not int or not 0<im[k]<=20000 for k in ['width','height']):raise ValueError('Invalid showcase image metadata')
+            for x in item.values():walk(x)
+    walk(showcase)
+    if len(set(ids))!=len(ids):raise ValueError('Duplicate showcase IDs')
+    for title in showcase['featured_publications']:profile_record(profile,{'section':'publications','title':title})
+    return showcase
+
 if __name__=='__main__':
-    validate_profile(json.loads((ROOT/'content/profile.json').read_text()))
+    profile=validate_profile(json.loads((ROOT/'content/profile.json').read_text()))
     validate_media(json.loads((ROOT/'content/media.json').read_text()))
-    print('Content and image provenance validated')
+    validate_showcase(json.loads((ROOT/'content/showcase.json').read_text()),profile)
+    print('Content, protected credentials and image provenance validated')

@@ -1,0 +1,39 @@
+"""Render the source-backed editorial homepage separately from the CV archive."""
+import html
+from urllib.parse import urlsplit
+
+def e(value):
+    return html.escape(str(value), quote=True)
+
+def picture(item, cls=''):
+    return f'<img class="{e(cls)}" src="{e(item["path"])}" alt="{e(item["alt"])}" width="{item["width"]}" height="{item["height"]}" loading="lazy">'
+
+def render(p, media, s, pubs):
+    cases = ''.join(f'''<article class="case-card" id="{e(x['id'])}">
+      <div class="case-heading"><span class="case-number">0{i+1}</span><p class="eyebrow">{e(x['kicker'])}</p><h3>{e(x['title'])}</h3><p>{e(x['summary'])}</p></div>
+      <div class="case-detail"><p class="mini-label">My contribution</p><p>{e(x['contribution'])}</p><div class="case-outcome"><p class="mini-label">Value & outcomes</p><p>{e(x['outcome'])}</p></div><a class="text-link" href="{e(x['url'])}">{e(x['label'])} ↗</a></div>
+    </article>''' for i,x in enumerate(s['cases']))
+    credentials = ''.join(f'<article class="credential"><p class="eyebrow">{e(x["kicker"])}</p><h3>{e(x["title"])}</h3><p>{e(x["detail"])}</p><a href="{e(x["url"])}" aria-label="View details: {e(x["title"])}">View details ↗</a></article>' for x in s['credentials'])
+    appearances = ''
+    for x in s['appearances']:
+        visual = f'<a class="appearance-image" href="{e(x["url"])}">{picture(x["image"])}</a>' if x['image']['path'] else ''
+        extra = ''.join(f'<a href="{e(link["url"])}">{e(link["title"])} ↗</a>' for link in x['extra'])
+        appearances += f'''<article class="appearance {'with-image' if visual else ''}" id="{e(x['id'])}">{visual}<div class="appearance-copy"><p class="eyebrow">{e(x['format'])}</p><h3>{e(x['title'])}</h3><p class="date">{e(x['date'])}</p><p>{e(x['summary'])}</p><a class="text-link" href="{e(x['url'])}">{e(x['label'])} ↗</a><div class="extra-links">{extra}</div></div></article>'''
+    photos = ''.join(f'''<figure class="story"><a href="{e(x['source_url'])}"><img src="{e(x['image'])}" alt="{e(x['alt'])}" width="{x['width']}" height="{x['height']}" loading="lazy"></a><figcaption><p class="eyebrow">In the room · {e(x['date'])}</p><h3>{e(x['title'])}</h3><p>{e(x['caption'])}</p><a href="{e(x['source_url'])}">View the {'Bluesky' if urlsplit(x['source_url']).hostname=='bsky.app' else 'LinkedIn'} post ↗</a></figcaption></figure>''' for x in media)
+    repositories = ''.join(f'<article class="repo-card"><p class="eyebrow">Public research resources</p><h3><a href="{e(x["url"])}">{e(x["title"])} ↗</a></h3><p>{e(x["summary"])}</p><p class="repo-tags">{e(x["tags"])}</p></article>' for x in s['repositories'])
+    impacts = ''.join(f'<article><strong>{e(x["value"])}</strong><h3>{e(x["label"])}</h3><p>{e(x["detail"])}</p></article>' for x in p['impact'])
+    chips = ''.join(f'<span>{e(x)}</span>' for x in p['focus'])
+    book = s['book']
+    publication_map = {x['title']:x for x in p['publications']}
+    selected = pubs([publication_map[title] for title in s['featured_publications']])
+    return f'''
+<section class="hero wrap" id="about"><div class="hero-copy"><p class="eyebrow">AI leadership / Products / Innovation</p><p class="hero-name">{e(p['name'])}</p><h1>{e(p['headline'])}</h1><p class="lede">{e(p['intro'])}</p><div class="actions"><a class="button" href="#work">Explore my work <span>↗</span></a><a class="text-link" href="#media">Watch, listen & read →</a></div><p class="hero-credential">PhD, Computer Science · Industry practitioner · Research collaborator</p></div><div class="portrait-panel"><div class="portrait-frame"><img src="assets/images/portrait.jpg" alt="Portrait of {e(p['name'])}" width="400" height="400" fetchpriority="high"></div><div class="portrait-caption"><span class="small-square"></span><div><strong>{e(p['role'])}</strong><p>{e(p['location'])}</p></div></div><p class="portrait-note">Research depth.<br>Enterprise perspective.</p></div></section>
+<div class="recognition"><div class="wrap"><a href="#recognition">Forbes<b>30 Under 30 Europe · 2022</b></a><a href="#recognition">British Data Awards<b>Data Leader finalist · 2026</b></a><a href="#recognition">ETH Zurich<b>Aptitude colloquium · Invited expert</b></a><a href="#recognition">Loughborough<b>Distinguished Visiting Fellow</b></a></div></div>
+<section class="section wrap" id="work"><div class="section-heading"><div><p class="eyebrow">01 / Enterprise AI</p><h2>Strategy that connects<br>to delivery.</h2></div><p>My work spans the decisions around AI as well as the technology itself: where to invest effort, what to build, who needs to be involved and how it becomes useful.</p></div>
+<div class="delivery-path" aria-label="Areas of contribution"><div><span>01</span><strong>Shape the opportunity</strong><p>Use cases, value & feasibility</p></div><div><span>02</span><strong>Build the product</strong><p>Models, experience & deployment</p></div><div><span>03</span><strong>Enable adoption</strong><p>People, governance & operations</p></div><div><span>04</span><strong>Develop capability</strong><p>Teams, mentoring & knowledge</p></div></div>
+<div class="case-list">{cases}</div><div class="impact-grid">{impacts}</div><div class="focus-list">{chips}</div><a class="text-link" href="profile.html#experience">Full experience & career history →</a></section>
+<section class="recognition-section" id="recognition"><div class="section wrap"><div class="section-heading"><div><p class="eyebrow">02 / Recognition & contribution</p><h2>Experience recognised<br>across disciplines.</h2></div><p>Enterprise recognition alongside invited academic service, innovation evaluation and research with international reach.</p></div><div class="credential-grid">{credentials}</div><div class="development-note"><p><strong>Business, product & leadership development</strong><br>Cambridge business CPD · Oxford AI Programme · Professional Agile Leadership · AI for Product Management</p><a class="text-link" href="profile.html#cpd">Courses & professional development →</a></div></div></section>
+<section class="section wrap" id="media"><div class="section-heading"><div><p class="eyebrow">03 / Watch, listen & read</p><h2>The conversations<br>behind the work.</h2></div><p>Interviews, public writing and recorded talks on useful AI, responsible adoption and careers connecting research with industry.</p></div><div class="appearance-grid">{appearances}</div><a class="text-link" href="profile.html#press">More press & media →</a></section>
+<section class="research-section" id="research"><div class="section wrap"><div class="section-heading"><div><p class="eyebrow">04 / Research & authorship</p><h2>Technical depth.<br>A wider perspective.</h2></div><a class="text-link" href="research.html">All publications →</a></div><article class="book-feature"><a class="book-cover" href="{e(book['url'])}">{picture(book['image'])}</a><div><p class="eyebrow">{e(book['kicker'])}</p><h3>{e(book['title'])}</h3><p class="book-subtitle">{e(book['subtitle'])}</p><p>{e(book['summary'])}</p><a class="text-link" href="{e(book['url'])}">Explore the book at Wiley ↗</a></div></article><div class="selected-pubs">{selected}</div><a class="text-link" href="{e(p['scholar'])}">Google Scholar ↗</a></div></section>
+<section class="section wrap" id="speaking"><div class="section-heading"><div><p class="eyebrow">05 / Speaking & exchange</p><h2>Ideas in the room.</h2></div><p>Sharing research and taking part in conversations across industry, universities and public forums.</p></div><div class="story-grid">{photos}</div><a class="text-link" href="profile.html#talks">All talks & appearances →</a></section>
+<section class="code-section"><div class="section wrap" id="github"><div class="section-heading"><div><p class="eyebrow">06 / Open research</p><h2>Explore the work<br>behind the ideas.</h2></div><a class="button" href="{e(p['github'])}">View my GitHub ↗</a></div><div class="repo-grid">{repositories}</div></div></section>'''

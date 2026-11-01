@@ -65,5 +65,131 @@
     "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3mlhko5wurc2t",
     "published": "2026-05-10T01:00:33.761Z",
     "accessed": "2026-11-01"
+  },
+  {
+    "id": "british-data-awards-2026",
+    "label": "British Data Awards 2026 finalists — organiser announcement",
+    "kind": "public web",
+    "url": "https://predatech.co.uk/british-data-awards-2026-finalists/",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "low-to-grow",
+    "label": "Low to Grow: Explainable AI and the Power of Quiet Thinking",
+    "kind": "public web",
+    "url": "https://www.lowtogrow.com/en/episodes/joyjit-chatterjee-explaining-explainable-ai/",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "hull-careers-video",
+    "label": "University of Hull DAIM: careers in data science and AI recording",
+    "kind": "public web",
+    "url": "https://www.youtube.com/watch?v=CWNxgbuGuKg",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "iea-task43-2025",
+    "label": "IEA Wind Task 43 Annual General Meeting 2025 report",
+    "kind": "public web",
+    "url": "https://iea-wind.org/task43-agm2025-report/",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "ieee-spectrum",
+    "label": "IEEE Spectrum interview: AI’s Benefit to Solar and Wind Power Isn’t Hot Air",
+    "kind": "public web",
+    "url": "https://spectrum.ieee.org/climate-change-ai",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "wef-perspective",
+    "label": "World Economic Forum republication of coauthored Conversation article",
+    "kind": "public web",
+    "url": "https://www.weforum.org/stories/2022/04/developing-countries-are-being-left-behind-in-the-ai-race-and-that-s-a-problem-for-all-of-us/",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "wiley-book",
+    "label": "Wiley: Renewable Energy Transition with Artificial Intelligence",
+    "kind": "public web",
+    "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781394300068",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "loughborough-group",
+    "label": "Loughborough Language & Data Research Group: distinguished fellow",
+    "kind": "public web",
+    "url": "https://ldr-lboro.github.io/",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "green-talents",
+    "label": "Green Talents official 2021 awardee profile",
+    "kind": "public web",
+    "url": "https://www.greentalents.de/awardees_awardees2021_joyjit-chatterjee.php",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "hull-ktp",
+    "label": "University of Hull: Outstanding Reckitt AI Knowledge Transfer Partnership",
+    "kind": "public web",
+    "url": "https://www.hull.ac.uk/collaborate/services-for-business/work-with-our-experts",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "github-xai4wind",
+    "label": "XAI4Wind public research repository",
+    "kind": "public web",
+    "url": "https://github.com/joyjitchatterjee/XAI4Wind",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "github-windqa",
+    "label": "WindTurbine-QAKG public research repository",
+    "kind": "public web",
+    "url": "https://github.com/joyjitchatterjee/WindTurbine-QAKG",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "conversation-ai",
+    "label": "The Conversation: developing countries and the AI race",
+    "kind": "public web",
+    "url": "https://theconversation.com/developing-countries-are-being-left-behind-in-the-ai-race-and-thats-a-problem-for-all-of-us-180218",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "education-times",
+    "label": "Education Times: Using AI to tackle the climatic challenges",
+    "kind": "public web",
+    "url": "https://www.educationtimes.com/article/campus-beat-student-speak/84405705/using-ai-to-tackle-the-climatic-challenges",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "commerce-industry",
+    "label": "Commerce & Industry June 2022, page 39",
+    "kind": "public web",
+    "url": "https://online.fliphtml5.com/eqgb/cnot/#p=39",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "glow-programme",
+    "label": "Official GLOW 2026 programme",
+    "url": "https://glow-workshop.github.io/iswc2026/",
+    "kind": "public web",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "nldb-paper",
+    "label": "Springer NLDB publication record",
+    "url": "https://doi.org/10.1007/978-3-032-29532-3_19",
+    "kind": "public web",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "reactv-paper",
+    "label": "ACM ReActV publication record",
+    "url": "https://doi.org/10.1145/3795513.3810458",
+    "kind": "public web",
+    "accessed": "2026-11-01"
   }
 ]

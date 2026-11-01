@@ -12,8 +12,8 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from validate import validate_profile,validate_media
-from refresh_cv import extract,removals
+from validate import validate_profile,validate_media,validate_showcase
+from refresh_cv import extract,removals,compare
 from build import e
 
 class ContentTests(unittest.TestCase):
@@ -40,6 +40,25 @@ class ContentTests(unittest.TestCase):
     def test_removals_cover_additional_records(self):
         old=copy.deepcopy(self.profile);self.profile['additional'][0]['items'].pop()
         self.assertTrue(removals(old,self.profile))
+    def test_important_academic_service_cannot_silently_disappear(self):
+        service=next(x for x in self.profile['additional'] if x['id']=='reviews')
+        service['items']=[x for x in service['items'] if 'Aptitude Colloquium' not in x['title']]
+        with self.assertRaisesRegex(ValueError,'protected record'):validate_profile(self.profile)
+    def test_changed_academic_service_is_reported_for_homepage_review(self):
+        old=copy.deepcopy(self.profile)
+        service=next(x for x in self.profile['additional'] if x['id']=='reviews')
+        service['items'][0]['summary']+=' Additional verified detail.'
+        report=compare(old,self.profile)
+        self.assertIn('Updated additional.reviews: Invited Expert',report)
+        self.assertIn('Reconcile content/showcase.json',report)
+    def test_curated_card_cannot_reference_missing_credential(self):
+        showcase=json.loads((ROOT/'content/showcase.json').read_text())
+        showcase['credentials'][0]['record']['title']='Unsupported award'
+        with self.assertRaisesRegex(ValueError,'protected record'):validate_showcase(showcase,self.profile)
+    def test_curated_appearance_rejects_unsafe_link(self):
+        showcase=json.loads((ROOT/'content/showcase.json').read_text())
+        showcase['appearances'][0]['extra'][0]['url']='javascript:alert(1)'
+        with self.assertRaisesRegex(ValueError,'Unsafe showcase URL'):validate_showcase(showcase,self.profile)
     def test_docx_extraction(self):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'my CV.docx'
@@ -82,6 +101,17 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('Research interests include trustworthy AI.',(self.root/'profile.html').read_text())
         self.assertTrue((self.run/'report.md').exists())
         self.assertIn(self.metadata['sources'][0]['id'],(self.root/'content/sources.json').read_text())
+    def test_import_preserves_curated_media_and_flags_changed_case(self):
+        showcase=(self.root/'content/showcase.json').read_bytes()
+        media=(self.root/'content/media.json').read_bytes()
+        self.result['profile']['experience'][0]['summary']+=' New delivery responsibilities.'
+        self.apply()
+        self.assertEqual(showcase,(self.root/'content/showcase.json').read_bytes())
+        self.assertEqual(media,(self.root/'content/media.json').read_bytes())
+        self.assertIn('Reconcile content/showcase.json with changed record: Lead Data Scientist',(self.run/'report.md').read_text())
+        homepage=(self.root/'index.html').read_text()
+        for text in ['ETH Zurich','Aptitude Colloquium','British Data Awards','Low to Grow','WindTurbine-QAKG']:
+            self.assertIn(text,homepage)
     def test_unresolved_leaves_content_untouched(self):
         before=(self.root/'content/profile.json').read_bytes();self.result['unresolved']=['Conflicting dates.'];self.apply(ok=False)
         self.assertEqual(before,(self.root/'content/profile.json').read_bytes())

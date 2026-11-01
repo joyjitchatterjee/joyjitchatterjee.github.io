@@ -1,0 +1,138 @@
+[
+  {
+    "record": {
+      "section": "experience",
+      "title": "Lead Data Scientist"
+    },
+    "surface": "index.html",
+    "reason": "Shaping AI opportunities into deliverable programmes"
+  },
+  {
+    "record": {
+      "section": "experience",
+      "title": "IT & Digital Data Scientist - R&D / KTP Associate"
+    },
+    "surface": "index.html",
+    "reason": "From laboratory research to a production application"
+  },
+  {
+    "record": {
+      "section": "experience",
+      "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"
+    },
+    "surface": "index.html",
+    "reason": "Making manufacturing data useful for decisions"
+  },
+  {
+    "record": {
+      "section": "awards",
+      "title": "British Data Awards — Data Leader of the Year (Partner) Finalist"
+    },
+    "surface": "index.html",
+    "reason": "British Data Awards 2026"
+  },
+  {
+    "record": {
+      "section": "awards",
+      "title": "Forbes 30 Under 30 Europe"
+    },
+    "surface": "index.html",
+    "reason": "Forbes 30 Under 30 Europe"
+  },
+  {
+    "record": {
+      "section": "additional.reviews",
+      "title": "Invited Expert — Doctoral Examination (Aptitude Colloquium) Committee"
+    },
+    "surface": "index.html",
+    "reason": "ETH Zurich"
+  },
+  {
+    "record": {
+      "section": "appointments",
+      "title": "Distinguished Visiting Fellow"
+    },
+    "surface": "index.html",
+    "reason": "Loughborough University"
+  },
+  {
+    "record": {
+      "section": "additional.reviews",
+      "title": "External Evaluator and Reviewer — NGI Search"
+    },
+    "surface": "index.html",
+    "reason": "European Commission programme"
+  },
+  {
+    "record": {
+      "section": "awards",
+      "title": "Green Talents Award"
+    },
+    "surface": "index.html",
+    "reason": "Green Talents"
+  },
+  {
+    "record": {
+      "section": "additional.reviews",
+      "title": "Co-editor — Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions"
+    },
+    "surface": "index.html",
+    "reason": "Renewable Energy Transition with Artificial Intelligence"
+  },
+  {
+    "record": {
+      "section": "additional.cpd",
+      "title": "Cambridge Business Administration and Management CPD Course"
+    },
+    "surface": "profile.html",
+    "reason": "Professional development retained separately from degrees"
+  },
+  {
+    "record": {
+      "section": "additional.cpd",
+      "title": "Oxford Artificial Intelligence Programme"
+    },
+    "surface": "profile.html",
+    "reason": "Professional development retained separately from degrees"
+  },
+  {
+    "record": {
+      "section": "additional.cpd",
+      "title": "Oxford Machine Learning Summer School"
+    },
+    "surface": "profile.html",
+    "reason": "Professional development retained separately from degrees"
+  },
+  {
+    "record": {
+      "section": "certifications",
+      "title": "Professional Agile Leadership (PAL-1)"
+    },
+    "surface": "profile.html",
+    "reason": "Leadership and product development credentials"
+  },
+  {
+    "record": {
+      "section": "certifications",
+      "title": "AI for Product Management"
+    },
+    "surface": "profile.html",
+    "reason": "Leadership and product development credentials"
+  },
+  {
+    "record": {
+      "section": "certifications",
+      "title": "CMI Level 5 study course in Management & Leadership"
+    },
+    "surface": "profile.html",
+    "reason": "Leadership and product development credentials"
+  },
+  {
+    "record": {
+      "section": "publications",
+      "title": "Analysis of CPU Utilization of a Cross-Platform Web Application for Facial Recognition based Remote User Tracking System"
+    },
+    "surface": "research.html",
+    "reason": "Previously omitted CV publication"
+  }
+]
