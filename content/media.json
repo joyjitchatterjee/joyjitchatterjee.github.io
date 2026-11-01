@@ -1,0 +1,54 @@
+[
+  {
+    "id": "glow",
+    "title": "Knowledge graphs for power-line inspection",
+    "caption": "Presenting research on a graph-grounded multimodal agent for trustworthy power-line operations and maintenance at the GLOW workshop, ISWC 2026, Bari.",
+    "date": "25 Oct 2026",
+    "image": "assets/images/glow.jpg",
+    "alt": "Joyjit presenting the power-line operations and maintenance paper beside its title slide at the GLOW workshop in Bari.",
+    "width": 3999,
+    "height": 2250,
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3myr4tdqguc2h",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreic6eh3frcceyuqozhs7gyucofjys7n727obkmmvl6nywfr7iopcxq",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "loughborough",
+    "title": "Trustworthy AI starts with domain knowledge",
+    "caption": "A guest lecture at Loughborough University on knowledge representation and reasoning for safety-critical engineering.",
+    "date": "Mar 2026",
+    "image": "assets/images/loughborough.jpg",
+    "alt": "A guest lecture at Loughborough University on knowledge representation and reasoning for safety-critical engineering.",
+    "source_url": "https://www.linkedin.com/posts/joyjitchatterjee_ai-loughboroughuni-datascience-activity-7435411542277267457-fE0l",
+    "source_image_url": "https://media.licdn.com/dms/image/v2/D4E22AQExugxNftCZJA/feedshare-shrink_800/B4EZy_jZHzJcAk-/0/1772740252642?e=2147483647&v=beta&t=imYzCMdFs3u89jqk2dVMl4vDZQIaXpJLysBJADErcOw",
+    "accessed": "2026-11-01",
+    "width": 800,
+    "height": 811
+  },
+  {
+    "id": "parliament",
+    "title": "AI, mobility and public trust",
+    "caption": "An invited guest at a House of Lords evidence session on the legal and ethical frameworks for autonomous vehicle technology.",
+    "date": "19 Oct 2026",
+    "image": "assets/images/parliament.jpg",
+    "alt": "Joyjit in a House of Lords committee room during his visit for an autonomous vehicle technology evidence session.",
+    "width": 4000,
+    "height": 2250,
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3myas2zrvyc2d",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreibyhb3fnsihlnjgy4z74izzafckqq5zazr646wrqkfidtfsvt7mwy",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "qmul",
+    "title": "GenAI meets the wind industry",
+    "caption": "An invited talk for Queen Mary University of London on generative AI, knowledge graphs and Wind Task 43, at the London City Institute of Technology campus.",
+    "date": "Nov 2025",
+    "image": "assets/images/qmul.jpg",
+    "alt": "Joyjit speaking to an audience with slides showing AI and knowledge graphs for wind turbine operations and maintenance.",
+    "width": 2000,
+    "height": 1500,
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3m6mybgvf2k2d",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreiaqo27o3oouhmtl23redtrueqtj3h6w2dxvcs6l2l3nbuwoaeait4",
+    "accessed": "2026-11-01"
+  }
+]

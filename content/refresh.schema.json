@@ -1,0 +1,485 @@
+{
+  "type": "object",
+  "properties": {
+    "profile": {
+      "type": "object",
+      "properties": {
+        "updated": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "role": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "location": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "headline": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "intro": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "linkedin": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "scholar": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "github": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "about": {
+          "type": "string",
+          "maxLength": 12000
+        },
+        "focus": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 12000
+          },
+          "maxItems": 500
+        },
+        "appointments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "organization": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "organization",
+              "date",
+              "summary",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "experience": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "organization": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "organization",
+              "date",
+              "summary",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "organization": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "organization",
+              "date",
+              "summary",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "publications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "venue": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "authors": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "type": {
+                "type": "string",
+                "maxLength": 12000,
+                "enum": [
+                  "journal",
+                  "conference",
+                  "preprint",
+                  "book",
+                  "blog",
+                  "abstract",
+                  "chapter"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "venue",
+              "authors",
+              "date",
+              "type",
+              "url",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "talks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "venue": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "status": {
+                "type": "string",
+                "maxLength": 12000,
+                "enum": [
+                  "completed",
+                  "upcoming",
+                  "attended",
+                  "past-scheduled"
+                ]
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "venue",
+              "date",
+              "status",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "awards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "organization": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "organization",
+              "date",
+              "summary",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "organization": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "date": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "title",
+              "organization",
+              "date",
+              "summary",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "impact": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "label": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "detail": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 12000
+              }
+            },
+            "required": [
+              "value",
+              "label",
+              "detail",
+              "source"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "additional": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "title": {
+                "type": "string",
+                "maxLength": 12000
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "maxLength": 12000
+                    },
+                    "organization": {
+                      "type": "string",
+                      "maxLength": 12000
+                    },
+                    "date": {
+                      "type": "string",
+                      "maxLength": 12000
+                    },
+                    "summary": {
+                      "type": "string",
+                      "maxLength": 12000
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 12000
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "organization",
+                    "date",
+                    "summary",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 500
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        },
+        "bluesky": {
+          "type": "string",
+          "maxLength": 12000
+        }
+      },
+      "required": [
+        "updated",
+        "name",
+        "role",
+        "location",
+        "headline",
+        "intro",
+        "email",
+        "linkedin",
+        "scholar",
+        "github",
+        "about",
+        "focus",
+        "appointments",
+        "experience",
+        "education",
+        "publications",
+        "talks",
+        "awards",
+        "certifications",
+        "impact",
+        "additional",
+        "bluesky"
+      ],
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "profile",
+    "notes",
+    "unresolved"
+  ],
+  "additionalProperties": false
+}

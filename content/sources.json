@@ -1,0 +1,69 @@
+[
+  {
+    "id": "cv-short-2026",
+    "label": "CV_Joyjit_Oct2026.pdf",
+    "kind": "user-provided CV",
+    "sha256": "c4efc022fd802f90d131ea323c87d8d48de897112811082a1c07091323e16c04",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "cv-full-2026",
+    "label": "CV_DrJoyjitChatterjee.docx-7.pdf",
+    "kind": "user-provided CV",
+    "sha256": "e8e5005c7a2647a9a472292aa674bf4a03c8a9994a2c483f8192116c9398a813",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "linkedin-profile-2026",
+    "label": "Public LinkedIn profile, upcoming Barclays panel",
+    "kind": "public web",
+    "url": "https://www.linkedin.com/in/joyjitchatterjee/",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "portrait",
+    "kind": "LinkedIn profile photo",
+    "url": "https://www.linkedin.com/posts/joyjitchatterjee_ai-loughboroughuni-datascience-activity-7435411542277267457-fE0l",
+    "image_url": "https://media.licdn.com/dms/image/v2/D5603AQEhuDFshYP1Yw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728508181257?e=2147483647&v=beta&t=Mng22PqN_59W5lB2u-8rQJfxDUzoCJZQW1WZt4vvoxE",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "portfolio-march-2026",
+    "kind": "prior public portfolio",
+    "label": "Historical records migrated from the existing website; not individually reverified",
+    "url": "https://github.com/joyjitchatterjee/joyjitchatterjee.github.io/blob/93cac38d95b30c78adc8efb92c426092fe84f3fc/index.html",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "bluesky-glow",
+    "kind": "public Bluesky post",
+    "label": "Knowledge graphs for power-line inspection",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3myr4tdqguc2h",
+    "published": "2026-10-26T06:47:03.768Z",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "bluesky-parliament",
+    "kind": "public Bluesky post",
+    "label": "AI, mobility and public trust",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3myas2zrvyc2d",
+    "published": "2026-10-19T18:51:54.791Z",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "bluesky-qmul",
+    "kind": "public Bluesky post",
+    "label": "GenAI meets the wind industry",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3m6mybgvf2k2d",
+    "published": "2025-11-27T18:19:46.851Z",
+    "accessed": "2026-11-01"
+  },
+  {
+    "id": "bluesky-reactv",
+    "kind": "public Bluesky post",
+    "label": "ReActV presentation announced at the ABIS workshop",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3mlhko5wurc2t",
+    "published": "2026-05-10T01:00:33.761Z",
+    "accessed": "2026-11-01"
+  }
+]
