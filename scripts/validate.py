@@ -35,6 +35,11 @@ def validate_profile(profile,extra_sources=()):
             if 'source' in x and x['source'] not in known:raise ValueError('Unknown source: '+x['source'])
             if 'title' in x and not x['title'].strip():raise ValueError('Empty title')
             if x.get('url'):web_url(x['url'])
+            if 'details' in x:
+                headings=[group['heading'].strip().casefold() for group in x['details']]
+                if len(headings)!=len(set(headings)) or any(not h for h in headings):raise ValueError('Duplicate or blank detail headings')
+                for group in x['details']:
+                    if not group['points'] or any(not point.strip() for point in group['points']):raise ValueError('Empty detail group')
             for v in x.values():walk(v)
         if isinstance(x,list):
             for v in x:walk(v)
@@ -108,6 +113,7 @@ def validate_showcase(showcase,profile):
     walk(showcase)
     if len(set(ids))!=len(ids):raise ValueError('Duplicate showcase IDs')
     for title in showcase['featured_publications']:profile_record(profile,{'section':'publications','title':title})
+    for title in showcase['featured_certifications']:profile_record(profile,{'section':'certifications','title':title})
     return showcase
 
 if __name__=='__main__':

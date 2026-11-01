@@ -134,5 +134,29 @@
     },
     "surface": "research.html",
     "reason": "Previously omitted CV publication"
+  },
+  {
+    "record": {
+      "section": "certifications",
+      "title": "Claude Certified Architect (Foundations)"
+    },
+    "surface": "index.html",
+    "reason": "Featured AI credential"
+  },
+  {
+    "record": {
+      "section": "certifications",
+      "title": "OpenAI Consultative Solutions Practitioner"
+    },
+    "surface": "index.html",
+    "reason": "Featured AI credential"
+  },
+  {
+    "record": {
+      "section": "certifications",
+      "title": "Google Cloud Generative AI Leader"
+    },
+    "surface": "index.html",
+    "reason": "Featured AI credential"
   }
 ]

@@ -80,6 +80,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -87,7 +118,8 @@
               "organization",
               "date",
               "summary",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -117,6 +149,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -124,7 +187,8 @@
               "organization",
               "date",
               "summary",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -154,6 +218,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -161,7 +256,8 @@
               "organization",
               "date",
               "summary",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -209,6 +305,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -218,7 +345,8 @@
               "date",
               "type",
               "url",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -254,6 +382,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -261,7 +420,8 @@
               "venue",
               "date",
               "status",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -291,6 +451,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -298,7 +489,8 @@
               "organization",
               "date",
               "summary",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -328,6 +520,37 @@
               "source": {
                 "type": "string",
                 "maxLength": 12000
+              },
+              "details": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "points": {
+                      "type": "array",
+                      "maxItems": 60,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 4000
+                      }
+                    },
+                    "source": {
+                      "type": "string",
+                      "maxLength": 200
+                    }
+                  },
+                  "required": [
+                    "heading",
+                    "points",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -335,7 +558,8 @@
               "organization",
               "date",
               "summary",
-              "source"
+              "source",
+              "details"
             ],
             "additionalProperties": false
           },
@@ -410,6 +634,37 @@
                     "source": {
                       "type": "string",
                       "maxLength": 12000
+                    },
+                    "details": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "heading": {
+                            "type": "string",
+                            "maxLength": 200
+                          },
+                          "points": {
+                            "type": "array",
+                            "maxItems": 60,
+                            "items": {
+                              "type": "string",
+                              "maxLength": 4000
+                            }
+                          },
+                          "source": {
+                            "type": "string",
+                            "maxLength": 200
+                          }
+                        },
+                        "required": [
+                          "heading",
+                          "points",
+                          "source"
+                        ],
+                        "additionalProperties": false
+                      }
                     }
                   },
                   "required": [
@@ -417,7 +672,8 @@
                     "organization",
                     "date",
                     "summary",
-                    "source"
+                    "source",
+                    "details"
                   ],
                   "additionalProperties": false
                 },

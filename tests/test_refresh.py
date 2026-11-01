@@ -1,6 +1,7 @@
 import copy
 import datetime as dt
 import importlib
+import html
 import json
 from pathlib import Path
 import shutil
@@ -59,6 +60,20 @@ class ContentTests(unittest.TestCase):
         showcase=json.loads((ROOT/'content/showcase.json').read_text())
         showcase['appearances'][0]['extra'][0]['url']='javascript:alert(1)'
         with self.assertRaisesRegex(ValueError,'Unsafe showcase URL'):validate_showcase(showcase,self.profile)
+    def test_all_profile_detail_is_present_in_generated_pages(self):
+        pages={name:html.unescape((ROOT/name).read_text()) for name in ['index.html','profile.html','research.html']}
+        groups=[(key,self.profile[key]) for key in ['experience','appointments','education','publications','talks','awards','certifications']]
+        groups.extend((section['id'],section['items']) for section in self.profile['additional'])
+        for section,items in groups:
+            page=pages['research.html' if section=='publications' else 'profile.html']
+            for item in items:
+                for detail in item['details']:
+                    for point in detail['points']:self.assertIn(point,page)
+        for name in ['Qatar Airways','Unilever','Barry Callebaut','Brussels Airport Company','Cleveland Clinic Abu Dhabi','Adidas','Co-op','Currys','PPG Industries','Reckitt','Syngenta Group']:
+            self.assertIn(name,pages['index.html'])
+    def test_empty_detail_group_rejected(self):
+        self.profile['experience'][0]['details'][0]['points']=[]
+        with self.assertRaisesRegex(ValueError,'Empty detail'):validate_profile(self.profile)
     def test_docx_extraction(self):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'my CV.docx'
@@ -120,6 +135,11 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(before,path.read_bytes())
     def test_history_loss_rejected(self):
         self.result['profile']['publications'].pop();self.apply(ok=False)
+    def test_cv_import_cannot_silently_summarise_away_work_details(self):
+        self.result['profile']['experience'][0]['details'][0]['points'].pop()
+        before=(self.root/'content/profile.json').read_bytes()
+        self.apply(ok=False)
+        self.assertEqual(before,(self.root/'content/profile.json').read_bytes())
     def test_build_failure_rolls_back(self):
         before={p:(self.root/p).read_bytes() for p in ['content/profile.json','content/sources.json','index.html']}
         (self.root/'templates/base.html').write_text('$unknown_variable')

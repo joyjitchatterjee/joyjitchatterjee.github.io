@@ -48,6 +48,25 @@
               "title"
             ],
             "additionalProperties": false
+          },
+          "highlights": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "label",
+                "text"
+              ],
+              "additionalProperties": false
+            }
           }
         },
         "required": [
@@ -60,7 +79,8 @@
           "source",
           "url",
           "label",
-          "record"
+          "record",
+          "highlights"
         ],
         "additionalProperties": false
       }
@@ -346,6 +366,12 @@
       "items": {
         "type": "string"
       }
+    },
+    "featured_certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [
@@ -355,7 +381,8 @@
     "book",
     "repositories",
     "profiles",
-    "featured_publications"
+    "featured_publications",
+    "featured_certifications"
   ],
   "additionalProperties": false
 }
