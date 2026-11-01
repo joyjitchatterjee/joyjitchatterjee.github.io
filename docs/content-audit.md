@@ -1,3 +1,13 @@
+# Procurement platform update, 1 November 2026
+
+Added the user's contribution to a GenAI negotiation intelligence platform for a
+global consumer goods company. The user explicitly confirmed that savings
+potential equivalent to 2% of annual procurement spend was demonstrated in an
+evaluation. This is not realised savings. The company remains anonymous and the
+project is not assigned to an employer or date because neither was supplied.
+The homepage includes the metric and the full profile includes a selected-project
+record with supporting detail. Preserve this user-sourced record in CV refreshes.
+
 # Detailed coverage update, 1 November 2026
 
 This update supersedes the earlier decision to leave small awards and routine

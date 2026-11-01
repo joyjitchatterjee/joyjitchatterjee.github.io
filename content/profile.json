@@ -1736,6 +1736,12 @@
   ],
   "impact": [
     {
+      "value": "2%",
+      "label": "Annual procurement savings potential",
+      "detail": "Contributed to a GenAI negotiation intelligence platform for a global consumer goods company. Evaluation demonstrated savings potential equivalent to 2% of annual procurement spend.",
+      "source": "user-procurement-evaluation-2026"
+    },
+    {
       "value": "£300k / year",
       "label": "Manufacturing savings potential",
       "detail": "Up to £300k per year demonstrated in evaluation of predictive analytics for continued process verification at Reckitt.",
@@ -1761,6 +1767,29 @@
     }
   ],
   "additional": [
+    {
+      "id": "selected-projects",
+      "title": "Selected enterprise AI projects",
+      "items": [
+        {
+          "title": "GenAI negotiation intelligence platform",
+          "organization": "Global consumer goods company",
+          "date": "",
+          "summary": "Contributed to a GenAI negotiation intelligence platform for a global consumer goods company. Evaluation demonstrated savings potential equivalent to 2% of annual procurement spend.",
+          "source": "user-procurement-evaluation-2026",
+          "details": [
+            {
+              "heading": "Contribution and evaluated value",
+              "points": [
+                "Worked on a GenAI negotiation intelligence platform supporting procurement negotiations.",
+                "Evaluation demonstrated savings potential equivalent to 2% of the company’s annual procurement spend. This represents potential benefits demonstrated in evaluation, not realised savings."
+              ],
+              "source": "user-procurement-evaluation-2026"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "patents",
       "title": "Patent applications",

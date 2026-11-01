@@ -206,5 +206,11 @@
     "sha256": "9ffaa18f2793d791f3cc866eafa6c2aaac04a1fa426b120f49b5938133dc4d6f",
     "licence": "CC BY 4.0",
     "accessed": "2026-11-01"
+  },
+  {
+    "id": "user-procurement-evaluation-2026",
+    "kind": "user clarification",
+    "label": "User reported contributing to a GenAI negotiation intelligence platform for a global consumer goods company and confirmed savings potential equivalent to 2% of annual procurement spend was demonstrated in evaluation, not realised savings.",
+    "accessed": "2026-11-01"
   }
 ]
