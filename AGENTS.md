@@ -68,3 +68,33 @@ Keep `.cv-refresh/`, raw CVs, credentials, and private contact details out of Gi
 The refresh script only changes local files; it does not publish automatically.
 Use `content/sources.json` for document filenames/hashes and public source links.
 A deterministic build and successful checks are required before publication.
+
+## Positioning and completeness
+
+Position the site around demonstrated AI leadership, product development,
+innovation strategy and enterprise operations. Retain the exact current job title;
+do not invent Head/Director titles, P&L ownership, budgets, direct-report counts or
+job-seeking language. Distinguish pre-sales/pitches from delivered client work.
+
+`content/showcase.json` holds the editorial homepage: enterprise case studies,
+recognition, recorded appearances, the Wiley book and public GitHub resources.
+Its images are original publisher/video assets with local copies and provenance.
+The CV importer deliberately preserves this file. After every CV refresh, reconcile
+it against the changed profile and the new CV: update affected case studies,
+feature important new achievements, and check for stale roles or recognition.
+The refresh report identifies changed records linked to existing homepage cards.
+The in-app Codex workflow includes this editorial step before publication; the
+standalone import command alone does not rewrite the curated cards.
+
+Read `docs/content-audit.md` for the latest section-by-section coverage audit.
+`content/coverage.json` protects selected important records (including the ETH
+aptitude colloquium) and records where they should appear. Validation fails if
+one disappears or is renamed without an intentional corresponding ledger update.
+This is an omission guard, not a claim that all future CV facts are discovered.
+Check every CV section and record coverage/deliberate omissions in each refresh
+report. Revisit homepage priorities when new evidence warrants it.
+
+Keep original public-source corrections (publication author lists, dates and
+roles) when a later CV abbreviates them. Resolve genuine conflicts using the
+most specific reliable source and document the correction. Never upgrade an
+invited guest to a speaker, a finalist to a winner, or a short course to a degree.

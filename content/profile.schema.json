@@ -195,7 +195,8 @@
               "book",
               "blog",
               "abstract",
-              "chapter"
+              "chapter",
+              "video"
             ]
           },
           "url": {

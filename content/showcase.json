@@ -1,0 +1,301 @@
+{
+  "cases": [
+    {
+      "id": "enterprise-ai",
+      "kicker": "Strategy & delivery · EPAM",
+      "title": "Shaping AI opportunities into deliverable programmes",
+      "summary": "AI/ML consulting across R&D, manufacturing, procurement and supply for Fortune 500 and FTSE 250 organisations.",
+      "contribution": "Connect use-case discovery and RFP responses with project planning, proof of value and governance. Help assemble delivery teams, mentor data scientists and align senior stakeholders and domain experts.",
+      "outcome": "Contribute to multi-million-pound engagements across Europe and North America, including generative and agentic AI.",
+      "record": {
+        "section": "experience",
+        "title": "Lead Data Scientist"
+      },
+      "source": "cv-full-2026",
+      "url": "profile.html#experience",
+      "label": "Experience & responsibilities"
+    },
+    {
+      "id": "rd-product",
+      "kicker": "AI product development · Reckitt × Hull",
+      "title": "From laboratory research to a production application",
+      "summary": "Shelf-life prediction for healthcare products, developed through an Innovate UK Knowledge Transfer Partnership.",
+      "contribution": "Led the AI workstream across models, interfaces and deployment, collaborating with R&D scientists, engineers and UI/UX specialists. Supported uptake through leadership engagement and skills transfer.",
+      "outcome": "Outstanding KTP rating. Potential annual savings of $780k and 10,000 laboratory hours.",
+      "record": {
+        "section": "experience",
+        "title": "IT & Digital Data Scientist - R&D / KTP Associate"
+      },
+      "source": "cv-full-2026",
+      "url": "https://www.hull.ac.uk/collaborate/services-for-business/work-with-our-experts",
+      "label": "University of Hull partnership story"
+    },
+    {
+      "id": "manufacturing",
+      "kicker": "Operations & adoption · Reckitt",
+      "title": "Making manufacturing data useful for decisions",
+      "summary": "Predictive and causal analytics for process verification, quality and operational planning.",
+      "contribution": "Connected manufacturing, quality and process data; supported causal AI adoption across factories; developed logistics and capacity-planning tools and engaged quality and IT leadership.",
+      "outcome": "Predictive analytics demonstrated potential savings of £300k per year. Contributed to waste reduction in major UK factories.",
+      "record": {
+        "section": "experience",
+        "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"
+      },
+      "source": "cv-full-2026",
+      "url": "profile.html#experience",
+      "label": "Experience & responsibilities"
+    }
+  ],
+  "credentials": [
+    {
+      "kicker": "Enterprise leadership",
+      "title": "British Data Awards 2026",
+      "detail": "Finalist — Data Leader of the Year (Partner).",
+      "record": {
+        "section": "awards",
+        "title": "British Data Awards — Data Leader of the Year (Partner) Finalist"
+      },
+      "source": "british-data-awards-2026",
+      "url": "https://predatech.co.uk/british-data-awards-2026-finalists/"
+    },
+    {
+      "kicker": "Independent recognition",
+      "title": "Forbes 30 Under 30 Europe",
+      "detail": "Manufacturing & Industry, 2022 — recognition for AI work in manufacturing and energy.",
+      "record": {
+        "section": "awards",
+        "title": "Forbes 30 Under 30 Europe"
+      },
+      "source": "cv-full-2026",
+      "url": "https://www.forbes.com/profile/joyjit-chatterjee/"
+    },
+    {
+      "kicker": "Academic judgement",
+      "title": "ETH Zurich",
+      "detail": "Invited expert on a Doctoral Examination (Aptitude Colloquium) committee.",
+      "record": {
+        "section": "additional.reviews",
+        "title": "Invited Expert — Doctoral Examination (Aptitude Colloquium) Committee"
+      },
+      "source": "cv-full-2026",
+      "url": "profile.html#reviews"
+    },
+    {
+      "kicker": "Research into impact",
+      "title": "Loughborough University",
+      "detail": "Distinguished Visiting Fellow, contributing to research embedding and industry impact.",
+      "record": {
+        "section": "appointments",
+        "title": "Distinguished Visiting Fellow"
+      },
+      "source": "loughborough-group",
+      "url": "https://ldr-lboro.github.io/"
+    },
+    {
+      "kicker": "Innovation evaluation",
+      "title": "European Commission programme",
+      "detail": "External evaluator and reviewer for Horizon Europe’s NGI Search project, 2023.",
+      "record": {
+        "section": "additional.reviews",
+        "title": "External Evaluator and Reviewer — NGI Search"
+      },
+      "source": "cv-full-2026",
+      "url": "profile.html#reviews"
+    },
+    {
+      "kicker": "Sustainability research",
+      "title": "Green Talents",
+      "detail": "One of 25 international awardees selected by Germany’s Federal Ministry of Education and Research in 2021.",
+      "record": {
+        "section": "awards",
+        "title": "Green Talents Award"
+      },
+      "source": "green-talents",
+      "url": "https://www.greentalents.de/awardees_awardees2021_joyjit-chatterjee.php"
+    }
+  ],
+  "appearances": [
+    {
+      "id": "podcast",
+      "title": "Explainable AI and the Power of Quiet Thinking",
+      "format": "Podcast · Low to Grow",
+      "date": "Nov 2025",
+      "summary": "A conversation with Wenmiao Yu on explainable AI, practical enterprise adoption and reflective leadership.",
+      "url": "https://www.lowtogrow.com/en/episodes/joyjit-chatterjee-explaining-explainable-ai/",
+      "label": "Listen to the episode",
+      "source": "low-to-grow",
+      "image": {
+        "path": "assets/images/feature-podcast.jpg",
+        "alt": "Low to Grow episode artwork featuring Joyjit holding a microphone.",
+        "width": 1280,
+        "height": 720,
+        "source_url": "https://i.ytimg.com/vi/FXgvSQKDZzs/maxresdefault.jpg",
+        "accessed": "2026-11-01"
+      },
+      "extra": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://www.youtube.com/watch?v=FXgvSQKDZzs"
+        },
+        {
+          "title": "Apple Podcasts",
+          "url": "https://podcasts.apple.com/us/podcast/low-to-grow/id1812329018?i=1000735933177"
+        }
+      ]
+    },
+    {
+      "id": "careers",
+      "title": "From doctoral research to industry AI",
+      "format": "Recorded talk · Hull / Alan Turing Institute",
+      "date": "Recording published Dec 2024",
+      "summary": "Sharing my career journey and perspective on working in data science and AI, at the University of Hull.",
+      "url": "https://www.youtube.com/watch?v=CWNxgbuGuKg",
+      "label": "Watch the talk",
+      "source": "hull-careers-video",
+      "image": {
+        "path": "assets/images/feature-hull-careers.jpg",
+        "alt": "Joyjit delivering a careers talk at the University of Hull, with an Alan Turing Institute and DAIM event banner.",
+        "width": 1280,
+        "height": 720,
+        "source_url": "https://i.ytimg.com/vi/CWNxgbuGuKg/maxresdefault.jpg",
+        "accessed": "2026-11-01"
+      },
+      "extra": []
+    },
+    {
+      "id": "iea",
+      "title": "Interactive decision support for wind turbines",
+      "format": "Recorded presentation · IEA Wind Task 43",
+      "date": "Jun 2025",
+      "summary": "Automated question-answering for operations and maintenance, presented at the Task 43 annual meeting.",
+      "url": "https://www.youtube.com/watch?v=sPzD0E9cCIE",
+      "label": "Watch the presentation",
+      "source": "iea-task43-2025",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": [
+        {
+          "title": "IEA meeting report",
+          "url": "https://iea-wind.org/task43-agm2025-report/"
+        }
+      ]
+    },
+    {
+      "id": "ieee",
+      "title": "AI’s Benefit to Solar and Wind Power Isn’t Hot Air",
+      "format": "Interview · IEEE Spectrum",
+      "date": "Jun 2022",
+      "summary": "Contributing a research perspective on trust, data and the practical use of AI in renewable energy.",
+      "url": "https://spectrum.ieee.org/climate-change-ai",
+      "label": "Read the interview",
+      "source": "ieee-spectrum",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": []
+    },
+    {
+      "id": "wef",
+      "title": "Who gets to benefit from AI?",
+      "format": "Coauthored perspective · World Economic Forum",
+      "date": "Apr 2022",
+      "summary": "With Nina Dethlefs, on the unequal global adoption of AI. Originally published by The Conversation and republished by the World Economic Forum.",
+      "url": "https://www.weforum.org/stories/2022/04/developing-countries-are-being-left-behind-in-the-ai-race-and-that-s-a-problem-for-all-of-us/",
+      "label": "Read the article",
+      "source": "wef-perspective",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": []
+    },
+    {
+      "id": "education",
+      "title": "Using AI to tackle the climatic challenges",
+      "format": "Profile · Education Times",
+      "date": "Jul 2021",
+      "summary": "A profile of my research in applying AI to energy and climate challenges.",
+      "url": "https://www.educationtimes.com/article/campus-beat-student-speak/84405705/using-ai-to-tackle-the-climatic-challenges",
+      "label": "Read the profile",
+      "source": "education-times",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": []
+    }
+  ],
+  "book": {
+    "title": "Renewable Energy Transition with Artificial Intelligence",
+    "subtitle": "Challenge-driven Solutions",
+    "kicker": "Co-editor with Nina Dethlefs · Wiley · 2025",
+    "summary": "Bringing academic and industry perspectives together on AI for the energy transition. I co-edited the volume and coauthored its opening chapter on operational, engineering and socioeconomic adoption challenges.",
+    "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781394300068",
+    "source": "wiley-book",
+    "record": {
+      "section": "additional.reviews",
+      "title": "Co-editor — Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions"
+    },
+    "image": {
+      "path": "assets/images/feature-book.jpg",
+      "alt": "Wiley cover of Renewable Energy Transition with Artificial Intelligence, edited by Nina Dethlefs and Joyjit Chatterjee.",
+      "width": 300,
+      "height": 440,
+      "source_url": "https://media.wiley.com/product_data/coverImage300/34/13943000/1394300034.jpg",
+      "accessed": "2026-11-01"
+    }
+  },
+  "repositories": [
+    {
+      "title": "XAI4Wind",
+      "summary": "A domain knowledge graph and supporting resources for explainable decisions in wind turbine operations and maintenance.",
+      "tags": "Knowledge graphs / Neo4j / Explainable AI",
+      "url": "https://github.com/joyjitchatterjee/XAI4Wind",
+      "source": "github-xai4wind"
+    },
+    {
+      "title": "WindTurbine-QAKG",
+      "summary": "Question–query datasets, templates and graph resources accompanying research on interactive maintenance decision support.",
+      "tags": "Natural language / Cypher / Decision support",
+      "url": "https://github.com/joyjitchatterjee/WindTurbine-QAKG",
+      "source": "github-windqa"
+    }
+  ],
+  "profiles": [
+    {
+      "title": "ORCID",
+      "url": "https://orcid.org/0000-0003-2672-3832"
+    },
+    {
+      "title": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Joyjit-Chatterjee"
+    },
+    {
+      "title": "Medium",
+      "url": "https://joyjitece.medium.com"
+    }
+  ],
+  "featured_publications": [
+    "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance",
+    "Structuring the Last Mile with ReActV: Tool-Augmented Delivery Planning with Verification"
+  ]
+}

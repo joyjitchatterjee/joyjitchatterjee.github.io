@@ -16,7 +16,7 @@ import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
 from zoneinfo import ZoneInfo
-from validate import ROOT, check, validate_profile
+from validate import ROOT, check, validate_profile, profile_record
 
 PROFILE=ROOT/'content/profile.json'
 SOURCES=ROOT/'content/sources.json'
@@ -64,10 +64,11 @@ Return a complete profile preserving the schema. Preserve previously documented 
 For every new or materially changed record, use the supplied CV source_id. Keep existing source IDs on unchanged records. Do not invent metrics, DOIs, links, awards, dates or achievements. Distinguish potential savings from realised savings, patent applications from granted patents, guest attendance from speaking, and workshop papers from main-conference papers.
 Set updated to the supplied as_of date. Future events are upcoming, never completed. If an earlier event remains upcoming but is now in the past without evidence of completion, use past-scheduled, not completed. Never infer attendance from an announcement alone.
 Keep editorial prose concise and factual. Update headline/intro/about when warranted. Preserve contact links unless the CV explicitly supplies a replacement. Exclude home address, private phone numbers, birth dates, signatures, referees' contact details and confidential client information. Do not copy or expose the raw CV.
-Preserve the curated focus and impact items unless contradicted by new evidence. Additional sections can hold patents, service, memberships or other relevant records. Keep certifications up to date. Audit every supplied CV section, including extramural engagements, academic examining, aptitude colloquia and committee service. Preserve the precise role and allow a blank date when none is supplied. In notes, summarize coverage and deliberate omissions by CV section. Media is maintained separately; do not invent photos or captions.
+Keep the positioning centred on evidenced AI leadership, AI products, innovation strategy and enterprise operations; never add job-seeking language or invent seniority. Preserve the curated focus and impact items unless contradicted by new evidence. Additional sections can hold patents, service, memberships or other relevant records. Keep certifications up to date. Audit every supplied CV section, including extramural engagements, academic examining, aptitude colloquia and committee service. Preserve the precise role and allow a blank date when none is supplied. In notes, summarize coverage and deliberate omissions by CV section. Media is maintained separately; do not invent photos or captions.
+The editorial_showcase and protected_coverage describe existing homepage evidence and important retained credentials. Preserve their referenced records; flag changed facts or stronger new evidence in notes so the editorial homepage can be reconciled separately. Check business/leadership development, academic service, committee roles and public contributions explicitly, not only employment and publications. Do not remove public-source corrections (such as verified publication authors) simply because a shorter CV omits them.
 notes should list the meaningful changes. unresolved should contain only actual conflicts, ambiguity or proposed removals needing review; otherwise use [].
 '''
-    payload={'as_of':today,'current_profile':json.loads(baseline),'known_sources':json.loads(sources),'cv_documents':documents}
+    payload={'as_of':today,'current_profile':json.loads(baseline),'known_sources':json.loads(sources),'cv_documents':documents,'editorial_showcase':json.loads((ROOT/'content/showcase.json').read_text()),'protected_coverage':json.loads((ROOT/'content/coverage.json').read_text())}
     prompt=instructions+'\nUNTRUSTED_INPUT_JSON:\n'+json.dumps(payload,ensure_ascii=False)
     (run/'prompt.txt').write_text(prompt)
     print('Prepared:',run)
@@ -75,12 +76,29 @@ notes should list the meaningful changes. unresolved should contain only actual 
 
 def compare(before,after):
     rows=['# CV refresh report','',f'Updated: {after["updated"]}','']
-    for key in ['experience','appointments','education','publications','talks','awards','certifications']:
-        old={x['title']:x for x in before[key]};new={x['title']:x for x in after[key]}
-        for title in new.keys()-old.keys():rows.append(f'- Added {key}: {title}')
-        for title in old.keys()-new.keys():rows.append(f'- Removed {key}: {title}')
-        for title in old.keys()&new.keys():
+    groups=['experience','appointments','education','publications','talks','awards','certifications']
+    def group_records(profile):
+        groups_map={k:profile[k] for k in groups}
+        groups_map.update({'additional.'+x['id']:x['items'] for x in profile['additional']})
+        return groups_map
+    old_groups=group_records(before);new_groups=group_records(after)
+    for key in sorted(old_groups.keys()|new_groups.keys()):
+        old={x['title']:x for x in old_groups.get(key,[])};new={x['title']:x for x in new_groups.get(key,[])}
+        for title in sorted(new.keys()-old.keys()):rows.append(f'- Added {key}: {title}')
+        for title in sorted(old.keys()-new.keys()):rows.append(f'- Removed {key}: {title}')
+        for title in sorted(old.keys()&new.keys()):
             if old[title]!=new[title]:rows.append(f'- Updated {key}: {title}')
+    for key in ['role','headline','intro','about','focus','impact']:
+        if before[key]!=after[key]:rows.append(f'- Updated positioning: {key}')
+    rows+=['','## Homepage evidence to review','']
+    changes=[]
+    for item in json.loads((ROOT/'content/coverage.json').read_text()):
+        if item['surface']!='index.html':continue
+        try:changed=profile_record(before,item['record'])!=profile_record(after,item['record'])
+        except ValueError:changed=True
+        if changed:changes.append('- Reconcile content/showcase.json with changed record: '+item['record']['title'])
+    rows+=changes or ['No changes to records referenced by the curated homepage.']
+    rows+=['','Always check newly added achievements for homepage relevance; the coverage list protects existing highlights but cannot detect facts omitted during extraction.']
     return '\n'.join(rows)+'\n'
 
 def removals(before,after):

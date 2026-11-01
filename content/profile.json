@@ -3,32 +3,34 @@
   "name": "Dr. Joyjit Chatterjee",
   "role": "Lead Data Scientist at EPAM Systems",
   "location": "United Kingdom",
-  "headline": "AI that moves from research to real-world impact.",
-  "intro": "I build explainable, responsible and generative AI for industry — connecting rigorous research with the practical challenges of manufacturing, energy and R&D.",
+  "headline": "Turning AI ambition into enterprise value.",
+  "intro": "I connect AI strategy, product development and operational delivery — bringing research, people and technology together to solve enterprise challenges in R&D, manufacturing, supply chains and energy.",
   "email": "joyjitece@gmail.com",
   "linkedin": "https://www.linkedin.com/in/joyjitchatterjee/",
   "scholar": "https://scholar.google.co.uk/citations?user=kjWYrm4AAAAJ&hl=en",
   "github": "https://github.com/joyjitchatterjee",
-  "about": "My work spans industrial AI, knowledge graphs and intelligent decision support. At EPAM Systems, I lead AI/ML engagements for Fortune 500 and FTSE 250 companies and mentor data scientists. Previously at Reckitt, I developed AI for product stability and manufacturing quality through a partnership with the University of Hull. I hold a PhD in Computer Science from Hull and continue to collaborate across industry and academia.",
+  "about": "I work at the intersection of AI strategy, product development and enterprise operations. As Lead Data Scientist at EPAM Systems, I lead AI/ML engagements, help shape opportunities and delivery teams, and work with senior stakeholders on value, adoption and governance. Previously at Reckitt, I translated research into a production application for product shelf-life prediction and developed analytics for manufacturing and supply operations. My work combines hands-on technical depth with cross-functional delivery, mentoring and industry–academic collaboration. I hold a PhD in Computer Science from the University of Hull and am a Distinguished Visiting Fellow at Loughborough University.",
   "focus": [
+    "AI strategy & value discovery",
+    "AI product development",
+    "Enterprise delivery & adoption",
+    "Teams & stakeholder alignment",
     "Agentic & generative AI",
-    "Knowledge graphs & reasoning",
-    "Explainable & responsible AI",
-    "Industrial decision support"
+    "Explainable AI & knowledge graphs"
   ],
   "appointments": [
     {
       "title": "Distinguished Visiting Fellow",
       "organization": "Loughborough University",
       "date": "Mar 2026 – Present",
-      "summary": "Previously Visiting Academic, Mar 2025 – Feb 2026.",
+      "summary": "Contribute to research embedding and industry impact in the Language & Data Research Group, including industry–academic collaboration and research impact development. Previously Visiting Academic, Mar 2025 – Feb 2026.",
       "source": "cv-full-2026"
     },
     {
       "title": "Visiting Academic",
       "organization": "University of Hull",
       "date": "Oct 2023 – Present",
-      "summary": "Research collaboration in AI and data science.",
+      "summary": "AI and data science research collaboration, industry–academic knowledge exchange and careers mentoring.",
       "source": "cv-full-2026"
     }
   ],
@@ -37,29 +39,29 @@
       "title": "Lead Data Scientist",
       "organization": "EPAM Systems, London, UK",
       "date": "Jan 2025 - Present",
-      "summary": "Lead AI/ML delivery and consulting across R&D, manufacturing, procurement and supply services. Develop generative and agentic AI solutions, work with senior stakeholders on strategy and governance, and mentor data scientists.",
+      "summary": "Lead AI/ML consulting and delivery for Fortune 500 and FTSE 250 organisations across R&D, manufacturing, procurement and supply services. Contribute to multi-million-pound engagements across Europe and North America, from use-case discovery, proposals and proof of value to delivery and governance. Help assemble project teams through technical and project interviews, mentor data scientists and senior data scientists, and work with senior leaders and domain experts.",
       "source": "cv-full-2026"
     },
     {
       "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst",
       "organization": "Reckitt (formerly Reckitt Benckiser Group PLC), Hull, UK",
       "date": "Oct 2023 - Dec 2024",
-      "summary": "Developed manufacturing data models and predictive analytics for continued process verification, quality and waste reduction. Built decision-support tools for logistics and capacity planning.",
+      "summary": "Developed manufacturing analytics for continued process verification, connecting SAP, quality, environmental and process data. Supported the adoption of causal AI across factories and contributed to approximately 30% waste reduction in major UK factories. Built decision-support tools for logistics consolidation and Agile capacity planning, engaged quality and IT leadership, and mentored graduates and interns. Predictive analytics demonstrated potential savings of £300k per year.",
       "source": "cv-full-2026"
     },
     {
       "title": "IT & Digital Data Scientist - R&D / KTP Associate",
       "organization": "Reckitt (formerly Reckitt Benckiser Group PLC), Hull, UK",
       "date": "Oct 2021 - Sep 2023",
-      "summary": "Led the AI workstream of an Innovate UK Knowledge Transfer Partnership. Combined laboratory data and chemistry knowledge in a shelf-life prediction application; the project received an Outstanding grade.",
+      "summary": "Led the AI workstream of a jointly funded Innovate UK Knowledge Transfer Partnership, translating chemistry and laboratory research into a shelf-life prediction application. Worked across R&D, data science, engineering and UI/UX teams on models, accessible interfaces and cloud deployment. Helped shape the longer-term use of AI in product design and testing and supported adoption through workshops and leadership engagement. The partnership received an Outstanding grade; the application offered potential annual savings of $780k and 10,000 lab hours.",
       "source": "cv-full-2026"
     },
     {
       "title": "Postdoctoral Researcher",
       "organization": "University of Hull, Hull, UK",
       "date": "Oct 2021 - Oct 2023",
-      "summary": "Pursued R&D in hybrid AI models combining laboratory data with chemistry domain-specific knowledge for pharmaceutical and nutraceutical product development. Collaborated with Reckitt on R&D NPD & EPD applications.",
-      "source": "portfolio-march-2026"
+      "summary": "Pursued R&D in hybrid AI models combining laboratory data with chemistry domain-specific knowledge for pharmaceutical and nutraceutical product development. Collaborated with Reckitt on R&D NPD & EPD applications. Contributed to recruitment panels, PhD co-supervision and talks for undergraduate and postgraduate students.",
+      "source": "cv-full-2026"
     },
     {
       "title": "Visiting Researcher",
@@ -131,20 +133,20 @@
     {
       "title": "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance",
       "venue": "GLOW workshop at ISWC, Bari, Italy",
-      "authors": "Verma, S., Chatterjee, J., Guo, J., Marar, A., Shankaran, R., Guo, Z., Mehra, A.",
+      "authors": "Verma, S., Chatterjee, J., Guo, J., Marar, A., Shankaran, R., Sharma, G., Guo, Z., Mehra, A.",
       "date": "Oct 2026",
       "type": "conference",
-      "url": "",
-      "source": "cv-full-2026"
+      "url": "https://glow-workshop.github.io/iswc2026/",
+      "source": "glow-programme"
     },
     {
       "title": "When Words Move Markets: Interpretable Behavioural and Robustness Analysis of LLMs for Financial Sentiment Reasoning via Local Perturbation Explanations",
       "venue": "NLDB 2026, Springer",
       "authors": "Verma, S., Aslansefat, K., Chatterjee, J., Marar, A., Mehra, A., Ekundayo, A.",
-      "date": "Jun 2026",
+      "date": "Jul 2026",
       "type": "conference",
-      "url": "",
-      "source": "cv-full-2026"
+      "url": "https://doi.org/10.1007/978-3-032-29532-3_19",
+      "source": "nldb-paper"
     },
     {
       "title": "Structuring the Last Mile with ReActV: Tool-Augmented Delivery Planning with Verification",
@@ -152,8 +154,8 @@
       "authors": "Chatterjee, J., Gamtenadze, D., Marar, A., Agarwal, P.",
       "date": "May 2026",
       "type": "conference",
-      "url": "",
-      "source": "bluesky-reactv"
+      "url": "https://doi.org/10.1145/3795513.3810458",
+      "source": "reactv-paper"
     },
     {
       "title": "Laying the foundations for context-aware and AI-ready fault diagnosis with the Operations Ontology",
@@ -170,7 +172,7 @@
       "authors": "Dethlefs, N., Chatterjee, J., Marar, A., Alugo, I.O., Ekundayo, A., Rothon, C., Houseago, R.",
       "date": "Apr 2026",
       "type": "abstract",
-      "url": "",
+      "url": "https://ldr-lboro.github.io/publications/WindEurope_poster26.pdf",
       "source": "cv-full-2026"
     },
     {
@@ -179,7 +181,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Dec 2025",
       "type": "chapter",
-      "url": "",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/9781394300068.ch01",
       "source": "cv-full-2026"
     },
     {
@@ -190,6 +192,15 @@
       "type": "journal",
       "url": "",
       "source": "portfolio-march-2026"
+    },
+    {
+      "title": "Analysis of CPU Utilization of a Cross-Platform Web Application for Facial Recognition based Remote User Tracking System",
+      "authors": "Pabanaas, V., Singhal, S., Saxena, A., Chatterjee, J., Mehra, A.",
+      "venue": "3rd International Conference on Intelligent Technologies (CONIT), Hubli, India, IEEE",
+      "date": "2023",
+      "type": "conference",
+      "url": "",
+      "source": "cv-full-2026"
     },
     {
       "title": "This new conversational AI model can be your friend, philosopher, and guide -- and even your worst enemy",
@@ -206,7 +217,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Aug 2022",
       "type": "journal",
-      "url": "",
+      "url": "https://ieeexplore.ieee.org/document/9852225/",
       "source": "portfolio-march-2026"
     },
     {
@@ -260,12 +271,12 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Feb 2021",
       "type": "preprint",
-      "url": "",
+      "url": "https://arxiv.org/abs/2012.10489",
       "source": "portfolio-march-2026"
     },
     {
       "title": "Generalized Ice Detection on Wind Turbine Rotor Blades with Neural Style Transfer",
-      "venue": "Tackling Climate Change with Machine Learning Workshop at NeurIPS 2022, New Orleans, USA. CORE RANKING: A*",
+      "venue": "Tackling Climate Change with Machine Learning Workshop at NeurIPS 2022, New Orleans, USA",
       "authors": "Chatterjee, J., Alvela Nieto, M., Gelbhardt, H., Dethlefs, N., Ohlendrof, J., Thoben, K.",
       "date": "Dec 2022",
       "type": "conference",
@@ -292,7 +303,7 @@
     },
     {
       "title": "Explainable AI for Intelligent Decision Support in Operations & Maintenance of Wind Turbines",
-      "venue": "ECAI Doctoral Consortium, Santiago, Spain. CORE RANKING: A",
+      "venue": "ECAI Doctoral Consortium, Santiago, Spain",
       "authors": "Chatterjee, J.",
       "date": "Aug 2020",
       "type": "conference",
@@ -301,7 +312,7 @@
     },
     {
       "title": "The Promise of Causal Reasoning in Reliable Decision Support for Wind Turbines",
-      "venue": "ACM SIGKDD (KDD) Fragile Earth Workshop, San Diego, California, USA. CORE RANKING: A*",
+      "venue": "ACM SIGKDD (KDD) Fragile Earth Workshop, San Diego, California, USA",
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Aug 2020",
       "type": "conference",
@@ -310,7 +321,7 @@
     },
     {
       "title": "A Dual Transformer Model for Intelligent Decision Support for Maintenance of Wind Turbines",
-      "venue": "IEEE IJCNN, Glasgow, UK. CORE RANKING: A (part of WCCI)",
+      "venue": "IEEE IJCNN, Glasgow, UK",
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Jul 2020",
       "type": "conference",
@@ -328,7 +339,7 @@
     },
     {
       "title": "Natural Language Generation for Operations and Maintenance in Wind Turbines",
-      "venue": "NeurIPS 2019 Tackling Climate Change with ML Workshop, Vancouver, Canada. CORE RANKING: A*",
+      "venue": "NeurIPS 2019 Tackling Climate Change with ML Workshop, Vancouver, Canada",
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Dec 2019",
       "type": "conference",
@@ -448,18 +459,18 @@
       "venue": "Workshop on Data Science in Climate and Climate Impact Research, ETH Zurich, Switzerland",
       "authors": "Chatterjee, J. and Dethlefs, N.",
       "date": "Aug 2020",
-      "type": "conference",
+      "type": "abstract",
       "url": "",
-      "source": "portfolio-march-2026"
+      "source": "cv-full-2026"
     },
     {
-      "title": "Renewable Energy Transition with AI: Challenge Driven Solutions",
+      "title": "Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions",
       "venue": "Wiley",
       "authors": "Chatterjee, J. (Co-editor)",
       "date": "Dec 2025",
       "type": "book",
-      "url": "",
-      "source": "portfolio-march-2026"
+      "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781394300068",
+      "source": "wiley-book"
     },
     {
       "title": "Thoughts of a Young Man",
@@ -467,7 +478,7 @@
       "authors": "Chatterjee, J.",
       "date": "Sep 2017",
       "type": "book",
-      "url": "",
+      "url": "https://www.google.co.uk/books/edition/Thoughts_of_a_Young_Man/Y68yDwAAQBAJ?hl=en&gbpv=0",
       "source": "portfolio-march-2026"
     },
     {
@@ -476,7 +487,7 @@
       "authors": "Chatterjee, J.",
       "date": "Nov 2023",
       "type": "blog",
-      "url": "",
+      "url": "https://medium.com/p/89cd31d7e1f7",
       "source": "portfolio-march-2026"
     },
     {
@@ -485,7 +496,7 @@
       "authors": "Chatterjee, J.",
       "date": "Mar 2023",
       "type": "blog",
-      "url": "",
+      "url": "https://medium.com/@joyjitece/we-are-in-an-ai-hype-right-now-but-the-ai-winter-will-come-again-e059642b72b8",
       "source": "portfolio-march-2026"
     },
     {
@@ -494,7 +505,7 @@
       "authors": "Chatterjee, J.",
       "date": "Apr 2022",
       "type": "blog",
-      "url": "",
+      "url": "https://theconversation.com/developing-countries-are-being-left-behind-in-the-ai-race-and-thats-a-problem-for-all-of-us-180218",
       "source": "portfolio-march-2026"
     },
     {
@@ -502,9 +513,9 @@
       "venue": "Nudge Global Impact Challenge Video",
       "authors": "Chatterjee, J.",
       "date": "May 2021",
-      "type": "blog",
-      "url": "",
-      "source": "portfolio-march-2026"
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=xKX_vtGnqNg",
+      "source": "cv-full-2026"
     },
     {
       "title": "Explainable AI – An Indispensable Tool for Affordable and Clean Energy",
@@ -530,7 +541,7 @@
       "authors": "Chatterjee, J.",
       "date": "Nov 2020",
       "type": "blog",
-      "url": "",
+      "url": "https://joyjitece.medium.com/utilising-google-colab-to-perform-text-to-speech-conversion-e9964f2e6194",
       "source": "portfolio-march-2026"
     },
     {
@@ -539,7 +550,7 @@
       "authors": "Chatterjee, J.",
       "date": "Nov 2020",
       "type": "blog",
-      "url": "",
+      "url": "https://towardsdatascience.com/tensorflow-for-complete-begineers-getting-started-with-tensors-780f846f007",
       "source": "portfolio-march-2026"
     },
     {
@@ -548,7 +559,7 @@
       "authors": "Chatterjee, J.",
       "date": "May 2020",
       "type": "blog",
-      "url": "",
+      "url": "https://towardsdatascience.com/ai-beyond-accuracy-transparency-and-scalability-d44b9f70f7d8",
       "source": "portfolio-march-2026"
     },
     {
@@ -557,7 +568,7 @@
       "authors": "Chatterjee, J.",
       "date": "Jan 2020",
       "type": "blog",
-      "url": "",
+      "url": "https://joyjitece.medium.com/consumer-preferences-for-buying-smartphones-in-india-2427e394b394",
       "source": "portfolio-march-2026"
     },
     {
@@ -566,7 +577,7 @@
       "authors": "Chatterjee, J.",
       "date": "Dec 2019",
       "type": "blog",
-      "url": "",
+      "url": "https://joyjitece.medium.com/a-beginners-guide-to-deep-learning-d5746c816ea8",
       "source": "portfolio-march-2026"
     },
     {
@@ -575,7 +586,7 @@
       "authors": "Chatterjee, J.",
       "date": "Dec 2019",
       "type": "blog",
-      "url": "",
+      "url": "https://joyjitece.medium.com/getting-started-with-machine-learning-an-introduction-with-python-1a3513ab5d26",
       "source": "portfolio-march-2026"
     }
   ],
@@ -772,6 +783,13 @@
   ],
   "awards": [
     {
+      "title": "British Data Awards — Data Leader of the Year (Partner) Finalist",
+      "organization": "British Data Awards",
+      "date": "2026",
+      "summary": "Named a finalist in the Data Leader of the Year (Partner) category.",
+      "source": "british-data-awards-2026"
+    },
+    {
       "title": "Forbes 30 Under 30 Europe",
       "organization": "",
       "date": "May 2022",
@@ -781,14 +799,14 @@
     {
       "title": "Green Talents Award",
       "organization": "",
-      "date": "2021",
+      "date": "Oct 2021",
       "summary": "German Federal Ministry of Education and Research (BMBF) - Among 25 outstanding young scientists selected globally for sustainable research",
-      "source": "cv-full-2026"
+      "source": "green-talents"
     },
     {
       "title": "UKRI Global Talent Endorsement",
       "organization": "",
-      "date": "2022",
+      "date": "Jan 2022",
       "summary": "Endorsed as Global Talent by UK Research and Innovation (UKRI).",
       "source": "cv-full-2026"
     },
@@ -809,7 +827,7 @@
     {
       "title": "Top-Cited Author",
       "organization": "",
-      "date": "2022",
+      "date": "Mar 2022",
       "summary": "Wiley Wind Energy journal - recognised as a top-cited author for contributions to the field",
       "source": "cv-full-2026"
     },
@@ -823,15 +841,15 @@
     {
       "title": "Alumni Achiever Award",
       "organization": "",
-      "date": "2021",
-      "summary": "Amity University - recognised as a distinguished alumnus for exceptional post-graduation achievements",
+      "date": "Mar 2021",
+      "summary": "Amity University — Alumni Achiever Award for Outstanding Contribution in Education.",
       "source": "cv-full-2026"
     },
     {
       "title": "Hull Employability Award",
       "organization": "",
-      "date": "2019",
-      "summary": "University of Hull - recognised for outstanding employability skills and professional development",
+      "date": "May 2019",
+      "summary": "University of Hull — Employability Award for Postgraduate Researchers.",
       "source": "cv-full-2026"
     },
     {
@@ -874,98 +892,98 @@
     {
       "title": "Professional Agile Leadership (PAL-1)",
       "organization": "Scrum.org",
-      "date": "",
+      "date": "Dec 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Platform Administrator Certification",
       "organization": "Databricks",
-      "date": "",
+      "date": "Dec 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Google Cloud Generative AI Leader",
       "organization": "Google Cloud",
-      "date": "",
+      "date": "Jul 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Certified AI Professional (CAIP)",
       "organization": "oxethica (Saïd Business School, University of Oxford)",
-      "date": "",
+      "date": "Jul 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "EngX Bootcamp Certification",
       "organization": "EPAM Systems",
-      "date": "",
+      "date": "Jun 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Agentic AI Executive Micro-Certification",
       "organization": "ServiceNow",
-      "date": "",
+      "date": "May 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Building Applications with GitHub Copilot Agent Mode",
       "organization": "Microsoft",
-      "date": "",
+      "date": "Apr 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Databricks Lakehouse Fundamentals",
       "organization": "Databricks",
-      "date": "",
+      "date": "Jan 2025",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Oracle Generative AI Professional",
       "organization": "Oracle",
-      "date": "",
+      "date": "Jul 2024",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Oracle AI Foundations Associate",
       "organization": "Oracle",
-      "date": "",
+      "date": "Jul 2024",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "AI for Product Management",
       "organization": "Pendo, Google Cloud & Mind The Product",
-      "date": "",
+      "date": "Feb 2024",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
       "title": "Google Analytics Individual Qualification",
       "organization": "Google",
-      "date": "",
+      "date": "Jul 2023",
       "summary": "",
       "source": "cv-full-2026"
     },
     {
-      "title": "CMI Level 5 Management & Leadership",
+      "title": "CMI Level 5 study course in Management & Leadership",
       "organization": "Ashorne Hill Management College / Innovate UK",
-      "date": "",
-      "summary": "",
+      "date": "Mar 2022",
+      "summary": "Certificate of successful completion of the study course at Ashorne Hill during Innovate UK KTP training modules.",
       "source": "cv-full-2026"
     },
     {
       "title": "Professional Scrum Master (PSM-1)",
       "organization": "Scrum.org",
-      "date": "",
+      "date": "Apr 2021",
       "summary": "",
       "source": "cv-full-2026"
     }
@@ -1030,32 +1048,46 @@
           "source": "cv-full-2026"
         },
         {
-          "title": "Editorship",
-          "organization": "",
-          "date": "",
-          "summary": "Co-editor: \"Renewable Energy Transition with AI: Challenge Driven Solutions\" , Wiley, Dec 2025",
-          "source": "portfolio-march-2026"
+          "title": "Co-editor — Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions",
+          "organization": "Wiley",
+          "date": "Dec 2025",
+          "summary": "Co-edited with Nina Dethlefs, coordinating contributions from academic and industrial institutions.",
+          "source": "wiley-book"
         },
         {
-          "title": "Grant Review",
-          "organization": "",
-          "date": "",
-          "summary": "European Commission NGI Search - Expert reviewer for EU-funded open internet search projects",
-          "source": "portfolio-march-2026"
+          "title": "External Evaluator and Reviewer — NGI Search",
+          "organization": "European Commission Horizon Europe programme",
+          "date": "2023",
+          "summary": "External evaluation and review for the Next-Generation Internet Search project.",
+          "source": "cv-full-2026"
         },
         {
           "title": "Journal Reviews",
           "organization": "",
           "date": "",
-          "summary": "EURASIP Journal on Audio, Speech, and Music Processing, Springer Expert Systems with Applications, Elsevier The Journal of Supercomputing, Springer The Lancet Digital Health, Elsevier Applied Artificial Intelligence, Taylor & Francis Cell Reports Physical Science, Elsevier Renewable and Sustainable Energy Reviews, Elsevier Journal of Hydrometeorology, American Meteorological Society Artificial Intelligence Review, Springer Energy and AI, Elsevier Technology | Architecture + Design, Taylor & Francis Energies Sensors Journal of Marine Science Computer Modeling in Engineering & Sciences, Tech Science Press Annals of Biomedical Engineering, Springer Nature PeerJ Computer Science",
-          "source": "portfolio-march-2026"
+          "summary": "Peer reviewer for journals including The Lancet Digital Health; Expert Systems with Applications; Artificial Intelligence Review; Renewable and Sustainable Energy Reviews; Energy and AI; EURASIP Journal on Audio, Speech, and Music Processing; The Journal of Supercomputing; Applied Artificial Intelligence; Cell Reports Physical Science; Journal of Hydrometeorology; Technology | Architecture + Design; Energies; Sensors; Journal of Marine Science; Computer Modeling in Engineering & Sciences; Annals of Biomedical Engineering; and PeerJ Computer Science.",
+          "source": "cv-full-2026"
         },
         {
-          "title": "Conference Reviews",
-          "organization": "",
+          "title": "Conference reviewing and programme committees",
+          "organization": "AI, energy and engineering conferences",
           "date": "",
-          "summary": "AAAI Conference on Artificial Intelligence ECAI/PAIS - European Conference on AI ICLR - International Conference on Learning Representations (Main + Workshops) NeurIPS - Conference on Neural Information Processing Systems (Main + Workshops) ICML - International Conference on Machine Learning (Main + Workshops) IJCNN/FUZZ-IEEE/IEEE WCCI Nordic Energy Informatics Academy Conference (EIA Nordic) IEEE SPIN Conference CSAE Conference ASME Energy Sustainability Conference ECIS - European Conference on Information Systems WindTech 2023 / NAWEA",
-          "source": "portfolio-march-2026"
+          "summary": "Main-conference reviewing includes ICLR (2022–2024), NeurIPS (2022–2023) and ICML (2023). Programme committee member/reviewer for the 40th AAAI and 40th NeurIPS conferences, PAIS 2025 alongside ECAI, and EIA Nordic 2025. Additional reviewing includes IEEE IJCNN/FUZZ-IEEE/WCCI, IEEE SPIN, CSAE, ASME Energy Sustainability and ECIS.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Technical Committee Member — NAWEA/WindTech",
+          "organization": "North American Wind Energy Academy",
+          "date": "2023",
+          "summary": "Technical committee service for the WindTech conference.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Climate Change AI workshop committees and reviewing",
+          "organization": "Tackling Climate Change with Machine Learning",
+          "date": "2020–2025",
+          "summary": "Programme committee and reviewing contributions to workshops at ICLR, ICML and NeurIPS, separate from main-conference reviewing.",
+          "source": "cv-full-2026"
         }
       ]
     },
@@ -1123,15 +1155,15 @@
           "title": "UNA-UK",
           "organization": "",
           "date": "",
-          "summary": "Member, United Nations Association UK",
-          "source": "portfolio-march-2026"
+          "summary": "Student Member, United Nations Association UK",
+          "source": "cv-full-2026"
         },
         {
           "title": "AISB",
           "organization": "",
           "date": "",
-          "summary": "Member, Society for the Study of Artificial Intelligence and Simulation of Behaviour",
-          "source": "portfolio-march-2026"
+          "summary": "Student Member, Society for the Study of Artificial Intelligence and Simulation of Behaviour",
+          "source": "cv-full-2026"
         },
         {
           "title": "Indian Science Congress",
@@ -1154,32 +1186,32 @@
           "source": "portfolio-march-2026"
         },
         {
-          "title": "AI Innovations in Wind Energy",
-          "organization": "",
-          "date": "",
-          "summary": "IEEE Spectrum Featured coverage of AI-driven approaches to wind turbine operations and maintenance.",
-          "source": "portfolio-march-2026"
+          "title": "AI’s Benefit to Solar and Wind Power Isn’t Hot Air",
+          "organization": "IEEE Spectrum",
+          "date": "Jun 2022",
+          "summary": "Interview contribution on AI for renewable energy, trustworthy decisions and practical adoption.",
+          "source": "ieee-spectrum"
         },
         {
-          "title": "AI for Industry & Manufacturing",
-          "organization": "",
-          "date": "",
-          "summary": "Commerce & Industry Magazine Profile on contributions to AI-driven manufacturing and supply chain optimisation.",
-          "source": "portfolio-march-2026"
+          "title": "Forbes and Green Talents recognition",
+          "organization": "Commerce & Industry Magazine",
+          "date": "Jun 2022",
+          "summary": "Coverage of AI, sustainability research and professional recognition.",
+          "source": "commerce-industry"
         },
         {
-          "title": "How AI Is Powering Renewable Energy",
-          "organization": "",
-          "date": "",
-          "summary": "The Conversation Published article on AI for renewable energy, subsequently republished by Times of India, Yahoo News, MSN , and other outlets .",
-          "source": "portfolio-march-2026"
+          "title": "Developing countries are being left behind in the AI race – and that’s a problem for all of us",
+          "organization": "The Conversation",
+          "date": "Apr 2022",
+          "summary": "Coauthored with Nina Dethlefs on unequal AI adoption and its wider implications; republished by the World Economic Forum.",
+          "source": "conversation-ai"
         },
         {
-          "title": "Young Achiever in AI",
-          "organization": "",
-          "date": "",
-          "summary": "Education Times Profile on academic and research achievements as a young AI researcher.",
-          "source": "portfolio-march-2026"
+          "title": "Using AI to tackle the climatic challenges",
+          "organization": "Education Times",
+          "date": "Jul 2021",
+          "summary": "Profile of research applying AI to climate and energy challenges.",
+          "source": "education-times"
         },
         {
           "title": "Research Impact Stories",
@@ -1194,6 +1226,27 @@
           "date": "",
           "summary": "Ashorne Hill / Innovate UK Highlighted as a Knowledge Transfer Partnership success story for the Reckitt-University of Hull AI collaboration.",
           "source": "portfolio-march-2026"
+        },
+        {
+          "title": "Explainable AI and the Power of Quiet Thinking",
+          "organization": "Low to Grow podcast",
+          "date": "Nov 2025",
+          "summary": "Guest conversation with Wenmiao Yu on explainable AI, enterprise applications and reflective leadership.",
+          "source": "low-to-grow"
+        },
+        {
+          "title": "Careers in data science and AI",
+          "organization": "University of Hull / Alan Turing Institute",
+          "date": "Dec 2024 (recording published)",
+          "summary": "Recorded talk sharing the journey from doctoral research into industrial data science.",
+          "source": "hull-careers-video"
+        },
+        {
+          "title": "AI and the developing world",
+          "organization": "World Economic Forum",
+          "date": "Apr 2022",
+          "summary": "Republication of the article coauthored with Nina Dethlefs for The Conversation.",
+          "source": "wef-perspective"
         }
       ]
     },
@@ -1300,38 +1353,38 @@
       "items": [
         {
           "title": "Careers Mentor",
-          "organization": "",
+          "organization": "University of Hull",
           "date": "",
           "summary": "Providing career guidance and mentoring to aspiring data scientists and AI professionals",
-          "source": "portfolio-march-2026"
+          "source": "cv-full-2026"
         },
         {
-          "title": "University Research Committee (URC) Representative",
-          "organization": "",
-          "date": "",
-          "summary": "Representing research interests at the University of Hull",
-          "source": "portfolio-march-2026"
+          "title": "Elected Postdoctoral Research Representative — University Research Committee",
+          "organization": "Faculty of Science and Engineering, University of Hull",
+          "date": "2022–2023",
+          "summary": "Elected representative of postdoctoral researchers on the University Research Committee.",
+          "source": "cv-full-2026"
         },
         {
-          "title": "ICLR 2022 Event Organiser",
-          "organization": "",
-          "date": "",
-          "summary": "Co-organised events at the International Conference on Learning Representations 2022",
-          "source": "portfolio-march-2026"
+          "title": "ICLR 2022 AI4Renewables Social Organiser",
+          "organization": "International Conference on Learning Representations",
+          "date": "Apr 2022",
+          "summary": "Led the two-day “Facilitating a smoother transition to Renewable Energy with AI” social, featuring an industry–academic expert panel and a community-building event.",
+          "source": "cv-full-2026"
         },
         {
-          "title": "IEEE Diversity, Equity & Inclusion Committee",
-          "organization": "",
+          "title": "Diversity, Equality and Inclusion Committee Member",
+          "organization": "IEEE UK & Ireland Section",
           "date": "",
-          "summary": "Active member contributing to DEI initiatives within IEEE",
-          "source": "portfolio-march-2026"
+          "summary": "Committee member in the section’s DEI group.",
+          "source": "cv-full-2026"
         },
         {
           "title": "Undergraduate Student Mentoring",
-          "organization": "",
+          "organization": "Amity University",
           "date": "",
-          "summary": "Mentoring undergraduate students in AI, data science, and research skills",
-          "source": "portfolio-march-2026"
+          "summary": "Voluntary academic mentor to 3–4 undergraduate dissertation students working on AI applications, alongside main supervisor Prof. Anu Mehra.",
+          "source": "cv-full-2026"
         },
         {
           "title": "Medium / Towards Data Science Contributor",
@@ -1348,11 +1401,11 @@
           "source": "portfolio-march-2026"
         },
         {
-          "title": "IEEE SPIN 2018 Organiser",
-          "organization": "",
-          "date": "",
-          "summary": "Organised the IEEE International Conference on Signal Processing and Integrated Networks 2018",
-          "source": "portfolio-march-2026"
+          "title": "Student Organiser — IEEE SPIN 2018",
+          "organization": "Amity University",
+          "date": "Feb 2018",
+          "summary": "Student organiser of the 5th IEEE International Conference on Signal Processing and Integrated Networks.",
+          "source": "cv-full-2026"
         },
         {
           "title": "Published Author",
@@ -1362,11 +1415,18 @@
           "source": "portfolio-march-2026"
         },
         {
-          "title": "IIT Kanpur Campus Ambassador",
-          "organization": "",
-          "date": "",
-          "summary": "Served as campus ambassador for IIT Kanpur during undergraduate studies",
-          "source": "portfolio-march-2026"
+          "title": "Entrepreneurship Cell Campus Ambassador",
+          "organization": "Indian Institute of Technology Kanpur",
+          "date": "2017–2018",
+          "summary": "Campus ambassador for the Entrepreneurship Cell during undergraduate studies.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Social and human values volunteering",
+          "organization": "Amity University",
+          "date": "2014–2018",
+          "summary": "Volunteered in university social and human values events.",
+          "source": "cv-full-2026"
         }
       ]
     },
@@ -1374,6 +1434,55 @@
       "id": "cpd",
       "title": "Continuing professional development",
       "items": [
+        {
+          "title": "Cambridge Business Administration and Management CPD Course",
+          "organization": "Institute of Continuing Education, University of Cambridge",
+          "date": "Nov 2023",
+          "summary": "Short course covering market and customer insight, product definition and scoping, financial planning and funding, team building, sales and marketing.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Oxford Artificial Intelligence Programme",
+          "organization": "Saïd Business School, University of Oxford",
+          "date": "May – Aug 2020",
+          "summary": "Professional certificate in AI, business applications and organisational implications. Final grade: 85%.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Oxford Machine Learning Summer School",
+          "organization": "Saïd Business School, University of Oxford and CIFAR",
+          "date": "Aug 2020",
+          "summary": "Participated in the summer school with a focus on machine learning in medicine.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "KTP management, finance and change leadership training",
+          "organization": "Innovate UK / Ashorne Hill Management College",
+          "date": "Nov 2021 – Mar 2022",
+          "summary": "Management and leadership modules covering stakeholder communication and influence, change, accounting and finance for project managers.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Oxford Science and Innovation Summit",
+          "organization": "University of Oxford Mathematical Institute",
+          "date": "Mar 2026",
+          "summary": "Attended the summit bringing together startup leaders and investors.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "Microsoft AI Partner Day",
+          "organization": "London",
+          "date": "Mar 2025",
+          "summary": "Attended the industry event sponsored by NVIDIA.",
+          "source": "cv-full-2026"
+        },
+        {
+          "title": "ASML PhD Master Class",
+          "organization": "ASML",
+          "date": "Nov 2020",
+          "summary": "Selected as an invited PhD participant through a competitive selection process.",
+          "source": "cv-full-2026"
+        },
         {
           "title": "Azure Machine Learning Development: Part 1",
           "organization": "",

@@ -99,3 +99,22 @@ To add a photo manually: save it in `assets/images/`, add an entry to `content/m
 The October short CV and supplied full CV informed this refresh. Added 2026 research contributions, the 2025 book chapter, August 2026 certifications and newer appearances. The 10 November 2026 Barclays/Cyber London panel is upcoming; the House of Lords entry is attendance as an invited guest. Financial benefits remain potential savings. Historical records were retained from the prior website, with their original source tracked where not individually reconciled.
 
 Automated checks are not a factual guarantee: review the report for role/date changes, ambiguous publications and confidential material before publication. The raw CVs are deliberately not downloadable from the public website.
+
+## Leadership positioning and coverage audit
+
+The homepage now connects enterprise AI strategy, product development and
+operational adoption to specific work at EPAM and Reckitt. It features the ETH
+aptitude-colloquium invitation, British Data Awards finalist listing, Loughborough
+appointment, public interviews, recordings, Wiley book and GitHub research.
+
+- `content/showcase.json` and its schema: curated case studies and public appearances.
+- `content/coverage.json`: selected important credentials protected against silent loss.
+- `docs/content-audit.md`: CV coverage, corrections, public sources and deliberate omissions.
+- `scripts/showcase.py`: homepage rendering; the existing three-page structure is retained.
+
+For future updates, the Codex workflow also reviews the curated homepage against
+the new CV. The standalone importer preserves curated cards and images, includes
+them in the extraction context, and reports changed source records for editorial
+review. It does not autonomously rewrite media or case-study prose. The record
+checks prevent known highlights from disappearing; they do not replace reading
+all sections of each newly supplied CV.

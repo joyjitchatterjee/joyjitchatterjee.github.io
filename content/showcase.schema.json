@@ -1,0 +1,361 @@
+{
+  "type": "object",
+  "properties": {
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kicker": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "contribution": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "record": {
+            "type": "object",
+            "properties": {
+              "section": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "section",
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "kicker",
+          "title",
+          "summary",
+          "contribution",
+          "outcome",
+          "source",
+          "url",
+          "label",
+          "record"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "credentials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "record": {
+            "type": "object",
+            "properties": {
+              "section": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "section",
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "kicker",
+          "title",
+          "detail",
+          "source",
+          "url",
+          "record"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "appearances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "source_url": {
+                "type": "string"
+              },
+              "accessed": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "alt",
+              "width",
+              "height",
+              "source_url",
+              "accessed"
+            ],
+            "additionalProperties": false
+          },
+          "extra": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "title",
+                "url"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "format",
+          "date",
+          "summary",
+          "url",
+          "label",
+          "source",
+          "image",
+          "extra"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "book": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "kicker": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "record": {
+          "type": "object",
+          "properties": {
+            "section": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "section",
+            "title"
+          ],
+          "additionalProperties": false
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "alt": {
+              "type": "string"
+            },
+            "width": {
+              "type": "integer"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "source_url": {
+              "type": "string"
+            },
+            "accessed": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "alt",
+            "width",
+            "height",
+            "source_url",
+            "accessed"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "title",
+        "subtitle",
+        "kicker",
+        "summary",
+        "url",
+        "source",
+        "record",
+        "image"
+      ],
+      "additionalProperties": false
+    },
+    "repositories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "summary",
+          "tags",
+          "url",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "featured_publications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "cases",
+    "credentials",
+    "appearances",
+    "book",
+    "repositories",
+    "profiles",
+    "featured_publications"
+  ],
+  "additionalProperties": false
+}
