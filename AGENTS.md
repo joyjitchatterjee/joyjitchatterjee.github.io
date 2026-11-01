@@ -98,3 +98,11 @@ Keep original public-source corrections (publication author lists, dates and
 roles) when a later CV abbreviates them. Resolve genuine conflicts using the
 most specific reliable source and document the correction. Never upgrade an
 invited guest to a speaker, a finalist to a winner, or a short course to a degree.
+
+## Writing style
+
+Do not use em dashes in website text. Use commas, colons, parentheses or separate
+sentences as appropriate; do not substitute double hyphens. This preference also
+applies to displayed titles: retain their wording while normalising punctuation.
+Update exact-title references in showcase and coverage together when needed.
+Date ranges may retain en dashes.

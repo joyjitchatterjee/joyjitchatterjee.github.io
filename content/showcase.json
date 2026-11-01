@@ -50,10 +50,10 @@
     {
       "kicker": "Enterprise leadership",
       "title": "British Data Awards 2026",
-      "detail": "Finalist — Data Leader of the Year (Partner).",
+      "detail": "Finalist: Data Leader of the Year (Partner).",
       "record": {
         "section": "awards",
-        "title": "British Data Awards — Data Leader of the Year (Partner) Finalist"
+        "title": "British Data Awards: Data Leader of the Year (Partner) Finalist"
       },
       "source": "british-data-awards-2026",
       "url": "https://predatech.co.uk/british-data-awards-2026-finalists/"
@@ -61,7 +61,7 @@
     {
       "kicker": "Independent recognition",
       "title": "Forbes 30 Under 30 Europe",
-      "detail": "Manufacturing & Industry, 2022 — recognition for AI work in manufacturing and energy.",
+      "detail": "Manufacturing & Industry, 2022. Recognition for AI work in manufacturing and energy.",
       "record": {
         "section": "awards",
         "title": "Forbes 30 Under 30 Europe"
@@ -75,7 +75,7 @@
       "detail": "Invited expert on a Doctoral Examination (Aptitude Colloquium) committee.",
       "record": {
         "section": "additional.reviews",
-        "title": "Invited Expert — Doctoral Examination (Aptitude Colloquium) Committee"
+        "title": "Invited Expert: Doctoral Examination (Aptitude Colloquium) Committee"
       },
       "source": "cv-full-2026",
       "url": "profile.html#reviews"
@@ -97,7 +97,7 @@
       "detail": "External evaluator and reviewer for Horizon Europe’s NGI Search project, 2023.",
       "record": {
         "section": "additional.reviews",
-        "title": "External Evaluator and Reviewer — NGI Search"
+        "title": "External Evaluator and Reviewer: NGI Search"
       },
       "source": "cv-full-2026",
       "url": "profile.html#reviews"
@@ -253,7 +253,7 @@
     "source": "wiley-book",
     "record": {
       "section": "additional.reviews",
-      "title": "Co-editor — Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions"
+      "title": "Co-editor: Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions"
     },
     "image": {
       "path": "assets/images/feature-book.jpg",

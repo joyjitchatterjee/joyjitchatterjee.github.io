@@ -7,6 +7,8 @@ import sys
 class Document(HTMLParser):
     def __init__(self,text):
         super().__init__();self.ids=[];self.links=[];self.titles=0;self.h1=0;self.feed(text)
+    def handle_data(self,data):
+        if '\u2014' in data:raise ValueError('Website text must not contain em dashes')
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if 'id' in a:self.ids.append(a['id'])
