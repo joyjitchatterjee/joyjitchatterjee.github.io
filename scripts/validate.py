@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Small dependency-free validator for the repository's JSON schema subset."""
+import hashlib
 import datetime as dt
 import json
 import re
@@ -116,8 +117,32 @@ def validate_showcase(showcase,profile):
     for title in showcase['featured_certifications']:profile_record(profile,{'section':'certifications','title':title})
     return showcase
 
+def validate_downloads(downloads,profile):
+    if not isinstance(downloads,list):raise ValueError('Downloads must be a list')
+    ids=[]
+    fields={'id','publication_title','file','preview','preview_width','preview_height','summary','pages','bytes','sha256','source_url','licence','added'}
+    for item in downloads:
+        if not isinstance(item,dict) or set(item)!=fields:raise ValueError('Invalid download metadata')
+        if not re.fullmatch(r'[a-z][a-z0-9-]*',item['id']):raise ValueError('Invalid download ID')
+        ids.append(item['id'])
+        profile_record(profile,{'section':'publications','title':item['publication_title']})
+        web_url(item['source_url']);dt.date.fromisoformat(item['added'])
+        for key in ['pages','bytes','preview_width','preview_height']:
+            if type(item[key]) is not int or item[key]<=0:raise ValueError('Invalid PDF size or dimensions')
+        pdf=(ROOT/item['file']).resolve()
+        if not pdf.is_relative_to(ROOT/'assets/papers') or pdf.suffix!='.pdf' or not pdf.is_file():raise ValueError('Invalid local PDF path')
+        data=pdf.read_bytes()
+        if not data.startswith(b'%PDF-') or len(data)!=item['bytes'] or hashlib.sha256(data).hexdigest()!=item['sha256']:raise ValueError('PDF integrity mismatch')
+        preview=(ROOT/item['preview']).resolve()
+        if not preview.is_relative_to(ROOT/'assets/images') or not preview.is_file():raise ValueError('Missing paper preview')
+        for key in ['summary','licence']:
+            if not isinstance(item[key],str) or not item[key].strip():raise ValueError('Missing PDF description or licence')
+    if len(ids)!=len(set(ids)):raise ValueError('Duplicate download IDs')
+    return downloads
+
 if __name__=='__main__':
     profile=validate_profile(json.loads((ROOT/'content/profile.json').read_text()))
     validate_media(json.loads((ROOT/'content/media.json').read_text()))
     validate_showcase(json.loads((ROOT/'content/showcase.json').read_text()),profile)
-    print('Content, protected credentials and image provenance validated')
+    validate_downloads(json.loads((ROOT/'content/downloads.json').read_text()),profile)
+    print('Content, protected credentials, image provenance and PDF downloads validated')

@@ -9,18 +9,21 @@ function element(textContent = '', kind) {
     querySelectorAll(selector) {return selector === '[data-cv-details]' ? this.children : [];},
     classList: {toggle(c) { if (classes.has(c)) { classes.delete(c); return false; } classes.add(c); return true; }, remove(c) { classes.delete(c); }, contains(c) { return classes.has(c); }},
     addEventListener(type, fn) {this.handlers[type] = fn;},
-    setAttribute(k, v) {this.attrs[k] = v;}, focus() {this.focused = true;}};
+    setAttribute(k, v) {this.attrs[k] = v;}, focus() {this.focused = true;}, select() {this.selected = true;}};
 }
 function setup(hash = '') {
   const nodes = {'nav-links': element(), search: element(), kind: element(), 'result-count': element(), 'empty-results': element(), 'print-profile': element(), 'expand-details': element(), 'experience-lead-data-scientist': element()};
   const details = [element('', 'details'), element('', 'details')];
   nodes['experience-lead-data-scientist'].children = [details[0]];
+  const copyButton = element(); copyButton.dataset.copyPdf = 'share-test';
+  nodes['share-test'] = element(); nodes['share-test'].value = 'https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf';
+  nodes['share-test-status'] = element();
   const menu = element(); const papers = [element('Wind knowledge graph', 'journal'), element('Graph agent', 'conference'), element('Delivery planning', 'conference')];
   nodes.kind.value = 'all';
-  const document = {handlers: {}, querySelector: () => menu, getElementById: id => nodes[id], querySelectorAll: selector => selector === '[data-cv-details]' ? details : papers, addEventListener(type, fn) {this.handlers[type] = fn;}};
-  const window = {location: {hash}, handlers: {}, addEventListener(type, fn) {this.handlers[type] = fn;}, print() {window.printed = true;}};
+  const document = {handlers: {}, querySelector: () => menu, getElementById: id => nodes[id], querySelectorAll: selector => selector === '[data-cv-details]' ? details : selector === '[data-copy-pdf]' ? [copyButton] : papers, addEventListener(type, fn) {this.handlers[type] = fn;}};
+  const window = {navigator: {clipboard: {async writeText(text) {window.copied = text;}}}, location: {hash}, handlers: {}, addEventListener(type, fn) {this.handlers[type] = fn;}, print() {window.printed = true;}};
   vm.runInNewContext(fs.readFileSync('assets/site.js', 'utf8'), {document, window});
-  return {nodes, menu, papers, document, window, details};
+  return {nodes, menu, papers, document, window, details, copyButton};
 }
 test('search and type filter compose; zero results are announced', () => {
   const {nodes, papers} = setup(); nodes.search.value = 'graph'; nodes.search.handlers.input();
@@ -69,4 +72,19 @@ test('printing includes all detail and restores the reading state afterwards', (
   window.handlers.beforeprint();
   window.handlers.afterprint();
   assert.equal(details[0].open, false); assert.equal(details[1].open, true);
+});
+
+test('paper sharing copies the permanent PDF URL', async () => {
+  const {nodes, window, copyButton} = setup();
+  await copyButton.handlers.click();
+  assert.equal(window.copied, nodes['share-test'].value);
+  assert.equal(nodes['share-test-status'].textContent, 'PDF link copied.');
+});
+test('paper sharing selects the link when clipboard access is unavailable', async () => {
+  const {nodes, window, copyButton} = setup();
+  window.navigator.clipboard.writeText = async () => {throw new Error('Denied');};
+  await copyButton.handlers.click();
+  assert.equal(nodes['share-test'].selected, true);
+  assert.equal(nodes['share-test'].focused, true);
+  assert.match(nodes['share-test-status'].textContent, /Link selected/);
 });

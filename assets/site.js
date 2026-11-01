@@ -63,3 +63,20 @@ window.addEventListener('afterprint', () => {
   printDetailState = null;
   syncDetailsButton();
 });
+
+for (const button of document.querySelectorAll('[data-copy-pdf]')) {
+  button.addEventListener('click', async () => {
+    const input = document.getElementById(button.dataset.copyPdf);
+    const status = document.getElementById(`${button.dataset.copyPdf}-status`);
+    if (!input || !status) return;
+    try {
+      if (!window.navigator?.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await window.navigator.clipboard.writeText(input.value);
+      status.textContent = 'PDF link copied.';
+    } catch {
+      input.focus();
+      input.select();
+      status.textContent = 'Link selected. Copy it using your browser or keyboard.';
+    }
+  });
+}
