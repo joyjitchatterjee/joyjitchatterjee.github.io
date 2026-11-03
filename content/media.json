@@ -13,17 +13,30 @@
     "accessed": "2026-11-01"
   },
   {
+    "id": "forbes-summit",
+    "title": "Part of the Forbes Under 30 community",
+    "caption": "At the Forbes Under 30 Summit in Phoenix, Arizona, as a Forbes 30 Under 30 Europe lister.",
+    "date": "Apr 2026",
+    "image": "assets/images/forbes-summit.jpg",
+    "alt": "Joyjit standing beside the Forbes Under 30 Summit backdrop in Phoenix.",
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3mjxtvux6j223",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreieihedrpztghirknwcirrlbkkp5xafqviis3d7p4y3eilb7r6pwx4",
+    "accessed": "2026-11-03",
+    "width": 1200,
+    "height": 1600
+  },
+  {
     "id": "loughborough",
     "title": "Trustworthy AI starts with domain knowledge",
     "caption": "A guest lecture at Loughborough University on knowledge representation and reasoning for safety-critical engineering.",
-    "date": "Mar 2026",
-    "image": "assets/images/loughborough.jpg",
-    "alt": "A guest lecture at Loughborough University on knowledge representation and reasoning for safety-critical engineering.",
+    "date": "5 Mar 2026",
+    "image": "assets/images/lecture-loughborough.jpg",
+    "alt": "Joyjit at the Loughborough University lectern presenting XAI4Wind and knowledge graphs for explainable AI.",
     "source_url": "https://www.linkedin.com/posts/joyjitchatterjee_ai-loughboroughuni-datascience-activity-7435411542277267457-fE0l",
-    "source_image_url": "https://media.licdn.com/dms/image/v2/D4E22AQExugxNftCZJA/feedshare-shrink_800/B4EZy_jZHzJcAk-/0/1772740252642?e=2147483647&v=beta&t=imYzCMdFs3u89jqk2dVMl4vDZQIaXpJLysBJADErcOw",
-    "accessed": "2026-11-01",
-    "width": 800,
-    "height": 811
+    "source_image_url": "https://media.licdn.com/dms/image/v2/D4E22AQErisIMFszhWw/feedshare-image-high-res/B4EZy_jZN5JAAU-/0/1772740253049?e=2147483647&v=beta&t=Mn2jx0jynheqfn-eKrrY4J3wAdnElEyRGHM4tebigqs",
+    "accessed": "2026-11-03",
+    "width": 1200,
+    "height": 1600
   },
   {
     "id": "parliament",
@@ -50,5 +63,18 @@
     "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3m6mybgvf2k2d",
     "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreiaqo27o3oouhmtl23redtrueqtj3h6w2dxvcs6l2l3nbuwoaeait4",
     "accessed": "2026-11-01"
+  },
+  {
+    "id": "iea-panel",
+    "title": "Generative AI and the future of wind energy",
+    "caption": "A panel discussion at the IEA Wind Task 43 Annual General Meeting in Golden, Colorado, alongside participants from Microsoft, NREL, Siemens and OST. Photograph: IEA Wind Task 43.",
+    "date": "11 Jun 2025",
+    "image": "assets/images/iea-panel.jpg",
+    "alt": "Joyjit, second from left, taking part in a five-person generative AI panel at the IEA Wind Task 43 meeting.",
+    "source_url": "https://iea-wind.org/task43-agm2025-report/",
+    "source_image_url": "https://iea-wind.org/wp-content/uploads/2025/06/DSC_0082-1083x720.jpg",
+    "accessed": "2026-11-03",
+    "width": 1600,
+    "height": 1063
   }
 ]

@@ -26,12 +26,28 @@
       ]
     },
     {
+      "id": "procurement-ai",
+      "kicker": "GenAI / Procurement",
+      "title": "Negotiation intelligence at enterprise scale",
+      "summary": "A GenAI platform for a global consumer goods company, supporting procurement negotiations.",
+      "contribution": "Contributed to the negotiation intelligence platform, connecting generative AI with a high-value enterprise decision process.",
+      "outcome": "Business case equivalent to 2% of annual procurement spend.",
+      "record": {
+        "section": "additional.selected-projects",
+        "title": "GenAI negotiation intelligence platform"
+      },
+      "source": "user-procurement-evaluation-2026",
+      "url": "profile.html#selected-projects",
+      "label": "Project background",
+      "highlights": []
+    },
+    {
       "id": "rd-product",
       "kicker": "AI product development · Reckitt × Hull",
       "title": "From laboratory research to a production application",
       "summary": "Shelf-life prediction for healthcare products, developed through an Innovate UK Knowledge Transfer Partnership.",
       "contribution": "Led the AI workstream across models, interfaces and deployment, collaborating with R&D scientists, engineers and UI/UX specialists. Supported uptake through leadership engagement and skills transfer.",
-      "outcome": "Outstanding KTP rating for the $200k jointly funded project. Evaluation demonstrated potential annual savings of $780k and 10,000 laboratory hours.",
+      "outcome": "Outstanding KTP rating for the $200k jointly funded project. Annual business case: $780k in testing costs and 10,000 laboratory hours.",
       "record": {
         "section": "experience",
         "title": "IT & Digital Data Scientist - R&D / KTP Associate"
@@ -47,7 +63,7 @@
       "title": "Making manufacturing data useful for decisions",
       "summary": "Predictive and causal analytics for process verification, quality and operational planning.",
       "contribution": "Connected manufacturing, quality and process data; supported causal AI adoption across factories; developed logistics and capacity-planning tools and engaged quality and IT leadership.",
-      "outcome": "Contributed to approximately 30% waste reduction in major UK factories. Predictive analytics demonstrated savings potential of up to £300k per year in evaluation.",
+      "outcome": "Contributed to approximately 30% waste reduction in major UK factories. Annual business case for predictive analytics: up to £300k.",
       "record": {
         "section": "experience",
         "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"
@@ -133,6 +149,25 @@
   ],
   "appearances": [
     {
+      "id": "forbes-profile",
+      "title": "Forbes 30 Under 30 Europe",
+      "format": "Recognition · Forbes",
+      "date": "2022",
+      "summary": "Recognised in Manufacturing & Industry for AI work in manufacturing and energy. Photo: at the 2026 Under 30 Summit in Phoenix.",
+      "url": "https://www.forbes.com/profile/joyjit-chatterjee/",
+      "label": "Read the Forbes profile",
+      "source": "forbes-editor-profile",
+      "image": {
+        "path": "assets/images/forbes-summit.jpg",
+        "alt": "Joyjit standing beside the Forbes Under 30 Summit backdrop in Phoenix.",
+        "width": 1200,
+        "height": 1600,
+        "source_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreieihedrpztghirknwcirrlbkkp5xafqviis3d7p4y3eilb7r6pwx4",
+        "accessed": "2026-11-03"
+      },
+      "extra": []
+    },
+    {
       "id": "podcast",
       "title": "Explainable AI and the Power of Quiet Thinking",
       "format": "Podcast · Low to Grow",
@@ -183,18 +218,18 @@
       "id": "iea",
       "title": "Interactive decision support for wind turbines",
       "format": "Recorded presentation · IEA Wind Task 43",
-      "date": "Jun 2025",
-      "summary": "Automated question-answering for operations and maintenance, presented at the Task 43 annual meeting.",
+      "date": "11 Jun 2025",
+      "summary": "Research presentation on maintenance decision support, alongside participation in the meeting’s generative AI panel.",
       "url": "https://www.youtube.com/watch?v=sPzD0E9cCIE",
       "label": "Watch the presentation",
       "source": "iea-task43-2025",
       "image": {
-        "path": "",
-        "alt": "",
-        "width": 0,
-        "height": 0,
-        "source_url": "",
-        "accessed": ""
+        "path": "assets/images/iea-panel.jpg",
+        "alt": "Joyjit, second from left, taking part in a five-person generative AI panel at the IEA Wind Task 43 meeting.",
+        "width": 1600,
+        "height": 1063,
+        "source_url": "https://iea-wind.org/wp-content/uploads/2025/06/DSC_0082-1083x720.jpg",
+        "accessed": "2026-11-03"
       },
       "extra": [
         {
@@ -259,6 +294,54 @@
         "accessed": ""
       },
       "extra": []
+    },
+    {
+      "id": "green-talents-film",
+      "title": "Explainable AI for a sustainable future",
+      "format": "Research film · Green Talents",
+      "date": "2021",
+      "summary": "My research introduction for the German government’s Green Talents award, on trustworthy AI for wind energy.",
+      "url": "https://www.greentalents.de/Video/Awardees%202021%20Videos/CHATTERJEE%20Joyjit.mp4",
+      "label": "Watch the introduction",
+      "source": "green-talents-video",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": [
+        {
+          "title": "Official awardee profile",
+          "url": "https://www.greentalents.de/awardees_awardees2021_joyjit-chatterjee.php"
+        }
+      ]
+    },
+    {
+      "id": "windeurope-profile",
+      "title": "Knowledge graphs for wind-energy operations",
+      "format": "Research poster · WindEurope",
+      "date": "2026",
+      "summary": "Coauthored research for WindEurope 2026. The poster was presented by collaborator Idris Alugo, as credited by the Loughborough research group.",
+      "url": "https://ldr-lboro.github.io/publications/WindEurope_poster26.pdf",
+      "label": "Read the research poster",
+      "source": "windeurope-2026-poster",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": [
+        {
+          "title": "Loughborough research group",
+          "url": "https://ldr-lboro.github.io/"
+        }
+      ]
     }
   ],
   "book": {

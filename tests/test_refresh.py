@@ -58,7 +58,7 @@ class ContentTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'protected record'):validate_showcase(showcase,self.profile)
     def test_curated_appearance_rejects_unsafe_link(self):
         showcase=json.loads((ROOT/'content/showcase.json').read_text())
-        showcase['appearances'][0]['extra'][0]['url']='javascript:alert(1)'
+        next(item for item in showcase['appearances'] if item['extra'])['extra'][0]['url']='javascript:alert(1)'
         with self.assertRaisesRegex(ValueError,'Unsafe showcase URL'):validate_showcase(showcase,self.profile)
     def test_all_profile_detail_is_present_in_generated_pages(self):
         pages={name:html.unescape((ROOT/name).read_text()) for name in ['index.html','profile.html','research.html']}

@@ -1,3 +1,38 @@
+# Visual portfolio and public-source audit, 3 November 2026
+
+- Searched public web results, LinkedIn posts, Bluesky, Google Scholar,
+  ResearchGate, YouTube, official organisers and publishers. X returned HTTP403;
+  Facebook exposed a temporary-block/login page. No unverified material from
+  those services was added. The Bluesky feed contained 17 entries at this review;
+  photographs were attributed only to Joyjit's own posts.
+- Verified Google Scholar's public metric table: 964 citations, h-index12,
+  i10-index14. ResearchGate reported 40,151 reads. These are dated snapshots,
+  with platform definitions and source links, not live counters. Added DOI links
+  to three previously unlinked papers and source-dated citation counts.
+- Added Forbes summit photography from Joyjit's own public post, a higher-quality
+  Loughborough lecture photograph, and the IEA organiser's GenAI panel photo.
+  Inspected each image and retained its source URL, date and actual dimensions.
+  Photos are resized for delivery, without generated or altered event content.
+- Added Forbes editor profile, Green Talents introduction video and the WindEurope
+  coauthored poster link. The official directory was verified but returned HTTP503
+  during link checks, so the working Loughborough-hosted poster is the destination. The latter does not imply
+  Joyjit presented it: Loughborough credits Idris Alugo with presenting the poster.
+  The Ashorne Hill interview URL redirected to a generic page and was omitted.
+- Forbes quotation is a 13-word excerpt linked to the editor profile. WEF remains
+  identified as a coauthored perspective republished from The Conversation.
+- Financial highlights use the amount and annual business-case labels. Removed
+  repetitive qualification from the card headlines, while retaining an adjacent
+  evaluation note and the precise scope in disclosures. Underlying CV statements
+  and user-confirmed potential-benefit records remain intact.
+- Added a procurement case study linked to the existing anonymous project record.
+  All employment detail, institutions and named pre-sales/support companies remain.
+- Added keyboard-accessible media filtering, native-dialog photo/video viewing,
+  on-demand players and source-link fallbacks. Full research and career archives,
+  publication downloads and CV-refresh workflows remain available.
+- Browser inventory was empty, so rendered desktop/mobile QA was unavailable.
+  Interaction tests and static asset, content, anchor and schema checks cover the
+  implemented behaviour; they do not substitute for visual browser inspection.
+
 # Procurement platform update, 1 November 2026
 
 Added the user's contribution to a GenAI negotiation intelligence platform for a

@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-11-03",
+  "scholar": {
+    "url": "https://scholar.google.com/citations?user=kjWYrm4AAAAJ&hl=en",
+    "source": "scholar-20261103",
+    "citations": 964,
+    "h_index": 12,
+    "i10_index": 14,
+    "years": [
+      {
+        "year": 2019,
+        "citations": 6
+      },
+      {
+        "year": 2020,
+        "citations": 27
+      },
+      {
+        "year": 2021,
+        "citations": 39
+      },
+      {
+        "year": 2022,
+        "citations": 66
+      },
+      {
+        "year": 2023,
+        "citations": 174
+      },
+      {
+        "year": 2024,
+        "citations": 254
+      },
+      {
+        "year": 2025,
+        "citations": 230
+      },
+      {
+        "year": 2026,
+        "citations": 154
+      }
+    ]
+  },
+  "researchgate": {
+    "url": "https://www.researchgate.net/profile/Joyjit-Chatterjee",
+    "source": "researchgate-20261103",
+    "reads": 40151
+  },
+  "videos": {
+    "podcast": {
+      "provider": "youtube",
+      "id": "FXgvSQKDZzs"
+    },
+    "careers": {
+      "provider": "youtube",
+      "id": "CWNxgbuGuKg"
+    },
+    "iea": {
+      "provider": "youtube",
+      "id": "sPzD0E9cCIE"
+    },
+    "green-talents-film": {
+      "provider": "video",
+      "url": "https://www.greentalents.de/Video/Awardees%202021%20Videos/CHATTERJEE%20Joyjit.mp4"
+    }
+  },
+  "cited_work": [
+    {
+      "title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "url": "https://doi.org/10.1016/j.patter.2022.100676",
+      "citations": 376,
+      "venue": "Patterns"
+    },
+    {
+      "title": "Scientometric review of artificial intelligence for operations & maintenance of wind turbines: The past, present and future",
+      "url": "https://doi.org/10.1016/j.rser.2021.111051",
+      "citations": 198,
+      "venue": "Renewable and Sustainable Energy Reviews"
+    },
+    {
+      "title": "Deep learning with knowledge transfer for explainable anomaly prediction in wind turbines",
+      "url": "https://doi.org/10.1002/we.2510",
+      "citations": 90,
+      "venue": "Wind Energy"
+    }
+  ]
+}

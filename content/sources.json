@@ -212,5 +212,54 @@
     "kind": "user clarification",
     "label": "User reported contributing to a GenAI negotiation intelligence platform for a global consumer goods company and confirmed savings potential equivalent to 2% of annual procurement spend was demonstrated in evaluation, not realised savings.",
     "accessed": "2026-11-01"
+  },
+  {
+    "id": "scholar-20261103",
+    "kind": "public web",
+    "label": "Google Scholar public profile: 964 citations, h-index 12, i10-index 14; snapshot 3 November 2026",
+    "url": "https://scholar.google.com/citations?user=kjWYrm4AAAAJ&hl=en",
+    "accessed": "2026-11-03"
+  },
+  {
+    "id": "researchgate-20261103",
+    "kind": "public web",
+    "label": "ResearchGate public profile: 40,151 reads and 750 citations; snapshot 3 November 2026",
+    "url": "https://www.researchgate.net/profile/Joyjit-Chatterjee",
+    "accessed": "2026-11-03"
+  },
+  {
+    "id": "forbes-editor-profile",
+    "kind": "public web",
+    "label": "Forbes editor profile of Joyjit Chatterjee, 3 May 2022",
+    "url": "https://www.forbes.com/profile/joyjit-chatterjee/",
+    "accessed": "2026-11-03"
+  },
+  {
+    "id": "forbes-summit-post",
+    "kind": "public web",
+    "label": "Joyjit’s own photographs and account of attending the Forbes Under 30 Summit as a lister, April 2026",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3mjxtvux6j223",
+    "accessed": "2026-11-03"
+  },
+  {
+    "id": "green-talents-video",
+    "kind": "public web",
+    "label": "Green Talents official awardee profile and research introduction video",
+    "url": "https://www.greentalents.de/awardees_awardees2021_joyjit-chatterjee.php",
+    "accessed": "2026-11-03"
+  },
+  {
+    "id": "windeurope-2026-profile",
+    "kind": "public web",
+    "label": "WindEurope 2026 presenter directory profile; not evidence that Joyjit personally delivered the coauthored poster",
+    "url": "https://windeurope.org/annual2026/conference/people/252/",
+    "accessed": "2026-11-03"
+  },
+  {
+    "id": "windeurope-2026-poster",
+    "kind": "public web",
+    "label": "WindEurope 2026 coauthored poster hosted by Loughborough LDR; group news credits Idris Alugo as presenter",
+    "url": "https://ldr-lboro.github.io/publications/WindEurope_poster26.pdf",
+    "accessed": "2026-11-03"
   }
 ]
