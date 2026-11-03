@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-03",
   "name": "Dr. Joyjit Chatterjee",
   "role": "Lead Data Scientist at EPAM Systems",
   "location": "United Kingdom",
@@ -510,7 +510,7 @@
       "authors": "Chatterjee, J. and Dethlefs, N.",
       "date": "Jan 2023",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1016/j.patter.2022.100676",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -564,7 +564,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "2021",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1016/j.rser.2021.111051",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -592,7 +592,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Apr 2020",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1002/we.2510",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -1155,7 +1155,7 @@
     {
       "title": "Knowledge Representation and Reasoning in AI for Safety-Critical Engineering Applications",
       "venue": "School of Computer Science, Loughborough University, Leicestershire, UK",
-      "date": "Mar 2026",
+      "date": "5 Mar 2026",
       "status": "completed",
       "source": "cv-full-2026",
       "details": []
@@ -1187,10 +1187,18 @@
     {
       "title": "Panel: The opportunities and challenges of generative AI in wind energy",
       "venue": "IEA Wind Task 43 AGM + Technical Expert Meeting, Golden, Colorado, USA",
-      "date": "Jun 2025",
+      "date": "11 Jun 2025",
       "status": "completed",
-      "source": "cv-full-2026",
-      "details": []
+      "source": "iea-task43-2025",
+      "details": [
+        {
+          "heading": "Organiser report and photograph",
+          "points": [
+            "The IEA Wind Task 43 organiser report identifies Joyjit as a panel participant alongside representatives from Microsoft, NREL, Siemens and OST."
+          ],
+          "source": "iea-task43-2025"
+        }
+      ]
     },
     {
       "title": "Innovating for Impact - Mastering the Art of Science in the age of GenAI",
@@ -1737,19 +1745,19 @@
   "impact": [
     {
       "value": "2%",
-      "label": "Annual procurement savings potential",
+      "label": "Annual procurement / business case",
       "detail": "Contributed to a GenAI negotiation intelligence platform for a global consumer goods company. Evaluation demonstrated savings potential equivalent to 2% of annual procurement spend.",
       "source": "user-procurement-evaluation-2026"
     },
     {
       "value": "£300k / year",
-      "label": "Manufacturing savings potential",
+      "label": "Manufacturing / annual business case",
       "detail": "Up to £300k per year demonstrated in evaluation of predictive analytics for continued process verification at Reckitt.",
       "source": "user-savings-clarification-2026"
     },
     {
       "value": "$780k / year",
-      "label": "R&D savings potential",
+      "label": "R&D / annual business case",
       "detail": "Approximately $780k and 10,000 lab hours per year demonstrated in evaluation of AI-assisted shelf-life prediction.",
       "source": "user-savings-clarification-2026"
     },

@@ -27,7 +27,7 @@ images and captions are in `content/media.json`. `index.html`, `research.html`, 
 4. Run `python3 scripts/refresh_cv.py --run '<run>' --candidate '<run>/candidate.json' --apply`.
    Resolve actual evidence conflicts before applying. Do not use `--allow-removals`
    unless the user requested the removals or corrections clearly justify them.
-5. Run `python3 -m unittest discover -s tests -v` and `node --test tests/site.test.cjs`.
+5. Run `python3 -m unittest discover -s tests -v` and `node --test tests/*.test.cjs`.
    Use available browser preview for desktop/mobile QA. If unavailable, report that limit.
 6. Show the meaningful changes and verification. If the user asks to publish,
    commit only this website's intended files, push/merge to `main`, and check the
@@ -149,3 +149,25 @@ list. To add another paper, store its PDF and preview and add a matching catalog
 entry, then build/check. Keep the catalogue reference valid if a publication title
 is deliberately corrected. Do not replace working local downloads with transient
 external links during CV refreshes.
+
+## Visual media and research reach
+
+The homepage uses `assets/experience.js` for progressively enhanced media filters,
+image enlargement and on-demand video playback. Keep all source links usable
+without JavaScript. Do not load third-party players before the visitor activates
+one. Preserve keyboard focus and unload players when the dialog closes.
+
+`content/reach.json` stores dated Google Scholar and ResearchGate snapshots plus
+approved video references. Preserve it during CV imports. Only refresh metrics
+from the matching public profile; retain the observation date and platform label,
+keep the current year's chart marked partial, and never add citation totals from
+different services. ResearchGate reads are interactions, not unique readers.
+
+Financial highlights now lead with amounts and describe annual business cases.
+Their evaluation basis remains in the adjacent note and expandable details.
+Preserve the underlying user-confirmed distinction from realised savings.
+Do not strip it out during a later copy refresh. Keep contributions attributed.
+
+Forbes summit photographs show attendance as a lister, not a speaking slot.
+WindEurope 2026 lists Joyjit in its directory, but the coauthored poster was
+presented by Idris Alugo. House of Lords imagery shows invited guest attendance.
