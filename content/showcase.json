@@ -3,7 +3,7 @@
     {
       "id": "enterprise-ai",
       "kicker": "Strategy & delivery · EPAM",
-      "title": "Shaping AI opportunities into deliverable programmes",
+      "title": "Enterprise AI strategy & delivery",
       "summary": "AI/ML consulting across R&D, manufacturing, procurement and supply for Fortune 500 and FTSE 250 organisations.",
       "contribution": "Connect use-case discovery and RFP responses with project planning, proof of value and governance. Help assemble delivery teams, mentor data scientists and align senior stakeholders and domain experts.",
       "outcome": "Contribute to multi-million-pound engagements across Europe and North America, including generative and agentic AI.",
@@ -37,7 +37,7 @@
     {
       "id": "procurement-ai",
       "kicker": "GenAI / Procurement",
-      "title": "Negotiation intelligence at enterprise scale",
+      "title": "GenAI negotiation intelligence",
       "summary": "Game theory and conversational role-play simulations applied to enterprise procurement negotiations.",
       "contribution": "Worked with buyers and category managers, senior IT product owners and platform team stakeholders on a GenAI negotiation intelligence platform.",
       "outcome": "Business case equivalent to 2% of annual procurement spend.",
@@ -67,7 +67,7 @@
     {
       "id": "rd-product",
       "kicker": "AI product development · Reckitt × Hull",
-      "title": "From laboratory research to a production application",
+      "title": "AI-led R&D, from research to adoption",
       "summary": "Turning AI research into a production application for healthcare product development, with cross-functional delivery and business adoption.",
       "contribution": "Led the AI workstream across models, interfaces and deployment, collaborating with R&D scientists, engineers and UI/UX specialists. Supported uptake through leadership engagement and skills transfer.",
       "outcome": "The Reckitt–Hull partnership received the highest KTP grade, Outstanding. Annual business case: $780k in testing costs and 10,000 laboratory hours.",
@@ -93,7 +93,7 @@
     {
       "id": "manufacturing",
       "kicker": "Operations & adoption · Reckitt",
-      "title": "Making manufacturing data useful for decisions",
+      "title": "Manufacturing intelligence",
       "summary": "Predictive and causal analytics for process verification, quality and operational planning.",
       "contribution": "Connected manufacturing, quality and process data; supported causal AI adoption across factories; developed logistics and capacity-planning tools and engaged quality and IT leadership.",
       "outcome": "Contributed to approximately 30% waste reduction in major UK factories. Annual business case for predictive analytics: up to £300k.",

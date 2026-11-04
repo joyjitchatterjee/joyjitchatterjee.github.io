@@ -39,8 +39,10 @@ def render_engagements(data):
     return f'<section class="executive-section wrap" id="executive-engagement"><div class="section-heading"><div><p class="eyebrow">Executive engagement & industry dialogue</p><h2>AI in the conversations<br>that shape business.</h2></div><a class="text-link" href="#speaking">International panels & talks ↓</a></div><div class="executive-grid">{cards}</div></section>'
 
 def render_feedback(data, photo):
-    cards = ''
+    cards = []
     for item in data['feedback']:
-        cards += f'<article class="feedback-card"><p class="eyebrow">{e(item["theme"])}</p><p class="feedback-summary">{e(item["summary"])}</p><p class="feedback-role">{e(item["role"])}</p></article>'
+        cards.append(f'<article class="feedback-card"><p class="eyebrow">{e(item["theme"])}</p><p class="feedback-summary">{e(item["summary"])}</p><p class="feedback-role">{e(item["role"])}</p></article>')
+    featured = ''.join(cards[:3])
+    more = '<details class="section-more"><summary>Further perspectives on leadership & mentoring</summary><div class="feedback-grid">'+''.join(cards[3:])+'</div></details>'
     visual = f'<figure class="feedback-photo"><a href="{e(photo["image"])}" data-viewer="image" data-title="{e(photo["title"])}" data-caption="{e(photo["caption"])}"><img src="{e(photo["image"])}" width="{photo["width"]}" height="{photo["height"]}" loading="lazy" alt="{e(photo["alt"])}"><span class="enlarge">View speaking photograph ↗</span></a><figcaption><span>Invited speaker · 2025</span><strong>Queen Mary University of London</strong><p>Generative AI, knowledge graphs and industrial decision support.</p></figcaption></figure>'
-    return f'<section class="feedback-section" id="feedback"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">Stakeholder perspectives</p><h2>Trusted to deliver.<br>Respected as a collaborator.</h2></div><p>Anonymised summaries of feedback shared by senior stakeholders and collaborators. Individual perspectives, with names, client identities and project details omitted.</p></div><div class="feedback-editorial">{visual}<div class="feedback-grid">{cards}</div></div></div></section>'
+    return f'<section class="feedback-section" id="feedback"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">Stakeholder perspectives</p><h2>Trusted to deliver.</h2></div><p>Anonymised summaries of individual feedback from senior stakeholders and collaborators.</p></div><div class="feedback-editorial">{visual}<div><div class="feedback-grid">{featured}</div>{more}</div></div></div></section>'
