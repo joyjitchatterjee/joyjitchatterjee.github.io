@@ -12,7 +12,8 @@ def check(value,schema,path='$'):
     if not isinstance(value,types[schema['type']]):raise ValueError(f'{path}: expected {schema["type"]}')
     if isinstance(value,dict):
         expected=set(schema['required'])
-        if set(value)!=expected:raise ValueError(f'{path}: wrong keys: {set(value)^expected}')
+        invalid=(expected-set(value)) | (set(value)-set(schema['properties']))
+        if invalid:raise ValueError(f'{path}: wrong keys: {invalid}')
         for k,v in value.items():check(v,schema['properties'][k],path+'.'+k)
     elif isinstance(value,list):
         if len(value)>schema.get('maxItems',1000):raise ValueError(f'{path}: too many items')
@@ -64,10 +65,21 @@ def validate_profile(profile,extra_sources=()):
     return profile
 
 def validate_media(media):
+    known={x['id'] for x in json.loads((ROOT/'content/sources.json').read_text())}
+    ids=set()
     for item in media:
+        if item['id'] in ids:raise ValueError('Duplicate media ID')
+        ids.add(item['id'])
         if not item.get('alt','').strip():raise ValueError('Image needs alt text')
-        web_url(item['source_url'])
-        web_url(item['source_image_url'])
+        if item.get('source_kind')=='user-provided':
+            if item.get('source') not in known:raise ValueError('Unknown local media source')
+            if not item.get('source_file','').strip() or item['source_file'].startswith('/') or '..' in item['source_file']:raise ValueError('Invalid source filename')
+            if not re.fullmatch(r'[a-f0-9]{64}',item.get('original_sha256','')):raise ValueError('Local media needs original SHA-256')
+        else:
+            web_url(item['source_url'])
+            web_url(item['source_image_url'])
+        dt.date.fromisoformat(item['accessed'])
+        if 'gallery' in item and type(item['gallery']) is not bool:raise ValueError('Invalid gallery setting')
         for dimension in ['width','height']:
             if type(item.get(dimension)) is not int or not 0<item[dimension]<=20000:raise ValueError('Invalid image dimensions')
         path=(ROOT/item['image']).resolve()
@@ -91,11 +103,13 @@ def validate_coverage(profile):
 def validate_showcase(showcase,profile):
     check(showcase,json.loads((ROOT/'content/showcase.schema.json').read_text()))
     known={x['id'] for x in json.loads((ROOT/'content/sources.json').read_text())}
+    media_ids={x['id'] for x in json.loads((ROOT/'content/media.json').read_text())}
     ids=[]
     def walk(item):
         if isinstance(item,list):
             for x in item:walk(x)
         elif isinstance(item,dict):
+            if 'media_id' in item and item['media_id'] not in media_ids:raise ValueError('Unknown showcase media')
             if 'source' in item and item['source'] not in known:raise ValueError('Unknown showcase source')
             if 'record' in item:profile_record(profile,item['record'])
             if 'id' in item:

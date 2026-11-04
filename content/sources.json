@@ -366,5 +366,47 @@
     "label": "Amity ECE department, alumni achievements",
     "url": "https://amity.edu/Aset/departments-ece.aspx",
     "accessed": "2026-11-04"
+  },
+  {
+    "id": "user-resource-images-20261104",
+    "kind": "user-provided images",
+    "label": "Hull presentation photographs and career-awards collage supplied on 4 November 2026",
+    "accessed": "2026-11-04"
+  },
+  {
+    "id": "local-resources-20261104",
+    "kind": "user-provided files",
+    "label": "Original Hull presentation photographs, slides and embedded award photographs supplied on 4 November 2026",
+    "accessed": "2026-11-04",
+    "files": [
+      {
+        "filename": "20241011_105736.jpg",
+        "sha256": "af3d6b3e598a90ae7bf42724652fed8fd755d3689aa41013e404302b22d34cfc"
+      },
+      {
+        "filename": "20241011_105739.jpg",
+        "sha256": "2bfa8334c6a9c562509645f4673ff7ee9587eedc0ddabcde8d0f4842f346af59"
+      },
+      {
+        "filename": "JoyjitSlides_11Oct_Final.pptx",
+        "sha256": "569d01655877a87e5cd115ea57d4e9105b06225c9e847eecd13cb8858638b78d"
+      },
+      {
+        "filename": "CareerJourney_DataScience_Joyjit.pdf",
+        "sha256": "189b26ec294c9cab3b1f4e083eecdb3094f4d97d9f58c0f0d685900393969259"
+      },
+      {
+        "filename": "IndustryAcademiaRecognitions.key",
+        "sha256": "2d131f2c4f3847f784963f4a713b67cd682000ff48eea93b7627a7d51eb05e29"
+      },
+      {
+        "filename": "Joyjit-CareerPathinPixels.key",
+        "sha256": "8542d1b50fd340b842f573d8df9abb727cfc6dc766ab2f059492ad0d6b9fd776"
+      },
+      {
+        "filename": "IETVolunteering_Joyjit.key",
+        "sha256": "0cb765530df5bd867b6cebcf227fef8e2370bdc2a425ccd007e48132f6a17ee4"
+      }
+    ]
   }
 ]
