@@ -204,8 +204,9 @@ release.
 ## Leadership positioning and stakeholder feedback
 
 The opening should prioritise enterprise leadership, executive engagement and
-recent recognition. The current hero uses the Forbes Under 30 Summit portrait, with the 2022 Europe
-listing distinguished from 2026 summit attendance. British Data Awards finalist
+recent recognition. The current hero uses the Forbes Under 30 Summit portrait, with the Europe listing
+distinguished from 2026 summit attendance. Omit the listing year from the opening
+image caption, retaining the date in the full recognition record. British Data Awards finalist
 recognition belongs later on the page. The IEA microphone photograph leads the
 speaking gallery. Keep the earlier KTP photo in the later gallery, not the
 hero. Retain academic and early-career achievements in the full archive without
@@ -234,13 +235,17 @@ stakeholders include buyers, category managers, senior IT product owners and
 platform teams. Its 2% business case still has an evaluation basis.
 
 
-## Compact homepage hierarchy
+## Compact experience, full visual sections
 
 Keep four enterprise cases in a compact two-column grid, with headline results
 visible and detailed contributions in disclosures. Avoid restoring a duplicate
 impact-metrics strip or large process-diagram panels. Keep the manufacturing paper
-link visible, with its full description inside the case details. Secondary
-feedback, training credentials and additional gallery photographs remain available
-in native disclosures; preserve their content during refreshes. The research
-library provides PDF previews, so avoid repeating the same paper in a separate
-oversized feature. Maintain full detail on profile.html and research.html.
+link visible, with its full description inside the case details.
+
+The user's compactness request applies to enterprise experience only. Preserve
+the larger images and original visual layouts for feedback, recognition, media,
+research and speaking. Show all stakeholder feedback, training credentials,
+selected publications and gallery photographs without new enclosing disclosures.
+Retain the large latest-paper preview and book feature. Existing detailed career
+and historical-award disclosures can remain. Maintain full records on profile.html
+and research.html, including the latest Reckitt VP recommendation.
