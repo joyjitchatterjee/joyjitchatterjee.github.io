@@ -200,3 +200,19 @@ them to the appropriate editorial feature. Preserve those references, captions
 and exact event roles. See the 4 November local-resource audit in
 `docs/content-audit.md` for selection decisions and files not intended for public
 release.
+
+## Leadership positioning and stakeholder feedback
+
+The opening should prioritise enterprise leadership, executive engagement and
+recent public speaking. Keep the earlier KTP photo in the later gallery, not the
+hero. Retain academic and early-career achievements in the full archive without
+letting them dominate the first impression. Preserve exact job titles and
+speaker/panellist/attendee distinctions.
+
+`content/leadership.json` contains executive engagement references and anonymised
+feedback summaries. Preserve it during CV refreshes. Feedback uses role-only
+attributions; never publish the original screenshots, personal names, identifying
+links or client/project specifics from the supplied feedback. The former EPAM
+colleague's current external job title must not be presented as an EPAM title.
+Summaries are explicitly described as summaries, not exact quotations or formal
+company endorsements. Reconcile these references after future CV updates.
