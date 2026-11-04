@@ -388,3 +388,13 @@ Static comparison: default-visible main text decreased from 3,005 to 2,179 words
 career records. This is a content comparison, not a measured scroll-height claim.
 All 48 automated tests pass, along with local asset/anchor checks, HTML nesting
 and deterministic generation. Browser viewport preview remains unavailable.
+
+
+## Reckitt VP feedback, 4 November 2026
+
+Added the user-supplied recommendation as a featured anonymised summary, attributed
+only to VP, IT&D Digital - Supply Chain, Reckitt. The theme is drive, purpose and
+humility. The reference to over 20 years of corporate experience describes the
+recommender, not Joyjit. The person's name, profile link, screenshot and personal
+family reference are omitted. Existing feedback remains available in the same
+compact section. The role is user-supplied; no additional title was inferred.
