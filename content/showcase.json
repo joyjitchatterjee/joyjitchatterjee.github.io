@@ -298,7 +298,8 @@
           "title": "IEA meeting report",
           "url": "https://iea-wind.org/task43-agm2025-report/"
         }
-      ]
+      ],
+      "media_id": "iea-panel-speaking"
     },
     {
       "id": "ieee",
@@ -355,7 +356,8 @@
         "source_url": "",
         "accessed": ""
       },
-      "extra": []
+      "extra": [],
+      "media_id": "education-times-clipping"
     },
     {
       "id": "green-talents-film",
