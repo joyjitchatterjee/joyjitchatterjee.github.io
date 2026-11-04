@@ -216,3 +216,16 @@ links or client/project specifics from the supplied feedback. The former EPAM
 colleague's current external job title must not be presented as an EPAM title.
 Summaries are explicitly described as summaries, not exact quotations or formal
 company endorsements. Reconcile these references after future CV updates.
+
+## Executive case-study presentation
+
+Homepage case studies use `scripts/case_studies.py` and each showcase case's
+`visual` value, label and approach steps. Keep the main view focused on product
+approach, stakeholder engagement, business value and adoption. Retain granular
+stability-study data counts in the full profile only, not homepage descriptions
+or disclosures. Preserve access to detailed responsibilities and company context
+through disclosures and full-record links. Diagrams describe the supported
+approach; do not invent product screenshots, simulation outcomes or dashboards.
+The negotiation platform uses game theory and conversational role-play simulations;
+stakeholders include buyers, category managers, senior IT product owners and
+platform teams. Its 2% business case still has an evaluation basis.

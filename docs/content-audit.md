@@ -304,3 +304,24 @@ previously confirmed evaluation basis and absent scope/methodology.
 Preserve this separate editorial file during CV refreshes and reconcile its
 protected event references. Feedback attribution must remain role-only, and
 older photographs must not return to the hero during routine content imports.
+
+## Visual enterprise case studies, 4 November 2026
+
+Added the user's clarification that the negotiation intelligence platform uses
+game theory and conversational role-play simulations, with engagement across
+buyers, category managers, senior IT product owners and platform team
+stakeholders. The full project record and homepage case both carry this detail;
+the 2% annual-spend business case retains its evaluation basis.
+
+Replaced the long case-study rows with four visual stories: strategy and delivery,
+negotiation intelligence, R&D innovation, and manufacturing operations. Approach
+diagrams and prominent outcome labels provide distinct visual treatments without
+inventing product interfaces or simulation results. Case navigation and native
+expandable detail retain access to client context, responsibilities and evidence.
+Removed the 60,000 / 1,000+ / 66 research-data counts from the homepage, including
+its R&D disclosure; the source detail remains in the complete profile. Added the
+existing Queen Mary speaking photograph beside anonymised stakeholder feedback.
+
+Verification: all 47 existing automated tests pass. Local path, anchor, heading,
+alt-text and no-em-dash checks pass. Browser viewport preview remains unavailable;
+there is no claim of desktop/mobile visual verification.

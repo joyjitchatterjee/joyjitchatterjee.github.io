@@ -23,31 +23,54 @@
           "label": "Pre-sales and use-case discovery support",
           "text": "Qatar Airways · Unilever · Barry Callebaut · Brussels Airport Company · Cleveland Clinic Abu Dhabi · Adidas · Co-op · Currys · PPG Industries"
         }
-      ]
+      ],
+      "visual": {
+        "value": "Multi-million £",
+        "label": "AI engagements across Europe and North America",
+        "steps": [
+          "Strategy & value discovery",
+          "Product development",
+          "Adoption & governance"
+        ]
+      }
     },
     {
       "id": "procurement-ai",
       "kicker": "GenAI / Procurement",
       "title": "Negotiation intelligence at enterprise scale",
-      "summary": "A GenAI platform for a global consumer goods company, supporting procurement negotiations.",
-      "contribution": "Contributed to the negotiation intelligence platform, connecting generative AI with a high-value enterprise decision process.",
+      "summary": "Game theory and conversational role-play simulations applied to enterprise procurement negotiations.",
+      "contribution": "Worked with buyers and category managers, senior IT product owners and platform team stakeholders on a GenAI negotiation intelligence platform.",
       "outcome": "Business case equivalent to 2% of annual procurement spend.",
       "record": {
         "section": "additional.selected-projects",
         "title": "GenAI negotiation intelligence platform"
       },
-      "source": "user-procurement-evaluation-2026",
+      "source": "user-negotiation-methods-20261104",
       "url": "profile.html#selected-projects",
       "label": "Project background",
-      "highlights": []
+      "highlights": [
+        {
+          "label": "Commercial and technology stakeholders",
+          "text": "Buyers · Category managers · Senior IT product owners · Platform teams"
+        }
+      ],
+      "visual": {
+        "value": "2%",
+        "label": "of annual procurement spend: evaluated business case",
+        "steps": [
+          "Game theory",
+          "Conversational role-play",
+          "Buyer & category engagement"
+        ]
+      }
     },
     {
       "id": "rd-product",
       "kicker": "AI product development · Reckitt × Hull",
       "title": "From laboratory research to a production application",
-      "summary": "Shelf-life prediction for healthcare products, developed through an Innovate UK Knowledge Transfer Partnership.",
+      "summary": "Turning AI research into a production application for healthcare product development, with cross-functional delivery and business adoption.",
       "contribution": "Led the AI workstream across models, interfaces and deployment, collaborating with R&D scientists, engineers and UI/UX specialists. Supported uptake through leadership engagement and skills transfer.",
-      "outcome": "Outstanding KTP rating for the $200k jointly funded project. Annual business case: $780k in testing costs and 10,000 laboratory hours.",
+      "outcome": "The Reckitt–Hull partnership received the highest KTP grade, Outstanding. Annual business case: $780k in testing costs and 10,000 laboratory hours.",
       "record": {
         "section": "experience",
         "title": "IT & Digital Data Scientist - R&D / KTP Associate"
@@ -55,13 +78,17 @@
       "source": "cv-full-2026",
       "url": "https://www.hull.ac.uk/collaborate/services-for-business/work-with-our-experts",
       "label": "University of Hull partnership story",
-      "highlights": [
-        {
-          "label": "Data scale reported in the Hull presentation",
-          "text": "60,000 stability-result data points · 1,000+ studies · 66 analytes"
-        }
-      ],
-      "media_id": "hull-rd-talk"
+      "highlights": [],
+      "media_id": "hull-rd-talk",
+      "visual": {
+        "value": "Outstanding",
+        "label": "The highest Innovate UK KTP grade",
+        "steps": [
+          "Research",
+          "Production application",
+          "Business adoption"
+        ]
+      }
     },
     {
       "id": "manufacturing",
@@ -82,7 +109,16 @@
           "label": "Supporting a multi-billion-pound portfolio",
           "text": "Nurofen · Strepsils · Airborne"
         }
-      ]
+      ],
+      "visual": {
+        "value": "~30%",
+        "label": "Waste-reduction contribution in major UK factories",
+        "steps": [
+          "Process intelligence",
+          "Quality decisions",
+          "Operational improvement"
+        ]
+      }
     }
   ],
   "credentials": [

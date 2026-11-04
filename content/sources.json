@@ -414,5 +414,11 @@
     "kind": "user-provided feedback",
     "label": "Anonymised summaries of stakeholder feedback and professional recommendations supplied on 4 November 2026",
     "accessed": "2026-11-04"
+  },
+  {
+    "id": "user-negotiation-methods-20261104",
+    "kind": "user clarification",
+    "label": "Negotiation intelligence: game theory, conversational role-play simulations and stakeholder engagement, supplied 4 November 2026",
+    "accessed": "2026-11-04"
   }
 ]
