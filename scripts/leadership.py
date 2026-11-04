@@ -7,6 +7,7 @@ from detail_views import record_anchor
 
 ROOT = Path(__file__).resolve().parents[1]
 ROLES = {
+    'VP, IT&D Digital - Supply Chain, Reckitt',
     'VP, Business Development, EPAM',
     'Director, Project Management, EPAM',
     'IT&D Product Manager at Global CPG company',

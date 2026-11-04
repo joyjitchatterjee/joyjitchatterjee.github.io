@@ -444,5 +444,11 @@
         "sha256": "2a008ef071aa8eb6aa79652899208037ac5146ab5fe318a19876022b58aef927"
       }
     ]
+  },
+  {
+    "id": "reckitt-vp-feedback-20261104",
+    "kind": "user-provided feedback",
+    "label": "Anonymised summary of a professional recommendation supplied by the user, with the role identified as VP, IT&D Digital - Supply Chain at Reckitt",
+    "accessed": "2026-11-04"
   }
 ]

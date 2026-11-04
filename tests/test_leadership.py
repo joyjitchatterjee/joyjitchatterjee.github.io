@@ -19,7 +19,8 @@ class LeadershipTests(unittest.TestCase):
             validate_leadership(self.data, self.profile)
 
     def test_former_colleague_cannot_be_promoted_to_an_unverified_title(self):
-        self.data['feedback'][3]['role'] = 'Head of Data Platform, EPAM'
+        item = next(x for x in self.data['feedback'] if x['role'] == 'Former senior colleague, EPAM')
+        item['role'] = 'Head of Data Platform, EPAM'
         with self.assertRaisesRegex(ValueError, 'anonymous role'):
             validate_leadership(self.data, self.profile)
 

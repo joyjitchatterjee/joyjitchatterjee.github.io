@@ -1,6 +1,12 @@
 {
   "feedback": [
     {
+      "role": "VP, IT&D Digital - Supply Chain, Reckitt",
+      "theme": "Drive, purpose and humility",
+      "summary": "Recognised for an unusually strong combination of drive, clarity of purpose, intelligence and humility by a leader with more than 20 years of corporate experience.",
+      "source": "reckitt-vp-feedback-20261104"
+    },
+    {
       "role": "VP, Business Development, EPAM",
       "theme": "Credibility with senior stakeholders",
       "summary": "Recognised for strong support across strategic pursuits, confidence in senior business discussions and credibility as a client-facing subject-matter expert.",
@@ -36,21 +42,30 @@
       "title": "CIO & SVP engagement",
       "role": "Executive presentations & knowledge exchange",
       "text": "Presented AI innovation outcomes to SVP leaders across quality, supply and R&D, and engaged the CIO through global AI forums and TechTalks at Reckitt.",
-      "record": {"section": "experience", "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"},
+      "record": {
+        "section": "experience",
+        "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"
+      },
       "source": "cv-full-2026"
     },
     {
       "title": "CXO Group roundtable",
       "role": "Invited panellist · 2024",
       "text": "Discussed next-generation AI products alongside industry leaders from Microsoft and Dell.",
-      "record": {"section": "talks", "title": "Panel: Next Gen AI Products"},
+      "record": {
+        "section": "talks",
+        "title": "Panel: Next Gen AI Products"
+      },
       "source": "cv-full-2026"
     },
     {
       "title": "FMCG CQO roundtable",
       "role": "Speaker · 2024",
       "text": "Presented AI for process verification to senior quality leaders from Unilever, ELC Europe, Sanofi, Haleon, Galderma and Kenvue.",
-      "record": {"section": "talks", "title": "AI for Continued Process Verification at Reckitt"},
+      "record": {
+        "section": "talks",
+        "title": "AI for Continued Process Verification at Reckitt"
+      },
       "source": "cv-full-2026"
     }
   ]
