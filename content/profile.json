@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "name": "Dr. Joyjit Chatterjee",
   "role": "Lead Data Scientist at EPAM Systems",
   "location": "United Kingdom",
@@ -457,12 +457,20 @@
     {
       "title": "Laying the foundations for context-aware and AI-ready fault diagnosis with the Operations Ontology",
       "venue": "Journal of Physics: Conference Series, IOP Publishing",
-      "authors": "Jonsson, C., Hansen, M.S., Wilson, J.J., Farren, D., Dethlefs, N., Chatterjee, J., Draper, J., Donnelly, R., Dimopoulos, A., Wiens, M., Marykovskiy, Y., Barber, S.",
+      "authors": "Jonsson, C., Hansen, M. S., Wilson, J. J., Farren, D., Dethlefs, N., Chatterjee, J., Draper, J., Donnelly, R., Dimopoulos, A., Wiens, M., Marykovskiy, Y., Barber, S.",
       "date": "May 2026",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1088/1742-6596/3232/1/012005",
       "source": "cv-full-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
+        }
+      ]
     },
     {
       "title": "Multi-Agentic Collective Intelligence with Generative AI for Interactive Decision Support in the Offshore Wind Industry",
@@ -487,12 +495,20 @@
     {
       "title": "Domain-invariant icing detection on wind turbine rotor blades with generative artificial intelligence for deep transfer learning",
       "venue": "Environmental Data Science, Cambridge University Press",
-      "authors": "Chatterjee, J., Alvela Nieto, M., Gelbhardt, H., Dethlefs, N., Ohlendrof, J., Greulich, A., Thoben, K.",
+      "authors": "Chatterjee, J., Alvela Nieto, M. T., Gelbhardt, H., Dethlefs, N., Ohlendorf, J.-H., Greulich, A., Thoben, K.-D.",
       "date": "Jun 2023",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1017/eds.2023.9",
       "source": "portfolio-march-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
+        }
+      ]
     },
     {
       "title": "Analysis of CPU Utilization of a Cross-Platform Web Application for Facial Recognition based Remote User Tracking System",
@@ -543,10 +559,10 @@
     {
       "title": "Facilitating a smoother transition to renewable energy with AI",
       "venue": "Patterns / Cell Press",
-      "authors": "Chatterjee, J. and Dethlefs, N.",
+      "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Jun 2022",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1016/j.patter.2022.100528",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -555,6 +571,13 @@
             "Patterns, volume 3, issue 6 (June 2022)."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -582,9 +605,17 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Sep 2020",
       "type": "journal",
-      "url": "",
+      "url": "https://doi.org/10.1088/1742-6596/1618/2/022022",
       "source": "portfolio-march-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
+        }
+      ]
     },
     {
       "title": "Deep learning with knowledge transfer for explainable anomaly prediction in wind turbines",
@@ -610,9 +641,17 @@
       "authors": "Chatterjee, J., Shankaran, R., Dethlefs, N.",
       "date": "Sep 2024",
       "type": "preprint",
-      "url": "",
+      "url": "https://hal.science/hal-04696344v1",
       "source": "portfolio-march-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
+        }
+      ]
     },
     {
       "title": "XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines",
@@ -627,10 +666,10 @@
     {
       "title": "Generalized Ice Detection on Wind Turbine Rotor Blades with Neural Style Transfer",
       "venue": "Tackling Climate Change with Machine Learning Workshop at NeurIPS 2022, New Orleans, USA",
-      "authors": "Chatterjee, J., Alvela Nieto, M., Gelbhardt, H., Dethlefs, N., Ohlendrof, J., Thoben, K.",
+      "authors": "Chatterjee, J., Alvela Nieto, M. T., Gelbhardt, H., Dethlefs, N., Ohlendorf, J., Thoben, K.-D.",
       "date": "Dec 2022",
       "type": "conference",
-      "url": "",
+      "url": "https://www.climatechange.ai/papers/neurips2022/47",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -639,6 +678,13 @@
             "Presented as a poster at the Tackling Climate Change with Machine Learning workshop at NeurIPS 2022."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -648,7 +694,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Oct 2020",
       "type": "conference",
-      "url": "",
+      "url": "https://doi.org/10.1201/9781003134572-50",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -657,6 +703,13 @@
             "Talk delivered at RENEW 2020, Lisbon. Published as a book chapter in Developments in Renewable Energies Offshore, CRC Press / Taylor & Francis."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -676,7 +729,7 @@
       "authors": "Chatterjee, J.",
       "date": "Aug 2020",
       "type": "conference",
-      "url": "",
+      "url": "https://www.researchgate.net/publication/344449303_Explainable_AI_for_Intelligent_Decision_Support_in_Operations_Maintenance_of_Wind_Turbines",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -685,6 +738,13 @@
             "Talk delivered at the ECAI Doctoral Consortium, Santiago, in August 2020."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -694,7 +754,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Aug 2020",
       "type": "conference",
-      "url": "",
+      "url": "https://www.researchgate.net/publication/344438754_The_Promise_of_Causal_Reasoning_in_Reliable_Decision_Support_for_Wind_Turbines",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -703,6 +763,13 @@
             "Talk delivered at the Fragile Earth workshop at KDD 2020."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -712,7 +779,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Jul 2020",
       "type": "conference",
-      "url": "",
+      "url": "https://doi.org/10.1109/IJCNN48605.2020.9206839",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -721,6 +788,13 @@
             "Talk delivered at IEEE IJCNN 2020 as part of WCCI."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -740,7 +814,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Dec 2019",
       "type": "conference",
-      "url": "",
+      "url": "https://www.climatechange.ai/papers/neurips2019/9",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -749,6 +823,13 @@
             "Poster presented at the Tackling Climate Change with Machine Learning workshop at NeurIPS 2019, Vancouver."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -758,7 +839,7 @@
       "authors": "Chatterjee, J., Dethlefs, N.",
       "date": "Nov 2019",
       "type": "conference",
-      "url": "",
+      "url": "https://windeurope.org/offshore2019/conference/sessions/?session_id=49",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -767,6 +848,13 @@
             "Poster presented at WindEurope Offshore 2019, Copenhagen."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -794,7 +882,7 @@
       "authors": "Chatterjee, J. and Dethlefs, N.",
       "date": "Jan 2019",
       "type": "conference",
-      "url": "",
+      "url": "https://arxiv.org/abs/2001.03612",
       "source": "portfolio-march-2026",
       "details": [
         {
@@ -803,6 +891,13 @@
             "Extended abstract and talk at the Northern Lights Deep Learning Workshop, Tromso, January 2019."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -966,7 +1061,7 @@
       "authors": "Chatterjee, J. and Dethlefs, N.",
       "date": "Aug 2020",
       "type": "abstract",
-      "url": "",
+      "url": "https://www.researchgate.net/publication/343524675_Transparency_Interpretability_and_Data_Availability_Key_Challenges_in_Tackling_Climate_Change_with_AI",
       "source": "cv-full-2026",
       "details": [
         {
@@ -975,6 +1070,13 @@
             "Abstract and talk at the Workshop on Data Science in Climate and Climate Impact Research, ETH Zurich, August 2020."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Publication source",
+          "points": [
+            "Publication metadata and access link checked against the Loughborough research-group archive and linked primary source."
+          ],
+          "source": "ldr-publication-audit-2026"
         }
       ]
     },
@@ -1315,9 +1417,9 @@
     {
       "title": "The Changing Face of AI Research: My learnings through evolution as an Early Career Researcher",
       "venue": "Distinguished Alumni Talk, University of Hull",
-      "date": "Jan 2024",
+      "date": "11 Jan 2024",
       "status": "completed",
-      "source": "cv-full-2026",
+      "source": "hull-distinguished-talk",
       "details": []
     },
     {
@@ -1485,26 +1587,42 @@
     },
     {
       "title": "Top-Cited Author",
-      "organization": "",
+      "organization": "Wiley · Wind Energy",
       "date": "Mar 2022",
-      "summary": "Wiley Wind Energy journal - recognised as a top-cited author for contributions to the field",
+      "summary": "Wiley Top-Cited Article recognition for 2020–2021 in the Wind Energy journal.",
       "source": "cv-full-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Recognition context",
+          "points": [
+            "The certificate shown in Amity’s official alumni magazine recognises a top-cited article in 2020–2021. This is journal-specific recognition, not an overall global author ranking."
+          ],
+          "source": "amity-chronicle-2023"
+        }
+      ]
     },
     {
       "title": "Young Researcher Award",
-      "organization": "",
+      "organization": "Amity University London and IEEE UK & Ireland Section",
       "date": "Apr 2019",
-      "summary": "IEEE UK & Ireland Section - recognised for outstanding research contributions as an early-career researcher",
+      "summary": "Amity Young Researcher Award, recognising early-career research contributions.",
       "source": "cv-full-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Award attribution",
+          "points": [
+            "The public LinkedIn awards record names Amity University London and IEEE UK & Ireland Section jointly. Amity’s ECE department also records the Young Researcher Award from IEEE UK & Ireland."
+          ],
+          "source": "amity-ece-recognition"
+        }
+      ]
     },
     {
       "title": "Alumni Achiever Award",
       "organization": "",
       "date": "Mar 2021",
       "summary": "Awarded by Amity University for Outstanding Contribution in Education.",
-      "source": "cv-full-2026",
+      "source": "amity-alumni-report-2021",
       "details": []
     },
     {
@@ -1519,8 +1637,8 @@
       "title": "Gold Medal & University Topper",
       "organization": "",
       "date": "2018",
-      "summary": "Amity University - B.Tech ECE with 9.68/10 CGPA, highest in the university",
-      "source": "cv-full-2026",
+      "summary": "Gold medallist and first in the B.Tech Electronics & Communication Engineering programme at Amity University, with 9.68/10 CGPA.",
+      "source": "amity-alumni-report-2021",
       "details": []
     },
     {
@@ -2138,6 +2256,14 @@
           "summary": "Republication of the article coauthored with Nina Dethlefs for The Conversation.",
           "source": "wef-perspective",
           "details": []
+        },
+        {
+          "title": "University of Hull alumni feature",
+          "organization": "University of Hull",
+          "date": "Apr 2025",
+          "summary": "The University of Hull profiled Joyjit’s journey from a funded PhD to enterprise AI, highlighting his research, Forbes recognition, Green Talents award and industry collaboration.",
+          "source": "hull-alumni-feature-2025",
+          "details": []
         }
       ]
     },
@@ -2282,9 +2408,9 @@
         {
           "title": "ICLR 2022 AI4Renewables Social Organiser",
           "organization": "International Conference on Learning Representations",
-          "date": "Apr 2022",
-          "summary": "Led the two-day “Facilitating a smoother transition to Renewable Energy with AI” social, featuring an industry–academic expert panel and a community-building event.",
-          "source": "cv-full-2026",
+          "date": "25 & 27 Apr 2022",
+          "summary": "Co-organised the two-day “Facilitating a smoother transition to Renewable Energy with AI” social, bringing together an industry–academic expert panel and a research community event.",
+          "source": "iclr-renewables-social",
           "details": []
         },
         {

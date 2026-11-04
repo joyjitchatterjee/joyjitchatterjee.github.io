@@ -13,5 +13,50 @@
     "source_url": "https://temp-iswc26-workshops.netlify.app/glow-paper6.pdf",
     "licence": "CC BY 4.0",
     "added": "2026-11-01"
+  },
+  {
+    "id": "facilitating-renewables",
+    "publication_title": "Facilitating a smoother transition to renewable energy with AI",
+    "file": "assets/papers/facilitating-renewables.pdf",
+    "preview": "assets/images/facilitating-renewables-preview.png",
+    "preview_width": 771,
+    "preview_height": 1000,
+    "summary": "A perspective on the technical and organisational changes needed to move AI into renewable-energy operations.",
+    "pages": 3,
+    "bytes": 252816,
+    "sha256": "540709aea08ba67847c64dfc34c93d4556377fbcb2362e7ec8febf55857dce03",
+    "source_url": "https://ldr-lboro.github.io/publications/patterns2022.pdf",
+    "licence": "CC BY 4.0",
+    "added": "2026-11-04"
+  },
+  {
+    "id": "domain-invariant-icing",
+    "publication_title": "Domain-invariant icing detection on wind turbine rotor blades with generative artificial intelligence for deep transfer learning",
+    "file": "assets/papers/domain-invariant-icing.pdf",
+    "preview": "assets/images/domain-invariant-icing-preview.png",
+    "preview_width": 705,
+    "preview_height": 1000,
+    "summary": "Generative AI and transfer learning for recognising wind-turbine blade icing across changing visual conditions.",
+    "pages": 15,
+    "bytes": 1992914,
+    "sha256": "d6f26b8050d28bd5c70a590acc7b2ca15e0a0487ef7fb48ea62517c753e61cf8",
+    "source_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/380344A0FF90C22E973A3B06F8E4E2BA/S2634460223000092a.pdf/div-class-title-domain-invariant-icing-detection-on-wind-turbine-rotor-blades-with-generative-artificial-intelligence-for-deep-transfer-learning-div.pdf",
+    "licence": "CC BY 4.0",
+    "added": "2026-11-04"
+  },
+  {
+    "id": "multimodal-factories",
+    "publication_title": "How Multimodal Data Can Enable Scalable and Trustworthy AI in Factories of The Future",
+    "file": "assets/papers/multimodal-factories.pdf",
+    "preview": "assets/images/multimodal-factories-preview.png",
+    "preview_width": 708,
+    "preview_height": 1000,
+    "summary": "A preprint on bringing together text, images and industrial data to build scalable, trustworthy AI for manufacturing.",
+    "pages": 8,
+    "bytes": 12690796,
+    "sha256": "a6ad06c6b4c2f6c63ca5187c6effd2105fb727bbf651c604907b87b115a347bd",
+    "source_url": "https://hal.science/hal-04696344v1/document",
+    "licence": "CC BY 4.0",
+    "added": "2026-11-04"
   }
 ]

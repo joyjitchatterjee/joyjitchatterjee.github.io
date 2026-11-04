@@ -171,3 +171,20 @@ Do not strip it out during a later copy refresh. Keep contributions attributed.
 Forbes summit photographs show attendance as a lister, not a speaking slot.
 WindEurope 2026 lists Joyjit in its directory, but the coauthored poster was
 presented by Idris Alugo. House of Lords imagery shows invited guest attendance.
+
+## Curated recognition and full-text access
+
+`content/spotlight.json` selects homepage quotes, awards, forums and community
+leadership from the full profile. Preserve it during CV imports and reconcile its
+references when a record changes. Quotes must remain exact, attributed and linked;
+Ann Storey's KTP comment is personal, not a formal institutional endorsement.
+The Hull alumni feature is separate from the March 2023 KTP photograph used on its
+card. Keep that photograph's context explicit. The certificate belongs to the KTP,
+not an individual award unrelated to the project.
+
+`content/publication-access.json` preserves audited external full-text links.
+Keep both it and the local download registry when importing a CV. Resolve broken
+references before publishing. Consult `docs/publication-audit-2026-11-04.md` for
+known source errors, author-list corrections and PDF reuse decisions. All 24
+matching LDR entries were already in the archive; do not duplicate them or infer
+authorship from chapters by others in an edited volume.

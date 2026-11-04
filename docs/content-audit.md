@@ -190,3 +190,33 @@ not establish that their primary-source links are broken.
 Known limitation in this update: the connected-browser inventory was empty, so
 browser-based desktop/mobile visual QA could not be performed. Original added
 images were visually inspected; static page and responsive source checks were run.
+
+## Deeper public evidence refresh, 4 November 2026
+
+- Replaced the earlier Forbes technical quote with its recognition statement;
+  added short, attributed Hull and Ann Storey excerpts with original context.
+- Surfaced the Hull alumni feature and distinguished alumni talk, actual KTP
+  poster portrait and Outstanding certificate. Kept original post and image URLs,
+  access dates, captions and dimensions. No stock or generated event photographs.
+- Added seven awards to the homepage, including international knowledge exchange,
+  Wiley recognition, UKRI endorsement, Amity alumni and researcher awards, the
+  B.Tech medal and human-values award. The full 19-award archive remains available.
+  Clarified the Wiley recognition period and the programme-specific gold medal.
+- Promoted ICLR AI4Renewables social co-organisation and seven talks/panels. CV-only
+  executive roundtables retain CV provenance; participant companies are not
+  presented as clients. ETH aptitude colloquium remains in the main credentials.
+- Added Economic Times coauthored commentary as a republication, not a profile.
+- Audited all 24 unique authored/editor entries on Loughborough LDR. All were in
+  the 51-record archive. Filled 14 missing URLs, corrected mismatched legacy links
+  and Operations Ontology authors, and retained workshop/preprint distinctions.
+- Added three unchanged, licensed open-access PDFs, with read/download/share
+  controls, first-page previews and integrity metadata. Four papers now have
+  permanent local links including the existing GLOW paper. Other full texts use
+  external links with source provenance. See the separate publication audit.
+- Public LinkedIn evidence was usable; no additional Hull Facebook story could be
+  verified. No claims were inferred from inaccessible Facebook or X content.
+- Scholar and ResearchGate figures retain their 3 November observation date.
+  Financial business cases retain the user-confirmed evaluation basis.
+- Browser preview was unavailable in this session. Images and paper previews were
+  inspected directly; automated checks cover generated paths, anchors, content,
+  publication integrity and interactive behaviour, but not rendered viewport QA.
