@@ -204,7 +204,8 @@ release.
 ## Leadership positioning and stakeholder feedback
 
 The opening should prioritise enterprise leadership, executive engagement and
-recent public speaking. Keep the earlier KTP photo in the later gallery, not the
+recent recognition. The current hero uses the British Data Awards 2026 portrait;
+the IEA microphone photograph leads the speaking gallery. Keep the earlier KTP photo in the later gallery, not the
 hero. Retain academic and early-career achievements in the full archive without
 letting them dominate the first impression. Preserve exact job titles and
 speaker/panellist/attendee distinctions.

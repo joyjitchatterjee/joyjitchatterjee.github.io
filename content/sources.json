@@ -420,5 +420,29 @@
     "kind": "user clarification",
     "label": "Negotiation intelligence: game theory, conversational role-play simulations and stakeholder engagement, supplied 4 November 2026",
     "accessed": "2026-11-04"
+  },
+  {
+    "id": "personal-photos-20261104",
+    "kind": "user-provided files",
+    "label": "British Data Awards portrait and finalist card, IEA panel speaking photograph and Education Times clipping supplied 4 November 2026",
+    "accessed": "2026-11-04",
+    "files": [
+      {
+        "filename": "1779319634549.jpeg",
+        "sha256": "bc49be6df7907ee2f6b9f9c76476e01475c5fdace88e05fa73f955f807f96c98"
+      },
+      {
+        "filename": "1749864958475.jpeg",
+        "sha256": "8b9c66f8f8e688d45ee092ca273ad90ede6f9c5ab48b3497f24eac5f0eb79f04"
+      },
+      {
+        "filename": "1779319632097.jpeg",
+        "sha256": "3b45fb93d7dbe51b1c8a7447c5b7708f763cc03d082834d2195615a330b8d9f7"
+      },
+      {
+        "filename": "1626064536119.jpeg",
+        "sha256": "2a008ef071aa8eb6aa79652899208037ac5146ab5fe318a19876022b58aef927"
+      }
+    ]
   }
 ]

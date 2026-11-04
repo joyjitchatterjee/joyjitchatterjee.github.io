@@ -337,3 +337,25 @@ research-contribution group to the full Reckitt manufacturing record. Its propos
 data model, equipment-effectiveness applications and human oversight are described
 as a perspective, not evidence of realised financial savings. Preserve the optional
 showcase `download_id` reference when refreshing curated cases.
+
+
+## Leadership photo selection, 4 November 2026
+
+Reviewed all six new user-supplied photographs. Selected the British Data Awards
+2026 portrait as the opening image: Joyjit is the sole subject against the event
+backdrop. The caption explicitly says Data Leader of the Year (Partner) finalist.
+Selected the IEA panel photograph showing Joyjit holding the microphone for the
+lead speaking-gallery image and the related media card. Retained the earlier
+panel photograph in the gallery and all other existing images.
+
+Added the British Data Awards finalist card to the recognition photographs, and
+the supplied Education Times clipping to its existing article card. Original
+files are copied unchanged and tracked by filename, dimensions and SHA-256 in
+the source/media registries. The 2019 award group photograph was not selected
+because the award already has its plaque in the historical archive; the ornate
+room portrait was not selected because its event context is unconfirmed and the
+awards portrait provides a clearer professional introduction.
+
+Browser preview is unavailable (no enabled browser surfaces). Source photographs
+were visually inspected; responsive CSS, media references, generated pages and
+live deployment are checked separately.
