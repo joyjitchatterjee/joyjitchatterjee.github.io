@@ -188,3 +188,15 @@ references before publishing. Consult `docs/publication-audit-2026-11-04.md` for
 known source errors, author-list corrections and PDF reuse decisions. All 24
 matching LDR entries were already in the archive; do not duplicate them or infer
 authorship from chapters by others in an edited volume.
+
+## User-supplied local visual resources
+
+Media with `source_kind: user-provided` uses a source registry ID, a relative
+original filename/archive member and an original SHA-256 instead of invented
+public source URLs. Keep those provenance fields when refreshing content.
+`gallery: false` keeps award artefacts and case-study images out of the general
+speaking gallery. `media_id` in showcase cases and spotlight references connects
+them to the appropriate editorial feature. Preserve those references, captions
+and exact event roles. See the 4 November local-resource audit in
+`docs/content-audit.md` for selection decisions and files not intended for public
+release.

@@ -25,11 +25,13 @@
   "awards": [
     {
       "section": "awards",
-      "title": "Best International Knowledge Exchange Activity"
+      "title": "Best International Knowledge Exchange Activity",
+      "media_id": "hull-ke-award"
     },
     {
       "section": "awards",
-      "title": "Top-Cited Author"
+      "title": "Top-Cited Author",
+      "media_id": "wiley-certificate"
     },
     {
       "section": "awards",
@@ -37,19 +39,23 @@
     },
     {
       "section": "awards",
-      "title": "Alumni Achiever Award"
+      "title": "Alumni Achiever Award",
+      "media_id": "alumni-achiever-award"
     },
     {
       "section": "awards",
-      "title": "Young Researcher Award"
+      "title": "Young Researcher Award",
+      "media_id": "young-researcher-award"
     },
     {
       "section": "awards",
-      "title": "Gold Medal & University Topper"
+      "title": "Gold Medal & University Topper",
+      "media_id": "amity-gold-medal"
     },
     {
       "section": "awards",
-      "title": "Shri Baljit Shastri Award"
+      "title": "Shri Baljit Shastri Award",
+      "media_id": "shastri-award"
     }
   ],
   "forums": [
@@ -85,7 +91,16 @@
   "community": [
     {
       "section": "additional.extramural",
-      "title": "ICLR 2022 AI4Renewables Social Organiser"
+      "title": "ICLR 2022 AI4Renewables Social Organiser",
+      "media_id": "iclr-programme"
+    }
+  ],
+  "recognition_photos": [
+    {
+      "media_id": "green-talents-ceremony"
+    },
+    {
+      "media_id": "hull-ke-ceremony"
     }
   ]
 }

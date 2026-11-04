@@ -55,7 +55,13 @@
       "source": "cv-full-2026",
       "url": "https://www.hull.ac.uk/collaborate/services-for-business/work-with-our-experts",
       "label": "University of Hull partnership story",
-      "highlights": []
+      "highlights": [
+        {
+          "label": "Data scale reported in the Hull presentation",
+          "text": "60,000 stability-result data points · 1,000+ studies · 66 analytes"
+        }
+      ],
+      "media_id": "hull-rd-talk"
     },
     {
       "id": "manufacturing",

@@ -220,3 +220,53 @@ images were visually inspected; static page and responsive source checks were ru
 - Browser preview was unavailable in this session. Images and paper previews were
   inspected directly; automated checks cover generated paths, anchors, content,
   publication integrity and interactive behaviour, but not rendered viewport QA.
+
+## Local presentation and recognition resources, 4 November 2026
+
+Added 11 original images from the supplied files: two Hull speaking photographs,
+Green Talents virtual ceremony, Hull KE award presentation, six award artefacts,
+and the ICLR AI4Renewables programme poster. Individual images were extracted
+from the original Keynote archives rather than reproduced from the collages.
+JPEG derivatives preserve image content, are limited to 1600 pixels without
+upscaling, and were visually inspected. Original filenames and SHA-256 hashes
+are retained in the media/source registries. Local archive records do not invent
+an external source URL. All images open at full size with keyboard-accessible
+viewer controls and ordinary links as the fallback.
+
+The R&D case now shows its Hull presentation and the reported data scale:
+approximately 60,000 stability results, 1,000+ studies and 66 analytes. The
+unqualified 90% accuracy figure was omitted because its metric definition is
+not supplied. Annual business cases retain the user-confirmed evaluation basis.
+The slides confirm the Hull KTP talk on 11 October 2024 and the Turing Careers
+Roadshow on 4 December 2024. Added the Amul Vidya Bhushan award and supporting
+Wiley, Hull KE and IET professional-service details. Existing career, ETH
+aptitude-colloquium, publication and media records are preserved.
+
+Resource selection:
+- Joyjit-CareerPathinPixels and IndustryAcademiaRecognitions: selected original
+  award images, ceremony photographs and ICLR programme. Existing Forbes and
+  media features already cover the article screenshots; no duplicate collages.
+- IETVolunteering_Joyjit: the 17 May 2019 letter corroborates three years on the
+  Multimedia Communications Technical Network Executive Committee.
+- 20241011_105736.jpg and 20241011_105739.jpg: published in speaking and R&D.
+  20241011_110048.jpg is a wider duplicate and was not added.
+- JoyjitSlides_11Oct_Final.pptx and CareerJourney_DataScience_Joyjit.pdf:
+  source evidence for dates and work details. Raw presentation files are not
+  needed to substantiate the selected visual features.
+- ChangingFace_AI_TalkFinal_AwayDay.pdf: corroborates the existing January 2024
+  alumni talk; its older role descriptions do not replace the current profile.
+- AchieversAwardApplication_2024.pdf: reviewed as background only. It contains
+  private application details and is not proof of an award win; not published.
+- Joyjit-LinkedInBanner: old logo collage is less useful than precise current
+  roles, sourced records and photographs; not published.
+- TravelJoyjit-Researcher, GradCeremony-Joyjit2018 and HardWork-JoyjitStory:
+  reviewed for recognition/context; duplicate and personal travel imagery not
+  added. Graduation photographs show Joyjit's father collecting awards in his
+  absence and must not be labelled as photographs of Joyjit.
+- Joyjit_Recording.mp4: sampled as a school alumni message. Not selected for this
+  enterprise-focused update; audio was not transcribed or reviewed in full.
+
+No immigration letter, application reference, home address, date of birth, raw
+award application or raw CV was published. Browser preview was unavailable in
+this session; verification uses the repository's automated content, interaction,
+asset/link and deterministic-build checks, plus deployed-file verification.

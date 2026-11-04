@@ -209,6 +209,14 @@
             "Developed colleagues’ data and AI capabilities through learning sessions, specialist workshops and regular discussion."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Data scale and decision-support workflow",
+          "points": [
+            "The Hull presentation reports approximately 60,000 stability-result data points, more than 1,000 stability studies and 66 analytes.",
+            "The application predicts the shelf-life of active ingredients during new-product development and existing-product optimisation. Predictive outputs support formulation decisions alongside laboratory stability studies."
+          ],
+          "source": "local-resources-20261104"
         }
       ]
     },
@@ -1329,7 +1337,7 @@
     {
       "title": "Data Science Unplugged: My Career Journey of Learning, Building, and Leading",
       "venue": "Turing Careers Roadshow (Alan Turing Institute & University of Hull)",
-      "date": "Dec 2024",
+      "date": "4 Dec 2024",
       "status": "completed",
       "source": "cv-full-2026",
       "details": []
@@ -1361,10 +1369,19 @@
     {
       "title": "Translating Innovative Research to Tangible Value",
       "venue": "Research & Knowledge Exchange Strategy Week, University of Hull",
-      "date": "Oct 2024",
+      "date": "11 Oct 2024",
       "status": "completed",
       "source": "cv-full-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Presentation focus",
+          "points": [
+            "Presented experience as a KTP Associate, connecting AI research with shelf-life prediction and product-development decisions at Reckitt.",
+            "The supplied photographs show the talk at the University of Hull, with the R&D application and its evaluation-based business case on the presentation slides."
+          ],
+          "source": "local-resources-20261104"
+        }
+      ]
     },
     {
       "title": "Panel: EthonAI Expert Roundtable \"From Statistics to Causal AI\"",
@@ -1583,7 +1600,15 @@
       "date": "Jun 2023",
       "summary": "University of Hull award for global collaborations and impact in the KTP project",
       "source": "cv-full-2026",
-      "details": []
+      "details": [
+        {
+          "heading": "Award certificate",
+          "points": [
+            "The University of Hull Knowledge Exchange Awards certificate names Dr Joyjit Chatterjee as the winner for Best International KE Activity, recognising KTP activity. The certificate is dated 21 June 2023."
+          ],
+          "source": "local-resources-20261104"
+        }
+      ]
     },
     {
       "title": "Top-Cited Author",
@@ -1598,6 +1623,13 @@
             "The certificate shown in Amity’s official alumni magazine recognises a top-cited article in 2020–2021. This is journal-specific recognition, not an overall global author ranking."
           ],
           "source": "amity-chronicle-2023"
+        },
+        {
+          "heading": "Recognised publication",
+          "points": [
+            "The Wiley certificate identifies “Deep learning with knowledge transfer for explainable anomaly prediction in wind turbines” as a Top Cited Article for 2020–2021 in Wind Energy."
+          ],
+          "source": "local-resources-20261104"
         }
       ]
     },
@@ -1704,6 +1736,22 @@
       "summary": "Received a trophy of appreciation during the IET On Campus Regional Fest at Amity University for contributions as Technical Head.",
       "source": "cv-full-2026",
       "details": []
+    },
+    {
+      "title": "Amul Vidya Bhushan Award",
+      "organization": "Amul",
+      "date": "Apr 2015",
+      "summary": "Recognised for academic performance in the 2014 Class 12 examinations.",
+      "source": "linkedin-profile-2026",
+      "details": [
+        {
+          "heading": "Supporting evidence",
+          "points": [
+            "The supplied career collage includes a photograph with the Amul Vidya Bhushan certificate; the public LinkedIn awards record provides the April 2015 award date."
+          ],
+          "source": "local-resources-20261104"
+        }
+      ]
     }
   ],
   "certifications": [
@@ -2129,7 +2177,15 @@
           "date": "",
           "summary": "Executive Committee Member, IET Multimedia Communications Technical Professional Network (2016-2019)",
           "source": "portfolio-march-2026",
-          "details": []
+          "details": [
+            {
+              "heading": "Recognition of professional service",
+              "points": [
+                "An IET letter dated 17 May 2019 thanks me for three years of service on the Multimedia Communications Technical Network Executive Committee."
+              ],
+              "source": "local-resources-20261104"
+            }
+          ]
         },
         {
           "title": "UNA-UK",
