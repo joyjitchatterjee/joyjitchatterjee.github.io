@@ -25,6 +25,11 @@
   "awards": [
     {
       "section": "awards",
+      "title": "British Data Awards: Data Leader of the Year (Partner) Finalist",
+      "media_id": "british-data-awards-finalist"
+    },
+    {
+      "section": "awards",
       "title": "Best International Knowledge Exchange Activity",
       "media_id": "hull-ke-award"
     },
@@ -93,7 +98,7 @@
   ],
   "recognition_photos": [
     {
-      "media_id": "british-data-awards-finalist"
+      "media_id": "british-data-awards-portrait"
     },
     {
       "media_id": "green-talents-ceremony"

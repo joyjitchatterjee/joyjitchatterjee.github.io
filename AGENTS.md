@@ -204,8 +204,10 @@ release.
 ## Leadership positioning and stakeholder feedback
 
 The opening should prioritise enterprise leadership, executive engagement and
-recent recognition. The current hero uses the British Data Awards 2026 portrait;
-the IEA microphone photograph leads the speaking gallery. Keep the earlier KTP photo in the later gallery, not the
+recent recognition. The current hero uses the Forbes Under 30 Summit portrait, with the 2022 Europe
+listing distinguished from 2026 summit attendance. British Data Awards finalist
+recognition belongs later on the page. The IEA microphone photograph leads the
+speaking gallery. Keep the earlier KTP photo in the later gallery, not the
 hero. Retain academic and early-career achievements in the full archive without
 letting them dominate the first impression. Preserve exact job titles and
 speaker/panellist/attendee distinctions.
@@ -230,3 +232,15 @@ approach; do not invent product screenshots, simulation outcomes or dashboards.
 The negotiation platform uses game theory and conversational role-play simulations;
 stakeholders include buyers, category managers, senior IT product owners and
 platform teams. Its 2% business case still has an evaluation basis.
+
+
+## Compact homepage hierarchy
+
+Keep four enterprise cases in a compact two-column grid, with headline results
+visible and detailed contributions in disclosures. Avoid restoring a duplicate
+impact-metrics strip or large process-diagram panels. Keep the manufacturing paper
+link visible, with its full description inside the case details. Secondary
+feedback, training credentials and additional gallery photographs remain available
+in native disclosures; preserve their content during refreshes. The research
+library provides PDF previews, so avoid repeating the same paper in a separate
+oversized feature. Maintain full detail on profile.html and research.html.

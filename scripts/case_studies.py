@@ -9,7 +9,6 @@ def e(value): return html.escape(str(value), quote=True)
 def render_cases(cases, profile, media, downloads=()):
     papers = {x['id']: x for x in downloads}
     cards = ''
-    jump = ''
     for i, case in enumerate(cases):
         ref = case['record']
         record = profile_record(profile, ref)
@@ -17,21 +16,19 @@ def render_cases(cases, profile, media, downloads=()):
         home_record = {**record, 'details': [g for g in record.get('details', []) if g['heading'] != 'Data scale and decision-support workflow']}
         url = 'profile.html#'+record_anchor(ref['section'].removeprefix('additional.'), ref['title'])
         v = case['visual']
-        steps = ''.join(f'<li><span class="approach-dot">{n+1:02}</span><span>{e(step)}</span></li>' for n, step in enumerate(v['steps']))
-        visual = f'<div class="story-visual"><p class="eyebrow">Product & delivery approach</p><ol class="approach-map">{steps}</ol><div class="story-metric"><strong>{e(v["value"])}</strong><span>{e(v["label"])}</span></div></div>'
+        steps = ''.join(f'<li>{e(step)}</li>' for step in v['steps'])
+        visual = f'<div class="story-metric"><strong>{e(v["value"])}</strong><span>{e(v["label"])}</span></div>'
         highlights = ''.join(f'<div class="story-highlight"><h4>{e(x["label"])}</h4><p>{e(x["text"])}</p></div>' for x in case['highlights'])
         photo = ''
         if case.get('media_id'):
             m = media[case['media_id']]
             photo = '<figure class="story-evidence">'+image_link(m, 'View presentation photograph ↗')+'<figcaption>'+e(m['caption'])+'</figcaption></figure>'
-        detail = f'<details class="story-depth"><summary>Explore contribution, context & evidence <span aria-hidden="true">↗</span></summary><div class="story-depth-body">{highlights}{render_details(home_record,"Full responsibilities & project detail")}{photo}<a class="text-link" href="{e(case["url"])}">{e(case["label"])} ↗</a></div></details>'
         paper = ''
+        paper_detail = ''
         if case.get('download_id'):
             item = papers[case['download_id']]
-            publication = profile_record(profile, {'section':'publications', 'title':item['publication_title']})
-            paper = f'<aside class="story-paper" aria-label="Related research"><a href="{e(item["file"])}" aria-label="Read {e(item["publication_title"])}"><img src="{e(item["preview"])}" width="{item["preview_width"]}" height="{item["preview_height"]}" loading="lazy" alt="First page of the manufacturing AI preprint"></a><div><p class="eyebrow">Related research · {e(publication["venue"])} · {e(publication["date"])}</p><h4>{e(item["publication_title"])}</h4><p>{e(item["summary"])}</p><div class="story-paper-links"><a href="{e(item["file"])}">Read PDF ↗</a><a href="{e(item["file"])}" download>Download PDF</a><a href="research.html#download-{e(item["id"])}">Authors & publication details →</a></div></div></aside>'
-        basis = '<p class="story-basis">Financial business cases reflect opportunities assessed in evaluation.</p>' if case['id'] != 'enterprise-ai' else ''
-        cards += f'<article class="enterprise-story story-{e(case["id"])}" id="{e(case["id"])}"><div class="story-copy"><p class="eyebrow"><span class="story-index">0{i+1}</span> {e(case["kicker"])}</p><h3>{e(case["title"])}</h3><p class="story-summary">{e(case["summary"])}</p><p class="story-contribution">{e(case["contribution"])}</p><p class="story-outcome">{e(case["outcome"])}</p>{basis}<a class="text-link" href="{e(url)}">Full career record →</a></div>{visual}{paper}{detail}</article>'
-        label = {'enterprise-ai':'Strategy & delivery','procurement-ai':'Negotiation intelligence','rd-product':'R&D innovation','manufacturing':'Manufacturing'}[case['id']]
-        jump += f'<a href="#{e(case["id"])}"><span>0{i+1}</span>{label} ↗</a>'
-    return '<nav class="case-navigation" aria-label="Explore enterprise work">'+jump+'</nav><div class="enterprise-stories">'+cards+'</div>'
+            paper = f'<a class="story-paper-link" href="{e(item["file"])}"><img src="{e(item["preview"])}" width="{item["preview_width"]}" height="{item["preview_height"]}" loading="lazy" alt="Manufacturing AI paper preview"><span>Related paper · HAL preprint<strong>Trustworthy AI in factories · Read PDF ↗</strong></span></a>'
+            paper_detail = f'<div class="story-highlight"><h4>{e(item["publication_title"])}</h4><p>{e(item["summary"])}</p><div class="story-paper-links"><a href="{e(item["file"])}" download>Download PDF</a><a href="research.html#download-{e(item["id"])}">Authors & publication details →</a></div></div>'
+        detail = f'<details class="story-depth"><summary>Contribution & evidence <span aria-hidden="true">↗</span></summary><div class="story-depth-body"><p class="story-contribution">{e(case["contribution"])}</p><ul class="approach-map">{steps}</ul>{highlights}{paper_detail}{render_details(home_record,"Full responsibilities & project detail")}{photo}<a class="text-link" href="{e(url)}">Full career record →</a><a class="text-link" href="{e(case["url"])}">{e(case["label"])} ↗</a></div></details>'
+        cards += f'<article class="enterprise-story story-{e(case["id"])}" id="{e(case["id"])}"><div class="story-copy"><p class="eyebrow">{e(case["kicker"])}</p>{visual}<h3>{e(case["title"])}</h3><p class="story-summary">{e(case["summary"])}</p><p class="story-outcome">{e(case["outcome"])}</p>{paper}</div>{detail}</article>'
+    return '<div class="enterprise-stories">'+cards+'</div>'

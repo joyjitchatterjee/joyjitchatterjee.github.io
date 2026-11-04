@@ -359,3 +359,32 @@ awards portrait provides a clearer professional introduction.
 Browser preview is unavailable (no enabled browser surfaces). Source photographs
 were visually inspected; responsive CSS, media references, generated pages and
 live deployment are checked separately.
+
+## Forbes opening and compact homepage, 4 November 2026
+
+Switched the opening to the existing Forbes Under 30 Summit portrait at the user's
+request. The caption distinguishes the 2022 Europe Manufacturing & Industry
+listing from summit attendance in Phoenix in 2026. Removed finalist emphasis from
+the opening proof points and recognition strip. The British Data Awards portrait
+now appears among recognition photographs; its finalist card remains in the full
+recognition disclosure with the exact category and status.
+
+Reduced repeated homepage content and oversized layouts. Four enterprise cases
+now share a compact two-column grid, with headline results and summaries visible.
+Removed the duplicated five-metric strip and process-diagram panels. Contributions,
+methods, company context and responsibilities remain in disclosures. The Reckitt
+paper retains a visible PDF link, with its description and download in the case
+expansion. Financial figures retain the nearby evaluation-basis statement.
+
+The first three senior stakeholder perspectives remain visible; two additional
+perspectives are expandable. Secondary credentials and later gallery photographs
+are expandable too. All original photographs remain accessible. Media cards use
+smaller side previews; recognition images, the KTP certificate and research panels
+use tighter layouts. The paper library replaces the repeated standalone latest-PDF
+feature, and papers already in the library are not repeated in selected entries.
+
+Static comparison: default-visible main text decreased from 3,005 to 2,179 words
+(about 27%), and default-visible images from 30 to 23, without deleting supporting
+career records. This is a content comparison, not a measured scroll-height claim.
+All 48 automated tests pass, along with local asset/anchor checks, HTML nesting
+and deterministic generation. Browser viewport preview remains unavailable.
