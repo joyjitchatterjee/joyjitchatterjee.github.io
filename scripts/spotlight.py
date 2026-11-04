@@ -25,7 +25,7 @@ def load_spotlight(profile):
 
 def render_quotes(data):
     cards = ''.join(f'<figure class="evidence-quote"><figcaption><strong>{e(q["name"])}</strong><span>{e(q["context"])}</span></figcaption><blockquote>“{e(q["text"])}”</blockquote><a class="text-link" href="{e(q["url"])}">Read in context ↗</a></figure>' for q in data['quotes'])
-    return '<aside class="evidence-quotes wrap" aria-label="Recognition in their words">'+cards+'</aside>'
+    return '<aside class="evidence-quotes" aria-label="Recognition in their words">'+cards+'</aside>'
 
 def record_link(ref):
     return 'profile.html#'+record_anchor(ref['section'].removeprefix('additional.'), ref['title'])
@@ -45,7 +45,7 @@ def render_awards(data, profile, certificate, media):
     for ref in data.get('recognition_photos', []):
         m = media[ref['media_id']]
         moments += f'<figure class="recognition-moment moment-{e(m["id"])}">{image_link(m)}<figcaption><p class="eyebrow">{e(m["date"])}</p><h3>{e(m["title"])}</h3><p>{e(m["caption"])}</p></figcaption></figure>'
-    return '<div class="recognition-moments">'+moments+'</div>'+feature+'<div class="award-timeline"><h3>A wider record of recognition.</h3><ol>'+cards+'</ol><a class="text-link" href="profile.html#awards">All awards & recognition →</a></div>'
+    return '<div class="recognition-moments">'+moments+'</div>'+feature+'<details class="award-archive"><summary>Explore the full recognition record: awards, citations & academic distinctions</summary><div class="award-timeline"><h3>A wider record of recognition.</h3><ol>'+cards+'</ol><a class="text-link" href="profile.html#awards">All awards & recognition →</a></div></details>'
 
 def render_forums(data, profile, media):
     cards = ''

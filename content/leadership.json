@@ -1,0 +1,57 @@
+{
+  "feedback": [
+    {
+      "role": "VP, Business Development, EPAM",
+      "theme": "Credibility with senior stakeholders",
+      "summary": "Recognised for strong support across strategic pursuits, confidence in senior business discussions and credibility as a client-facing subject-matter expert.",
+      "source": "stakeholder-feedback-20261104"
+    },
+    {
+      "role": "Director, Project Management, EPAM",
+      "theme": "Strategy, clarity and collaboration",
+      "summary": "Commended for shaping reusable assets, translating complex solutions into clear client presentations, building confidence in the team’s capabilities and taking a proactive, collaborative approach.",
+      "source": "stakeholder-feedback-20261104"
+    },
+    {
+      "role": "IT&D Product Manager at Global CPG company",
+      "theme": "Ownership and dependable delivery",
+      "summary": "Described as highly dependable and dedicated, consistently exceeding expectations, taking full ownership of responsibilities and proactively addressing challenges to deliver commitments on time.",
+      "source": "stakeholder-feedback-20261104"
+    },
+    {
+      "role": "Former senior colleague, EPAM",
+      "theme": "Mentorship and rigorous thinking",
+      "summary": "Recognised for deep AI knowledge, applying academic rigour to business problems, mentoring colleagues and working effectively across stakeholders to help the team achieve its goals.",
+      "source": "stakeholder-feedback-20261104"
+    },
+    {
+      "role": "Professor, Loughborough University",
+      "theme": "Leadership across research and industry",
+      "summary": "Described as self-directed and reliable, combining practical AI expertise with original thinking, strong leadership skills and the ability to communicate complex ideas across technical and business audiences.",
+      "source": "stakeholder-feedback-20261104"
+    }
+  ],
+  "engagements": [
+    {
+      "title": "CIO & SVP engagement",
+      "role": "Executive presentations & knowledge exchange",
+      "text": "Presented AI innovation outcomes to SVP leaders across quality, supply and R&D, and engaged the CIO through global AI forums and TechTalks at Reckitt.",
+      "record": {"section": "experience", "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"},
+      "source": "cv-full-2026"
+    },
+    {
+      "title": "CXO Group roundtable",
+      "role": "Invited panellist · 2024",
+      "text": "Discussed next-generation AI products alongside industry leaders from Microsoft and Dell.",
+      "record": {"section": "talks", "title": "Panel: Next Gen AI Products"},
+      "source": "cv-full-2026"
+    },
+    {
+      "title": "FMCG CQO roundtable",
+      "role": "Speaker · 2024",
+      "text": "Presented AI for process verification to senior quality leaders from Unilever, ELC Europe, Sanofi, Haleon, Galderma and Kenvue.",
+      "record": {"section": "talks", "title": "AI for Continued Process Verification at Reckitt"},
+      "source": "cv-full-2026"
+    }
+  ]
+}

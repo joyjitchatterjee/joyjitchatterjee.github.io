@@ -1,0 +1,45 @@
+"""Anonymised stakeholder feedback and source-linked executive engagement."""
+import html
+import json
+from pathlib import Path
+from validate import profile_record
+from detail_views import record_anchor
+
+ROOT = Path(__file__).resolve().parents[1]
+ROLES = {
+    'VP, Business Development, EPAM',
+    'Director, Project Management, EPAM',
+    'IT&D Product Manager at Global CPG company',
+    'Former senior colleague, EPAM',
+    'Professor, Loughborough University',
+}
+def e(value): return html.escape(str(value), quote=True)
+
+def validate_leadership(data, profile):
+    sources = {x['id'] for x in json.loads((ROOT/'content/sources.json').read_text())}
+    for item in data['feedback']:
+        if set(item) != {'role', 'theme', 'summary', 'source'} or item['role'] not in ROLES:
+            raise ValueError('Feedback must use approved anonymous role attribution')
+        if not item['summary'].strip() or item['source'] not in sources:
+            raise ValueError('Feedback needs a summary and known evidence source')
+    for item in data['engagements']:
+        profile_record(profile, item['record'])
+        if item['source'] not in sources: raise ValueError('Unknown engagement source')
+    return data
+
+def load_leadership(profile):
+    return validate_leadership(json.loads((ROOT/'content/leadership.json').read_text()), profile)
+
+def render_engagements(data):
+    cards = ''
+    for item in data['engagements']:
+        ref = item['record']
+        url = 'profile.html#'+record_anchor(ref['section'].removeprefix('additional.'), ref['title'])
+        cards += f'<article><p class="eyebrow">{e(item["role"])}</p><h3>{e(item["title"])}</h3><p>{e(item["text"])}</p><a class="text-link" href="{e(url)}">Explore the context →</a></article>'
+    return f'<section class="executive-section wrap" id="executive-engagement"><div class="section-heading"><div><p class="eyebrow">Executive engagement & industry dialogue</p><h2>AI in the conversations<br>that shape business.</h2></div><a class="text-link" href="#speaking">International panels & talks ↓</a></div><div class="executive-grid">{cards}</div></section>'
+
+def render_feedback(data):
+    cards = ''
+    for item in data['feedback']:
+        cards += f'<article class="feedback-card"><p class="eyebrow">{e(item["theme"])}</p><p class="feedback-summary">{e(item["summary"])}</p><p class="feedback-role">{e(item["role"])}</p></article>'
+    return f'<section class="feedback-section" id="feedback"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">Stakeholder perspectives</p><h2>Trusted to deliver.<br>Respected as a collaborator.</h2></div><p>Anonymised summaries of feedback shared by senior stakeholders and collaborators. Individual perspectives, with names, client identities and project details omitted.</p></div><div class="feedback-grid">{cards}</div></div></section>'

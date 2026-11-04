@@ -408,5 +408,11 @@
         "sha256": "0cb765530df5bd867b6cebcf227fef8e2370bdc2a425ccd007e48132f6a17ee4"
       }
     ]
+  },
+  {
+    "id": "stakeholder-feedback-20261104",
+    "kind": "user-provided feedback",
+    "label": "Anonymised summaries of stakeholder feedback and professional recommendations supplied on 4 November 2026",
+    "accessed": "2026-11-04"
   }
 ]

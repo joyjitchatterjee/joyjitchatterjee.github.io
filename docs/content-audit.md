@@ -270,3 +270,37 @@ No immigration letter, application reference, home address, date of birth, raw
 award application or raw CV was published. Browser preview was unavailable in
 this session; verification uses the repository's automated content, interaction,
 asset/link and deterministic-build checks, plus deployed-file verification.
+
+## Leadership positioning and anonymous feedback, 4 November 2026
+
+Replaced the opening KTP photograph with the June 2025 IEA Wind Task 43 panel
+photograph. The caption identifies Joyjit as a panellist, second from left.
+The KTP photograph remains in the later gallery. The current role stays Lead
+Data Scientist; no executive job title, reporting line or budget ownership is
+invented. The opening now prioritises enterprise strategy, delivery, executive
+engagement and international speaking. Older academic distinctions remain in
+an expandable recognition archive and in the complete profile.
+
+Rechecked both extracted CVs for CIO/SVP and executive-event coverage. The
+records were already present but mostly nested in detail. Promoted CIO/SVP
+presentations and knowledge exchange, the CXO Group panel with Microsoft/Dell,
+and the FMCG CQO speaker engagement to a dedicated homepage section. Added the
+existing Global QC Excellence Forum record to the featured speaking list.
+EthonAI and IEA panels remain featured. Microsoft AI Partner Day and Oxford
+Science and Innovation Summit remain attendance records, not speaking claims.
+
+`content/leadership.json` holds five anonymised summaries, not verbatim quotes,
+of the feedback supplied in this conversation. Attributions use roles only:
+EPAM VP Business Development, EPAM Director Project Management, IT&D Product
+Manager at Global CPG company, former senior colleague at EPAM, and Professor
+at Loughborough University. The former colleague's EPAM title was not supplied;
+the current employer's Head of Data Platform title is not attributed to EPAM.
+No source screenshot, personal name, identifying recommendation URL, private
+client identity or project identifier from that feedback is stored or published.
+These are individual perspectives, not corporate endorsements. The 80% lab
+reduction in one recommendation is not added as a measured outcome, given the
+previously confirmed evaluation basis and absent scope/methodology.
+
+Preserve this separate editorial file during CV refreshes and reconcile its
+protected event references. Feedback attribution must remain role-only, and
+older photographs must not return to the hero during routine content imports.
