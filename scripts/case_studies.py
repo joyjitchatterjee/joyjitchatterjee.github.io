@@ -6,7 +6,8 @@ from spotlight import image_link
 
 def e(value): return html.escape(str(value), quote=True)
 
-def render_cases(cases, profile, media):
+def render_cases(cases, profile, media, downloads=()):
+    papers = {x['id']: x for x in downloads}
     cards = ''
     jump = ''
     for i, case in enumerate(cases):
@@ -24,8 +25,13 @@ def render_cases(cases, profile, media):
             m = media[case['media_id']]
             photo = '<figure class="story-evidence">'+image_link(m, 'View presentation photograph ↗')+'<figcaption>'+e(m['caption'])+'</figcaption></figure>'
         detail = f'<details class="story-depth"><summary>Explore contribution, context & evidence <span aria-hidden="true">↗</span></summary><div class="story-depth-body">{highlights}{render_details(home_record,"Full responsibilities & project detail")}{photo}<a class="text-link" href="{e(case["url"])}">{e(case["label"])} ↗</a></div></details>'
+        paper = ''
+        if case.get('download_id'):
+            item = papers[case['download_id']]
+            publication = profile_record(profile, {'section':'publications', 'title':item['publication_title']})
+            paper = f'<aside class="story-paper" aria-label="Related research"><a href="{e(item["file"])}" aria-label="Read {e(item["publication_title"])}"><img src="{e(item["preview"])}" width="{item["preview_width"]}" height="{item["preview_height"]}" loading="lazy" alt="First page of the manufacturing AI preprint"></a><div><p class="eyebrow">Related research · {e(publication["venue"])} · {e(publication["date"])}</p><h4>{e(item["publication_title"])}</h4><p>{e(item["summary"])}</p><div class="story-paper-links"><a href="{e(item["file"])}">Read PDF ↗</a><a href="{e(item["file"])}" download>Download PDF</a><a href="research.html#download-{e(item["id"])}">Authors & publication details →</a></div></div></aside>'
         basis = '<p class="story-basis">Financial business cases reflect opportunities assessed in evaluation.</p>' if case['id'] != 'enterprise-ai' else ''
-        cards += f'<article class="enterprise-story story-{e(case["id"])}" id="{e(case["id"])}"><div class="story-copy"><p class="eyebrow"><span class="story-index">0{i+1}</span> {e(case["kicker"])}</p><h3>{e(case["title"])}</h3><p class="story-summary">{e(case["summary"])}</p><p class="story-contribution">{e(case["contribution"])}</p><p class="story-outcome">{e(case["outcome"])}</p>{basis}<a class="text-link" href="{e(url)}">Full career record →</a></div>{visual}{detail}</article>'
+        cards += f'<article class="enterprise-story story-{e(case["id"])}" id="{e(case["id"])}"><div class="story-copy"><p class="eyebrow"><span class="story-index">0{i+1}</span> {e(case["kicker"])}</p><h3>{e(case["title"])}</h3><p class="story-summary">{e(case["summary"])}</p><p class="story-contribution">{e(case["contribution"])}</p><p class="story-outcome">{e(case["outcome"])}</p>{basis}<a class="text-link" href="{e(url)}">Full career record →</a></div>{visual}{paper}{detail}</article>'
         label = {'enterprise-ai':'Strategy & delivery','procurement-ai':'Negotiation intelligence','rd-product':'R&D innovation','manufacturing':'Manufacturing'}[case['id']]
         jump += f'<a href="#{e(case["id"])}"><span>0{i+1}</span>{label} ↗</a>'
     return '<nav class="case-navigation" aria-label="Explore enterprise work">'+jump+'</nav><div class="enterprise-stories">'+cards+'</div>'

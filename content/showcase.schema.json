@@ -94,6 +94,9 @@
               "steps"
             ],
             "additionalProperties": false
+          },
+          "download_id": {
+            "type": "string"
           }
         },
         "required": [

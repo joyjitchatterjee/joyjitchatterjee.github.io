@@ -21,7 +21,7 @@ def render(p,media,s,pubs,downloads=()):
     spotlight=load_spotlight(p)
     leadership=load_leadership(p)
     reach=load_reach();metric_date=dt.date.fromisoformat(reach['as_of']).strftime('%d %b %Y').lstrip('0');photos_by_id={m['id']:m for m in media};panel=photos_by_id['iea-panel']
-    cases=render_cases(s['cases'],p,photos_by_id)
+    cases=render_cases(s['cases'],p,photos_by_id,downloads)
     credentials=''.join(f'<article class="credential"><p class="eyebrow">{e(x["kicker"])}</p><h3>{e(x["title"])}</h3><p>{e(x["detail"])}</p><a href="{e(x["url"])}" aria-label="View details: {e(x["title"])}">View details ↗</a></article>' for x in s['credentials'])
     certifications=''.join(f'<li><a href="profile.html#{record_anchor("certifications",x["title"])}">{e(x["title"])}</a><span>{e(x["organization"])} · {e(x["date"])}</span></li>' for x in p['certifications'] if x['title'] in s['featured_certifications'])
     appearances=''

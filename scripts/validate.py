@@ -104,12 +104,14 @@ def validate_showcase(showcase,profile):
     check(showcase,json.loads((ROOT/'content/showcase.schema.json').read_text()))
     known={x['id'] for x in json.loads((ROOT/'content/sources.json').read_text())}
     media_ids={x['id'] for x in json.loads((ROOT/'content/media.json').read_text())}
+    download_ids={x['id'] for x in json.loads((ROOT/'content/downloads.json').read_text())}
     ids=[]
     def walk(item):
         if isinstance(item,list):
             for x in item:walk(x)
         elif isinstance(item,dict):
             if 'media_id' in item and item['media_id'] not in media_ids:raise ValueError('Unknown showcase media')
+            if 'download_id' in item and item['download_id'] not in download_ids:raise ValueError('Unknown showcase download')
             if 'source' in item and item['source'] not in known:raise ValueError('Unknown showcase source')
             if 'record' in item:profile_record(profile,item['record'])
             if 'id' in item:

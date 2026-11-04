@@ -45,3 +45,9 @@ class EvidenceReferenceTests(unittest.TestCase):
         showcase['cases'][0]['media_id'] = 'removed-photo'
         with self.assertRaisesRegex(ValueError, 'Unknown showcase media'):
             validate_showcase(showcase, self.profile)
+
+    def test_case_paper_reference_must_resolve(self):
+        showcase = json.loads((ROOT/'content/showcase.json').read_text())
+        showcase['cases'][0]['download_id'] = 'removed-paper'
+        with self.assertRaisesRegex(ValueError, 'Unknown showcase download'):
+            validate_showcase(showcase, self.profile)
