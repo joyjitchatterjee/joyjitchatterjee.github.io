@@ -325,3 +325,15 @@ existing Queen Mary speaking photograph beside anonymised stakeholder feedback.
 Verification: all 47 existing automated tests pass. Local path, anchor, heading,
 alt-text and no-em-dash checks pass. Browser viewport preview remains unavailable;
 there is no claim of desktop/mobile visual verification.
+
+## Reckitt manufacturing research attachment, 4 November 2026
+
+Connected the existing multimodal factories PDF to the Reckitt manufacturing
+case study with a visible preview, executive summary, read/download actions and
+publication-details link. Reused the audited original PDF and registry entry;
+no duplicate paper or asset was added. Read the supplied HAL paper and confirmed
+its Reckitt/Hull affiliations, September 2024 date and preprint status. Added a
+research-contribution group to the full Reckitt manufacturing record. Its proposed
+data model, equipment-effectiveness applications and human oversight are described
+as a perspective, not evidence of realised financial savings. Preserve the optional
+showcase `download_id` reference when refreshing curated cases.

@@ -163,6 +163,14 @@
             "Contributed case studies for Responsible AI training, educated supply-chain colleagues through workshops, and mentored graduates and interns while delegating appropriate tasks."
           ],
           "source": "cv-full-2026"
+        },
+        {
+          "heading": "Research contribution: trustworthy AI for manufacturing",
+          "points": [
+            "Coauthored “How Multimodal Data Can Enable Scalable and Trustworthy AI in Factories of The Future” with Rajendra Shankaran and Nina Dethlefs, published as a HAL preprint in September 2024. The paper lists Reckitt affiliations for both industry coauthors and the University of Hull for Dethlefs.",
+            "Proposed a holistic manufacturing data model connecting R&D, production, quality and logistics to support equipment effectiveness, process verification, predictive stability and cost-to-serve decisions. The perspective emphasises domain-expert validation, explainability and human oversight."
+          ],
+          "source": "pdf-multimodal-factories"
         }
       ]
     },
