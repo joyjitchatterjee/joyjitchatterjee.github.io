@@ -1949,7 +1949,7 @@
           "title": "GenAI negotiation intelligence platform",
           "organization": "Global consumer goods company",
           "date": "",
-          "summary": "Contributed to a GenAI negotiation intelligence platform for a global consumer goods company. Evaluation demonstrated savings potential equivalent to 2% of annual procurement spend.",
+          "summary": "Contributed to a GenAI negotiation intelligence platform using game theory and conversational role-play simulations for a global consumer goods company. Engaged buyers, category managers, senior IT product owners and platform team stakeholders. Evaluation demonstrated savings potential equivalent to 2% of annual procurement spend.",
           "source": "user-procurement-evaluation-2026",
           "details": [
             {
@@ -1959,6 +1959,14 @@
                 "Evaluation demonstrated savings potential equivalent to 2% of the company’s annual procurement spend. This represents potential benefits demonstrated in evaluation, not realised savings."
               ],
               "source": "user-procurement-evaluation-2026"
+            },
+            {
+              "heading": "Product approach and stakeholder engagement",
+              "points": [
+                "Used game theory and conversational role-play simulations within the negotiation intelligence platform.",
+                "Engaged buyers and category managers, senior IT product owners and platform team stakeholders."
+              ],
+              "source": "user-negotiation-methods-20261104"
             }
           ]
         }
