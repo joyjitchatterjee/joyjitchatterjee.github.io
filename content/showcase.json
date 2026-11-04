@@ -168,6 +168,25 @@
       "extra": []
     },
     {
+      "id": "hull-feature",
+      "title": "From a Hull PhD to enterprise AI leadership",
+      "format": "Alumni feature · University of Hull",
+      "date": "Apr 2025",
+      "summary": "The university highlights my doctoral research, highly cited publications, Forbes recognition and journey through KTP work to EPAM. Photograph: presenting the KTP project in March 2023.",
+      "url": "https://www.linkedin.com/posts/joyjitchatterjee_grateful-and-honored-university-of-hull-activity-7318958465819783168-wQl4",
+      "label": "Read Hull’s feature",
+      "source": "hull-alumni-feature-2025",
+      "image": {
+        "path": "assets/images/ktp-poster.jpg",
+        "alt": "Sharing AI shelf-life prediction research at the Hull KTP celebration, Aura Innovation Centre, March 2023.",
+        "width": 1200,
+        "height": 1600,
+        "source_url": "https://media.licdn.com/dms/image/v2/C4D22AQFnBInAAt27EA/feedshare-shrink_800/feedshare-shrink_800/0/1678223805866?e=2147483647&v=beta&t=8Oon4nQspP4WqtCVm-5omTHYNVJxH7eg2gmpfk2MeB0",
+        "accessed": "2026-11-04"
+      },
+      "extra": []
+    },
+    {
       "id": "podcast",
       "title": "Explainable AI and the Power of Quiet Thinking",
       "format": "Podcast · Low to Grow",
@@ -342,6 +361,25 @@
           "url": "https://ldr-lboro.github.io/"
         }
       ]
+    },
+    {
+      "id": "economic-times",
+      "title": "The global AI divide",
+      "format": "Coauthored commentary · Economic Times",
+      "date": "17 Apr 2022",
+      "summary": "With Nina Dethlefs, on the consequences of unequal AI adoption. Republished by Economic Times / ETAuto.",
+      "url": "https://auto.economictimes.indiatimes.com/news/industry/developing-countries-are-being-left-behind-in-the-ai-race-and-thats-a-problem-for-all-of-us/90892866",
+      "label": "Read the commentary",
+      "source": "economic-times-ai-perspective",
+      "image": {
+        "path": "",
+        "alt": "",
+        "width": 0,
+        "height": 0,
+        "source_url": "",
+        "accessed": ""
+      },
+      "extra": []
     }
   ],
   "book": {

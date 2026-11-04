@@ -76,5 +76,44 @@
     "accessed": "2026-11-03",
     "width": 1600,
     "height": 1063
+  },
+  {
+    "id": "ktp-poster",
+    "title": "AI research, ready for industry",
+    "caption": "Sharing AI shelf-life prediction research at the Hull KTP celebration, Aura Innovation Centre, March 2023. Joyjit Chatterjee, via LinkedIn.",
+    "date": "7 Mar 2023",
+    "image": "assets/images/ktp-poster.jpg",
+    "alt": "Sharing AI shelf-life prediction research at the Hull KTP celebration, Aura Innovation Centre, March 2023.",
+    "width": 1200,
+    "height": 1600,
+    "source_url": "https://www.linkedin.com/posts/joyjitchatterjee_ai-data-research-activity-7038980830068678656-1AGk",
+    "source_image_url": "https://media.licdn.com/dms/image/v2/C4D22AQFnBInAAt27EA/feedshare-shrink_800/feedshare-shrink_800/0/1678223805866?e=2147483647&v=beta&t=8Oon4nQspP4WqtCVm-5omTHYNVJxH7eg2gmpfk2MeB0",
+    "accessed": "2026-11-04"
+  },
+  {
+    "id": "ktp-certificate",
+    "title": "Outstanding KTP: Certificate of Excellence",
+    "caption": "Certificate of Excellence for the Reckitt–University of Hull KTP, graded Outstanding. Shared February 2024. Innovate UK certificate, shared by Joyjit Chatterjee.",
+    "date": "Shared Feb 2024",
+    "image": "assets/images/ktp-certificate.jpg",
+    "alt": "Certificate of Excellence for the Reckitt–University of Hull KTP, graded Outstanding. Shared February 2024.",
+    "width": 1132,
+    "height": 1600,
+    "source_url": "https://www.linkedin.com/posts/joyjitchatterjee_innovateuk-reckitt-universityofhull-activity-7165991095674257408-i5o_",
+    "source_image_url": "https://media.licdn.com/dms/image/v2/D4D22AQFjRAGbEglxNA/feedshare-shrink_800/feedshare-shrink_800/0/1708505412841?e=2147483647&v=beta&t=8OeEjrNAl8HZLOONYRuEEDN8VUdt9Hg7zaruXWQORVE",
+    "accessed": "2026-11-04"
+  },
+  {
+    "id": "hull-alumni-talk",
+    "title": "Returning to Hull as a distinguished alumni speaker",
+    "caption": "Delivering an invited Distinguished Alumni Talk at the University of Hull, 11 January 2024. Photos credited in Joyjit’s post to Nina Dethlefs and Koorosh Aslansefat.",
+    "date": "11 Jan 2024",
+    "image": "assets/images/hull-alumni-talk.jpg",
+    "alt": "Delivering an invited Distinguished Alumni Talk at the University of Hull, 11 January 2024.",
+    "width": 1600,
+    "height": 900,
+    "source_url": "https://www.linkedin.com/posts/joyjitchatterjee_alumnitalk-artificialintelligence-machinelearning-activity-7151220370199429120-_UxD",
+    "source_image_url": "https://media.licdn.com/dms/image/v2/D5622AQETRidVxNAiXg/feedshare-image-high-res/feedshare-image-high-res/0/1704983797451?e=2147483647&v=beta&t=ZIHhvDv_gH0pkqzSESlFEpjBIfunl8y0Tg4d6s0BtxU",
+    "accessed": "2026-11-04"
   }
 ]

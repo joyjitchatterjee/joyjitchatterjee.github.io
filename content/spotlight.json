@@ -1,0 +1,91 @@
+{
+  "quotes": [
+    {
+      "text": "His work has been recognized in awards granted by the IEEE UK and the German Federal Ministry of Education and Research.",
+      "name": "Forbes",
+      "context": "Editor profile · May 2022",
+      "url": "https://www.forbes.com/profile/joyjit-chatterjee/",
+      "source": "forbes-editor-profile"
+    },
+    {
+      "text": "Joyjit published several highly cited papers in AI and renewable energy.",
+      "name": "University of Hull",
+      "context": "Institutional alumni feature · 2025",
+      "url": "https://www.linkedin.com/posts/joyjitchatterjee_grateful-and-honored-university-of-hull-activity-7318958465819783168-wQl4",
+      "source": "hull-alumni-feature-2025"
+    },
+    {
+      "text": "you have also demonstrated how transformational a #KTP can be for a business.",
+      "name": "Ann Storey",
+      "context": "Knowledge Transfer Adviser · Personal comment on the KTP · 2023",
+      "url": "https://www.linkedin.com/posts/joyjitchatterjee_ktp-reckitt-universityofhull-activity-7113237803018117121-4Ze1",
+      "source": "ktp-adviser-comment"
+    }
+  ],
+  "awards": [
+    {
+      "section": "awards",
+      "title": "Best International Knowledge Exchange Activity"
+    },
+    {
+      "section": "awards",
+      "title": "Top-Cited Author"
+    },
+    {
+      "section": "awards",
+      "title": "UKRI Global Talent Endorsement"
+    },
+    {
+      "section": "awards",
+      "title": "Alumni Achiever Award"
+    },
+    {
+      "section": "awards",
+      "title": "Young Researcher Award"
+    },
+    {
+      "section": "awards",
+      "title": "Gold Medal & University Topper"
+    },
+    {
+      "section": "awards",
+      "title": "Shri Baljit Shastri Award"
+    }
+  ],
+  "forums": [
+    {
+      "section": "talks",
+      "title": "Panel: Next Gen AI Products"
+    },
+    {
+      "section": "talks",
+      "title": "Panel: EthonAI Expert Roundtable \"From Statistics to Causal AI\""
+    },
+    {
+      "section": "talks",
+      "title": "AI for Continued Process Verification at Reckitt"
+    },
+    {
+      "section": "talks",
+      "title": "Translating Innovative Research to Tangible Value"
+    },
+    {
+      "section": "talks",
+      "title": "Panel: The opportunities and challenges of generative AI in wind energy"
+    },
+    {
+      "section": "talks",
+      "title": "The Changing Face of AI Research: My learnings through evolution as an Early Career Researcher"
+    },
+    {
+      "section": "talks",
+      "title": "Transparent, Accurate and Scalable AI for Intelligent Decision Support in O&M of Wind Turbines"
+    }
+  ],
+  "community": [
+    {
+      "section": "additional.extramural",
+      "title": "ICLR 2022 AI4Renewables Social Organiser"
+    }
+  ]
+}
