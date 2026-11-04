@@ -398,3 +398,20 @@ humility. The reference to over 20 years of corporate experience describes the
 recommender, not Joyjit. The person's name, profile link, screenshot and personal
 family reference are omitted. Existing feedback remains available in the same
 compact section. The role is user-supplied; no additional title was inferred.
+
+
+## Restore visual sections outside experience, 4 November 2026
+
+The user clarified that compactness was wanted only for enterprise experience.
+Restored the preceding visual treatment of recognition, media, research, speaking
+and stakeholder feedback, including larger photographs, paper previews and the
+book feature. Removed the recently added wrappers around secondary feedback,
+credentials, selected publications and the later gallery. All six recommendations
+(including the Reckitt VP) and all ten gallery photographs are visible by default.
+The accepted compact experience markup and case renderer are unchanged.
+
+Removed 2022 from the opening Forbes image caption. The exact listing year remains
+in the detailed recognition record, and the photograph retains its distinct 2026
+summit context. The Forbes opening image and newer media additions are preserved.
+Verified HTML nesting, visible content and unchanged experience markup. Browser
+viewport preview remains unavailable; source/build and deployment checks apply.
