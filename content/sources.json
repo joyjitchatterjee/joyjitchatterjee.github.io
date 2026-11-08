@@ -450,5 +450,68 @@
     "kind": "user-provided feedback",
     "label": "Anonymised summary of a professional recommendation supplied by the user, with the role identified as VP, IT&D Digital - Supply Chain at Reckitt",
     "accessed": "2026-11-04"
+  },
+  {
+    "id": "research-impact-ucl",
+    "label": "Repositioning GenAI as a Dialogic Learning Partner",
+    "kind": "public web",
+    "url": "https://student-journals.ucl.ac.uk/rdl/article/id/1940/",
+    "accessed": "2026-11-08",
+    "notes": "The discussion connects the idea of a chatbot as a friend, guide or philosopher to students rehearsing seminar contributions. The paper explicitly cites Chatterjee and Dethlefs (2023)."
+  },
+  {
+    "id": "research-impact-phd-on-track",
+    "label": "Artificial Intelligence | PhD on Track",
+    "kind": "public web",
+    "url": "https://www.phdontrack.net/good-research-practices/artificial-intelligence/",
+    "accessed": "2026-11-08",
+    "notes": "The Opportunities section quotes the title of our Patterns paper under LLMs as conversation partners. UiT describes PhD on Track as a collaboration between five Norwegian university libraries."
+  },
+  {
+    "id": "research-impact-oup",
+    "label": "From villain to VIP: institutional responses to generative AI in higher education",
+    "kind": "public web",
+    "url": "https://doi.org/10.1093/jpo/joag010",
+    "accessed": "2026-11-08",
+    "notes": "Published in the Journal of Professions and Organization, October 2026. The theoretical discussion and analysis reference Chatterjee and Dethlefs (2023) on human-like qualities and roles attributed to AI."
+  },
+  {
+    "id": "research-impact-sutd",
+    "label": "Codesign and AI: AI-assisted clustering of perception patterns of seniors on ageing and technology in Singapore",
+    "kind": "public web",
+    "url": "https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/codesign-and-ai-aiassisted-clustering-of-perception-patterns-of-seniors-on-ageing-and-technology-in-singapore/00BB8CF3D12A2E6DB003411CA7AC7E7C",
+    "accessed": "2026-11-08",
+    "notes": "Section 3.2 references Chatterjee and Dethlefs (2023) while describing the structured procedure and SCOPE framework for AI prompting. Published by Cambridge University Press in Proceedings of the Design Society."
+  },
+  {
+    "id": "research-impact-frontiers",
+    "label": "Renewable energy management using explainable artificial intelligence",
+    "kind": "public web",
+    "url": "https://doi.org/10.3389/fenrg.2026.1753200",
+    "accessed": "2026-11-08",
+    "notes": "Tables 3 and 11 and the wind-energy discussion assess our 2020 Wind Energy paper, including feature importance for fault diagnosis. This is an independent review of the method, not a new deployment claim."
+  },
+  {
+    "id": "research-impact-jmir",
+    "label": "Identification and Categorization of the Top 100 Articles and the Future of Large Language Models: Thematic Analysis Using Bibliometric Analysis",
+    "kind": "public web",
+    "url": "https://doi.org/10.2196/68603",
+    "accessed": "2026-11-08",
+    "notes": "Our paper is reference 80, within the reviewed technology and information sciences group. The discussion cites it on human oversight. The 100-publication selection belongs to this study and its search criteria, rather than a current universal ranking."
+  },
+  {
+    "id": "research-impact-gi",
+    "label": "ABIS@WebSci 2026: The Effects of the Adaptive Web on Society",
+    "kind": "public web",
+    "url": "https://fg-abis.gi.de/en/activities/summaries-reflections/abiswebsci-2026-the-effects-of-the-adaptive-web-on-society",
+    "accessed": "2026-11-08",
+    "notes": "The official workshop reflection names all four co-authors and describes stepwise confirmation and escalation in the proposed system. It discusses human agency in algorithmically managed work environments."
+  },
+  {
+    "id": "phd-on-track-library-context",
+    "label": "UiT: PhD on Track university library collaboration",
+    "kind": "public web",
+    "url": "https://en.uit.no/ub/kurs/sub?p_document_id=769894",
+    "accessed": "2026-11-08"
   }
 ]

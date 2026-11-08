@@ -249,3 +249,27 @@ selected publications and gallery photographs without new enclosing disclosures.
 Retain the large latest-paper preview and book feature. Existing detailed career
 and historical-award disclosures can remain. Maintain full records on profile.html
 and research.html, including the latest Reckitt VP recommendation.
+
+## Independent research impact and proactive discovery
+
+On future website update requests, include a targeted discovery pass for new public
+mentions and independent uses of Joyjit's work, not just CV changes or citation
+counts. Search name variants and exact paper titles/DOIs across university teaching
+and doctoral guidance, citing studies and systematic reviews, professional bodies,
+industry publications, news, interviews, event reports and public social posts.
+Prioritise primary institutional, publisher and organiser sources. Check identity,
+co-authorship, dates and the surrounding citation context before adding a claim.
+A bibliography entry alone does not prove adoption, a partnership or endorsement.
+Distinguish quotation, methodological use, review inclusion and workshop discussion;
+retain the scope and observation date for bibliometric rankings. Do not imply a
+publisher is the research institution. Do not infer conference attendance from a
+paper mention. Record inaccessible sources and uncertainty rather than inventing
+verification. This is part of requested refreshes, not a scheduled background job.
+
+`content/research-impact.json` contains the independently sourced impact examples,
+with exact publication references, evidence context and source registry IDs. It is
+curated outside CV imports and rendered on both the homepage and research page.
+Keep all examples readable by default, with optional supporting context and links
+to both the independent source and original co-authored paper. Reconcile exact
+publication titles if the profile changes. Read `docs/research-impact-audit-2026-11-08.md`
+for the initial audit. Record new discoveries and corrections in the update report.

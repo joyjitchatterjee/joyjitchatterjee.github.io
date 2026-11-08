@@ -1,0 +1,96 @@
+{
+  "verified_on": "2026-11-08",
+  "entries": [
+    {
+      "id": "ucl",
+      "organization": "University College London",
+      "context": "United Kingdom · 2026",
+      "category": "Higher education",
+      "title": "AI as a learning partner",
+      "summary": "A UCL Changemakers study cites my work with Nina Dethlefs when exploring how conversational AI can support student confidence, seminar preparation and participation.",
+      "source_title": "Repositioning GenAI as a Dialogic Learning Partner",
+      "url": "https://student-journals.ucl.ac.uk/rdl/article/id/1940/",
+      "evidence": "The discussion connects the idea of a chatbot as a friend, guide or philosopher to students rehearsing seminar contributions. The paper explicitly cites Chatterjee and Dethlefs (2023).",
+      "publication_title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "source": "research-impact-ucl"
+    },
+    {
+      "id": "phd-on-track",
+      "organization": "Norwegian university libraries",
+      "context": "Norway",
+      "category": "Doctoral guidance",
+      "title": "Quoted in guidance for PhD researchers",
+      "summary": "PhD on Track quotes our conversational AI paper in its guidance on research practice, bringing the work into a resource designed for doctoral researchers.",
+      "source_title": "Artificial Intelligence | PhD on Track",
+      "url": "https://www.phdontrack.net/good-research-practices/artificial-intelligence/",
+      "evidence": "The Opportunities section quotes the title of our Patterns paper under LLMs as conversation partners. UiT describes PhD on Track as a collaboration between five Norwegian university libraries.",
+      "publication_title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "source": "research-impact-phd-on-track"
+    },
+    {
+      "id": "oup",
+      "organization": "Oxford University Press",
+      "context": "Swedish university study · 2026",
+      "category": "Organisational change",
+      "title": "How universities respond to generative AI",
+      "summary": "A study of three Swedish universities cites our work in its analysis of how people understand and relate to conversational AI, from initial suspicion to acceptance as a colleague or collaborator.",
+      "source_title": "From villain to VIP: institutional responses to generative AI in higher education",
+      "url": "https://doi.org/10.1093/jpo/joag010",
+      "evidence": "Published in the Journal of Professions and Organization, October 2026. The theoretical discussion and analysis reference Chatterjee and Dethlefs (2023) on human-like qualities and roles attributed to AI.",
+      "publication_title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "source": "research-impact-oup"
+    },
+    {
+      "id": "sutd",
+      "organization": "Singapore University of Technology and Design",
+      "context": "Singapore · 2025",
+      "category": "Inclusive design",
+      "title": "AI-assisted research on ageing and technology",
+      "summary": "Researchers at SUTD and collaborating institutions cite our work in developing an AI prompting procedure for analysing older adults’ perceptions of ageing and technology.",
+      "source_title": "Codesign and AI: AI-assisted clustering of perception patterns of seniors on ageing and technology in Singapore",
+      "url": "https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/codesign-and-ai-aiassisted-clustering-of-perception-patterns-of-seniors-on-ageing-and-technology-in-singapore/00BB8CF3D12A2E6DB003411CA7AC7E7C",
+      "evidence": "Section 3.2 references Chatterjee and Dethlefs (2023) while describing the structured procedure and SCOPE framework for AI prompting. Published by Cambridge University Press in Proceedings of the Design Society.",
+      "publication_title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "source": "research-impact-sutd"
+    },
+    {
+      "id": "frontiers",
+      "organization": "Frontiers in Energy Research",
+      "context": "International · 2026",
+      "category": "Renewable energy",
+      "title": "Explainable AI assessed in a systematic review",
+      "summary": "A review of 48 studies includes our wind-turbine anomaly prediction research. Its comparative analysis highlights fault explanations that align with human analysis.",
+      "source_title": "Renewable energy management using explainable artificial intelligence",
+      "url": "https://doi.org/10.3389/fenrg.2026.1753200",
+      "evidence": "Tables 3 and 11 and the wind-energy discussion assess our 2020 Wind Energy paper, including feature importance for fault diagnosis. This is an independent review of the method, not a new deployment claim.",
+      "publication_title": "Deep learning with knowledge transfer for explainable anomaly prediction in wind turbines",
+      "source": "research-impact-frontiers"
+    },
+    {
+      "id": "jmir",
+      "organization": "JMIR AI",
+      "context": "International · 2025",
+      "category": "Responsible AI",
+      "title": "Among 100 highly cited LLM publications studied",
+      "summary": "An independent bibliometric study includes our early ChatGPT paper among the publications it analyses, citing its emphasis on human oversight for reliable AI outputs.",
+      "source_title": "Identification and Categorization of the Top 100 Articles and the Future of Large Language Models: Thematic Analysis Using Bibliometric Analysis",
+      "url": "https://doi.org/10.2196/68603",
+      "evidence": "Our paper is reference 80, within the reviewed technology and information sciences group. The discussion cites it on human oversight. The 100-publication selection belongs to this study and its search criteria, rather than a current universal ranking.",
+      "publication_title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "source": "research-impact-jmir"
+    },
+    {
+      "id": "gi",
+      "organization": "German Informatics Society",
+      "context": "Germany · 2026",
+      "category": "Human-centred systems",
+      "title": "ReActV in the discussion on human agency",
+      "summary": "The society’s adaptive and interactive systems group discusses our co-authored ReActV delivery-planning research as an example of AI supporting workers while retaining human intervention and control.",
+      "source_title": "ABIS@WebSci 2026: The Effects of the Adaptive Web on Society",
+      "url": "https://fg-abis.gi.de/en/activities/summaries-reflections/abiswebsci-2026-the-effects-of-the-adaptive-web-on-society",
+      "evidence": "The official workshop reflection names all four co-authors and describes stepwise confirmation and escalation in the proposed system. It discusses human agency in algorithmically managed work environments.",
+      "publication_title": "Structuring the Last Mile with ReActV: Tool-Augmented Delivery Planning with Verification",
+      "source": "research-impact-gi"
+    }
+  ]
+}
