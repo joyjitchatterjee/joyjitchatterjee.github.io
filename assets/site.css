@@ -138,3 +138,28 @@
 @media(max-width:420px){.story-metric{gap:12px}.story-enterprise-ai .story-metric strong,.story-rd-product .story-metric strong{font-size:25px}}
 @media(min-width:1001px){.recognition-moments{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media print{.story-depth-body{display:block}.enterprise-stories,.feedback-editorial{display:block}.enterprise-story{break-inside:avoid;margin-bottom:20px}.feedback-photo{display:none}}
+
+/* Independent research impact: all examples visible, supporting context expandable. */
+.research-impact-stories{padding:24px 0 48px;margin-bottom:30px}
+.research-impact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.impact-introduction{grid-column:span 2;padding:18px 30px 24px 0}
+.impact-introduction h2{font-size:clamp(2.4rem,3.8vw,3.8rem);margin-bottom:24px}
+.impact-introduction>p:not(.eyebrow){font-size:15px;max-width:640px;margin-top:16px}
+.research-impact-card{min-width:0;padding:26px;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--accent);color:var(--ink)}
+.research-impact-card .eyebrow{font-size:10px;margin-bottom:15px;color:var(--accent)}
+.research-impact-card .impact-institution{font-size:14px;font-weight:650;line-height:1.5;color:var(--ink)}
+.research-impact-card .impact-location{font-size:11px;margin-top:5px}
+.research-impact-card h3{font:26px/1.18 var(--serif);margin:20px 0 16px}
+.research-impact-card p{font-size:13px;color:var(--muted)}
+.research-impact-card>.text-link{margin-top:20px;font-size:12px}
+.impact-evidence{margin-top:20px;padding-top:14px;border-top:1px solid var(--line)}
+.impact-evidence summary{font-size:12px;font-weight:600;cursor:pointer}
+.impact-evidence p{margin-top:14px;font-size:12px;overflow-wrap:anywhere}
+.impact-closing{font:italic 20px/1.6 var(--serif);max-width:820px;margin-top:30px}
+.research-section .research-impact-card p{color:var(--muted)}
+.research-section .research-impact-card .impact-institution{color:var(--ink)}
+.research-section .research-impact-card .eyebrow{color:var(--accent)}
+.research-section .research-impact-card .text-link:hover{color:var(--accent)}
+@media(max-width:1000px){.research-impact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-introduction{grid-column:1/-1;padding-right:0}}
+@media(max-width:600px){.research-impact-grid{grid-template-columns:1fr}.research-impact-card{padding:23px}.impact-introduction h2{font-size:2.6rem}}
+@media print{.research-impact-grid{display:block}.research-impact-card{break-inside:avoid;margin-bottom:15px}.impact-evidence>p{display:block}}

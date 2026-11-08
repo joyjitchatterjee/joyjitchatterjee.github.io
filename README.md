@@ -149,3 +149,15 @@ isolated builds copy the PDFs with the other public assets.
 
 GitHub is now a footer link and optional supporting resource on the research page.
 It is no longer a primary navigation action or homepage section.
+
+## Independent research impact and future updates
+
+The homepage and [research page](https://joyjitchatterjee.github.io/research.html#research-in-practice)
+show independent references to the work in education, research and professional
+communities. `content/research-impact.json` stores the verified context and links;
+`content/sources.json` records provenance. These are preserved outside CV imports.
+
+Future website refreshes with Codex include searching for new academic, industry,
+media, event and public social mentions, as instructed in `AGENTS.md`. A CV import
+report also prompts this discovery pass. The standalone importer does not browse
+the web, and no recurring background task is configured.

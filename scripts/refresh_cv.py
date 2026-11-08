@@ -99,6 +99,7 @@ def compare(before,after):
         if changed:changes.append('- Reconcile content/showcase.json with changed record: '+item['record']['title'])
     rows+=changes or ['No changes to records referenced by the curated homepage.']
     rows+=['','Always check newly added achievements for homepage relevance; the coverage list protects existing highlights but cannot detect facts omitted during extraction.']
+    rows+=['','## Independent impact and public mentions','', 'During the Codex editorial refresh, search for new independent uses of the research and public mentions across university teaching and doctoral resources, citing studies and reviews, professional bodies, industry news, media, events and public social posts. Follow AGENTS.md and docs/research-impact-audit-2026-11-08.md. Verify the original source and context; preserve content/research-impact.json and reconcile its publication references. Record additions, corrections and inaccessible sources in the update report. The standalone CV importer does not perform this web research.']
     return '\n'.join(rows)+'\n'
 
 def removals(before,after):
