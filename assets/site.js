@@ -80,17 +80,3 @@ for (const button of document.querySelectorAll('[data-copy-pdf]')) {
     }
   });
 }
-
-
-// Old homepage links still lead directly to the relocated detail.
-const legacyRoutes = document.getElementById('legacy-routes');
-if (legacyRoutes) {
-  const routes = JSON.parse(legacyRoutes.textContent);
-  const followLegacyLink = () => {
-    let anchor;
-    try { anchor = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
-    if (Object.hasOwn(routes, anchor)) window.location.replace(routes[anchor]);
-  };
-  followLegacyLink();
-  window.addEventListener('hashchange', followLegacyLink);
-}

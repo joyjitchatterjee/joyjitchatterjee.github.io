@@ -1,54 +1,38 @@
-"""The shorter homepage must not lose evidence or strand shared links."""
-import html
-import json
-import sys
-import unittest
+"""Protect the restored visual homepage and visible event photographs."""
+import html,json,sys,unittest
 from pathlib import Path
-from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from check_site import Document,check_site
-
+from check_site import check_site
 class PortfolioNavigationTests(unittest.TestCase):
-    def test_all_pages_and_legacy_destinations_resolve(self):
+    def test_restored_navigation_and_compatibility_routes(self):
         check_site(ROOT)
         home=(ROOT/'index.html').read_text()
-        raw=home.split('<script type="application/json" id="legacy-routes">')[1].split('</script>')[0]
-        routes=json.loads(raw)
-        self.assertEqual(routes['procurement-ai'],'work.html#procurement-ai')
-        self.assertEqual(routes['impact-ucl'],'research.html#impact-ucl')
-        for target in routes.values():
-            page,anchor=target.split('#')
-            self.assertIn(anchor,Document((ROOT/page).read_text()).ids)
-        for page in ['work','recognition','speaking','research','profile']:
+        for anchor in ['work','feedback','speaking','recognition','media','research','latest-events']:
+            self.assertIn('id="'+anchor+'"',home)
+        self.assertIn('href="index.html#work"',home)
+        self.assertNotIn('id="legacy-routes"',home)
+        for page,anchor in [('work','work'),('recognition','recognition'),('speaking','speaking')]:
             text=(ROOT/(page+'.html')).read_text()
-            self.assertIn(f'href="{page}.html" aria-current="page"',text)
-            self.assertIn(f'href="{page}.html"',home)
-
-    def test_all_gallery_media_feedback_and_research_survive_the_move(self):
-        speaking=(ROOT/'speaking.html').read_text()
-        recognition=(ROOT/'recognition.html').read_text()
-        research=html.unescape((ROOT/'research.html').read_text())
-        work=html.unescape((ROOT/'work.html').read_text())
+            self.assertIn('id="restored-home" href="index.html#'+anchor+'"',text)
+            self.assertIn('src="assets/restore-route.js"',text)
+    def test_full_visual_evidence_stays_on_homepage(self):
+        home=html.unescape((ROOT/'index.html').read_text())
         for item in json.loads((ROOT/'content/media.json').read_text()):
             if item['id']!='ktp-certificate' and item.get('gallery',True):
-                self.assertIn('photo-'+item['id'],speaking)
+                self.assertIn('photo-'+item['id'],home)
         for item in json.loads((ROOT/'content/showcase.json').read_text())['appearances']:
-            self.assertIn('id="'+item['id']+'"',speaking)
+            self.assertIn('id="'+item['id']+'"',home)
         for item in json.loads((ROOT/'content/leadership.json').read_text())['feedback']:
-            self.assertIn(item['summary'],work)
-            self.assertIn(item['role'],work)
+            self.assertIn(item['summary'],home)
         for item in json.loads((ROOT/'content/research-impact.json').read_text())['entries']:
-            self.assertIn(item['summary'],research)
-        self.assertIn('book-feature',research)
-        self.assertIn('paper-visual',research)
-        self.assertIn('innovation-awards-2026.jpg',recognition)
-
-    def test_home_stays_a_concise_overview(self):
+            self.assertIn(item['summary'],home)
+        for cls in ['book-feature','paper-visual','photo-gallery','credential-grid','appearance-grid','enterprise-stories']:
+            self.assertIn('class="'+cls,home)
+    def test_new_events_have_original_photos_and_full_post_links(self):
         home=(ROOT/'index.html').read_text()
-        self.assertLess(home.count('<img '),7)
-        self.assertLess(len(home),20000)
-        for section in ['photo-gallery','appearance-grid','research-impact-grid','award-timeline']:
-            self.assertNotIn('class="'+section+'"',home)
-        for highlight in ['Forbes','ETH Zurich','Outstanding','Green Talents','Barclays','evaluated business case']:
-            self.assertIn(highlight,home)
+        for name in ['barclays-panel-2026','innovation-awards-portrait','innovation-awards-2026']:
+            self.assertIn('src="assets/images/'+name+'.jpg"',home)
+        for post in ['3n24caf3iak25','3n2azgtu67c2z']:
+            self.assertIn('href="https://bsky.app/profile/joyjitchat.bsky.social/post/'+post+'"',home)
+        self.assertIn('href="#latest-events"',home)

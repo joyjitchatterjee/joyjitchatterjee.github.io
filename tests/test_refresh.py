@@ -70,7 +70,7 @@ class ContentTests(unittest.TestCase):
                 for detail in item['details']:
                     for point in detail['points']:self.assertIn(point,page)
         for name in ['Qatar Airways','Unilever','Barry Callebaut','Brussels Airport Company','Cleveland Clinic Abu Dhabi','Adidas','Co-op','Currys','PPG Industries','Reckitt','Syngenta Group']:
-            self.assertIn(name,pages['work.html'])
+            self.assertIn(name,pages['index.html'])
     def test_empty_detail_group_rejected(self):
         self.profile['experience'][0]['details'][0]['points']=[]
         with self.assertRaisesRegex(ValueError,'Empty detail'):validate_profile(self.profile)

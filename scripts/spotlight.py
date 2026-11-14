@@ -21,6 +21,7 @@ def load_spotlight(profile):
     for ref in data['awards'] + data['community'] + data.get('recognition_photos', []):
         if 'media_id' in ref and ref['media_id'] not in media_ids:
             raise ValueError('Unknown spotlight media')
+    if any(id not in media_ids for id in data.get("recent_media", [])):raise ValueError("Unknown recent event media")
     return data
 
 def render_quotes(data):
@@ -66,3 +67,11 @@ def render_library(downloads, profile):
         p = publications[item['publication_title']]
         cards += f'<a class="library-paper" href="research.html#download-{e(item["id"])}"><img src="{e(item["preview"])}" width="{item["preview_width"]}" height="{item["preview_height"]}" loading="lazy" alt="First page of {e(item["publication_title"])}"><span class="eyebrow">{e(p["type"])} · {e(p["date"])}</span><h3>{e(item["publication_title"])}</h3><span class="text-link">Read, download & share ↗</span></a>'
     return '<div class="paper-library"><h3>Open papers. Ready to share.</h3><div class="library-grid">'+cards+'</div></div>'
+
+
+def render_recent(data, media):
+    cards=''
+    for id in data.get('recent_media', []):
+        m=media[id]
+        cards+=f'<figure class="recent-event photo-{e(id)}">{image_link(m, "View full photograph ↗")}<figcaption><p class="eyebrow">{e(m["date"])}</p><h3>{e(m["title"])}</h3><p>{e(m["caption"])}</p><a class="text-link" href="{e(m["source_url"])}">Read the full post & see its photographs ↗</a></figcaption></figure>'
+    return '<div class="latest-events" id="latest-events"><h3>Recent events, in pictures.</h3><div class="recent-event-grid">'+cards+'</div></div>'
