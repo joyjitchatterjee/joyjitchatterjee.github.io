@@ -316,3 +316,9 @@ Record the channels searched, full posts read, image counts inspected/selected,
 new items added, already-covered items, verification dates and access limitations.
 Do not promise literally complete internet coverage: report the actual scope and
 unresolved gaps candidly. Preserve these instructions during later CV imports.
+
+Keep photographs from the same event together in the relevant main section.
+In particular, the Innovation Awards standing portrait and awards-screen photo
+must both appear in Recognition, with the standing portrait leading the award
+entry. A portrait placed only in the later Recent events section is insufficient.
+The user should not have to search a second section for the other event images.
