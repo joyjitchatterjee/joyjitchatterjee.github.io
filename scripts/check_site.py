@@ -20,7 +20,7 @@ class Document(HTMLParser):
         if any(k.startswith('on') for k in a):raise ValueError('Unexpected inline event handler')
 def check_site(root):
     root=Path(root)
-    pages={name:Document((root/name).read_text()) for name in ['index.html','research.html','profile.html']}
+    pages={name:Document((root/name).read_text()) for name in ['index.html','research.html','profile.html','work.html','recognition.html','speaking.html']}
     for name,doc in pages.items():
         if doc.h1!=1 or doc.titles!=1:raise ValueError(name+': needs exactly one h1 and title')
         if len(doc.ids)!=len(set(doc.ids)):raise ValueError(name+': duplicate IDs')
@@ -34,5 +34,5 @@ def check_site(root):
             resolved=(root/target).resolve()
             if not resolved.is_relative_to(root.resolve()) or not resolved.exists():raise ValueError(name+': broken local path '+link)
             if u.fragment and target in pages and u.fragment not in pages[target].ids:raise ValueError(name+': missing anchor '+link)
-    print('3 pages checked: local paths, anchors, headings, image alternatives and URL schemes')
+    print('6 pages checked: local paths, anchors, headings, image alternatives and URL schemes')
 if __name__=='__main__':check_site(Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parents[1])

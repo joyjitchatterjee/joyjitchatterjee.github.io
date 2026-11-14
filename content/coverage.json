@@ -4,7 +4,7 @@
       "section": "experience",
       "title": "Lead Data Scientist"
     },
-    "surface": "index.html",
+    "surface": "work.html",
     "reason": "Shaping AI opportunities into deliverable programmes"
   },
   {
@@ -12,7 +12,7 @@
       "section": "experience",
       "title": "IT & Digital Data Scientist - R&D / KTP Associate"
     },
-    "surface": "index.html",
+    "surface": "work.html",
     "reason": "From laboratory research to a production application"
   },
   {
@@ -20,7 +20,7 @@
       "section": "experience",
       "title": "IT & Digital Data Scientist - Supply Chain / Senior Business Analyst"
     },
-    "surface": "index.html",
+    "surface": "work.html",
     "reason": "Making manufacturing data useful for decisions"
   },
   {
@@ -28,7 +28,7 @@
       "section": "awards",
       "title": "British Data Awards: Data Leader of the Year (Partner) Finalist"
     },
-    "surface": "index.html",
+    "surface": "recognition.html",
     "reason": "British Data Awards 2026"
   },
   {
@@ -60,7 +60,7 @@
       "section": "additional.reviews",
       "title": "External Evaluator and Reviewer: NGI Search"
     },
-    "surface": "index.html",
+    "surface": "recognition.html",
     "reason": "European Commission programme"
   },
   {
@@ -76,7 +76,7 @@
       "section": "additional.reviews",
       "title": "Co-editor: Renewable Energy Transition with Artificial Intelligence: Challenge-driven Solutions"
     },
-    "surface": "index.html",
+    "surface": "research.html",
     "reason": "Renewable Energy Transition with Artificial Intelligence"
   },
   {
@@ -140,7 +140,7 @@
       "section": "certifications",
       "title": "Claude Certified Architect (Foundations)"
     },
-    "surface": "index.html",
+    "surface": "recognition.html",
     "reason": "Featured AI credential"
   },
   {
@@ -148,7 +148,7 @@
       "section": "certifications",
       "title": "OpenAI Consultative Solutions Practitioner"
     },
-    "surface": "index.html",
+    "surface": "recognition.html",
     "reason": "Featured AI credential"
   },
   {
@@ -156,7 +156,23 @@
       "section": "certifications",
       "title": "Google Cloud Generative AI Leader"
     },
-    "surface": "index.html",
+    "surface": "recognition.html",
     "reason": "Featured AI credential"
+  },
+  {
+    "record": {
+      "section": "talks",
+      "title": "Can we trust AI?"
+    },
+    "surface": "speaking.html",
+    "reason": "Completed Barclays/Cyber London panel, confirmed in post-event account"
+  },
+  {
+    "record": {
+      "section": "awards",
+      "title": "Innovation Awards: Young Innovator of the Year Finalist"
+    },
+    "surface": "recognition.html",
+    "reason": "Young Innovator of the Year finalist, November 2026"
   }
 ]

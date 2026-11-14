@@ -61,7 +61,7 @@ class ContentTests(unittest.TestCase):
         next(item for item in showcase['appearances'] if item['extra'])['extra'][0]['url']='javascript:alert(1)'
         with self.assertRaisesRegex(ValueError,'Unsafe showcase URL'):validate_showcase(showcase,self.profile)
     def test_all_profile_detail_is_present_in_generated_pages(self):
-        pages={name:html.unescape((ROOT/name).read_text()) for name in ['index.html','profile.html','research.html']}
+        pages={name:html.unescape((ROOT/name).read_text()) for name in ['index.html','profile.html','research.html','work.html','recognition.html','speaking.html']}
         groups=[(key,self.profile[key]) for key in ['experience','appointments','education','publications','talks','awards','certifications']]
         groups.extend((section['id'],section['items']) for section in self.profile['additional'])
         for section,items in groups:
@@ -70,7 +70,7 @@ class ContentTests(unittest.TestCase):
                 for detail in item['details']:
                     for point in detail['points']:self.assertIn(point,page)
         for name in ['Qatar Airways','Unilever','Barry Callebaut','Brussels Airport Company','Cleveland Clinic Abu Dhabi','Adidas','Co-op','Currys','PPG Industries','Reckitt','Syngenta Group']:
-            self.assertIn(name,pages['index.html'])
+            self.assertIn(name,pages['work.html'])
     def test_empty_detail_group_rejected(self):
         self.profile['experience'][0]['details'][0]['points']=[]
         with self.assertRaisesRegex(ValueError,'Empty detail'):validate_profile(self.profile)
@@ -98,7 +98,7 @@ class PipelineTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.root=Path(self.temp.name)/'site';self.root.mkdir()
         for name in ['scripts','content','assets','templates']:shutil.copytree(ROOT/name,self.root/name)
-        for name in ['index.html','research.html','profile.html']:shutil.copy(ROOT/name,self.root/name)
+        for name in ['index.html','research.html','profile.html','work.html','recognition.html','speaking.html']:shutil.copy(ROOT/name,self.root/name)
         self.cv=self.root/'sample CV.txt';self.cv.write_text('Dr. Joyjit Chatterjee\nLead Data Scientist at EPAM Systems.\n'+('Research in explainable AI and knowledge graphs. '*6))
         self.invoke(str(self.cv),'--prepare-only')
         self.run=next((self.root/'.cv-refresh').iterdir())
@@ -135,9 +135,9 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(showcase,(self.root/'content/showcase.json').read_bytes())
         self.assertEqual(media,(self.root/'content/media.json').read_bytes())
         self.assertIn('Reconcile content/showcase.json with changed record: Lead Data Scientist',(self.run/'report.md').read_text())
-        homepage=(self.root/'index.html').read_text()
+        portfolio=''.join((self.root/name).read_text() for name in ['index.html','work.html','recognition.html','speaking.html','research.html'])
         for text in ['ETH Zurich','Aptitude Colloquium','British Data Awards','Low to Grow','Read PDF']:
-            self.assertIn(text,homepage)
+            self.assertIn(text,portfolio)
     def test_unresolved_leaves_content_untouched(self):
         before=(self.root/'content/profile.json').read_bytes();self.result['unresolved']=['Conflicting dates.'];self.apply(ok=False)
         self.assertEqual(before,(self.root/'content/profile.json').read_bytes())

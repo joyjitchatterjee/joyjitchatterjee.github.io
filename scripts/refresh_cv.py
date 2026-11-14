@@ -90,14 +90,13 @@ def compare(before,after):
             if old[title]!=new[title]:rows.append(f'- Updated {key}: {title}')
     for key in ['role','headline','intro','about','focus','impact']:
         if before[key]!=after[key]:rows.append(f'- Updated positioning: {key}')
-    rows+=['','## Homepage evidence to review','']
+    rows+=['','## Curated website evidence to review','']
     changes=[]
     for item in json.loads((ROOT/'content/coverage.json').read_text()):
-        if item['surface']!='index.html':continue
         try:changed=profile_record(before,item['record'])!=profile_record(after,item['record'])
         except ValueError:changed=True
         if changed:changes.append('- Reconcile content/showcase.json with changed record: '+item['record']['title'])
-    rows+=changes or ['No changes to records referenced by the curated homepage.']
+    rows+=changes or ['No changes to records referenced by the curated website.']
     rows+=['','Always check newly added achievements for homepage relevance; the coverage list protects existing highlights but cannot detect facts omitted during extraction.']
     rows+=['','## Independent impact and public mentions','', 'During the Codex editorial refresh, search for new independent uses of the research and public mentions across university teaching and doctoral resources, citing studies and reviews, professional bodies, industry news, media, events and public social posts. Follow AGENTS.md and docs/research-impact-audit-2026-11-08.md. Verify the original source and context; preserve content/research-impact.json and reconcile its publication references. Record additions, corrections and inaccessible sources in the update report. The standalone CV importer does not perform this web research.']
     return '\n'.join(rows)+'\n'
@@ -143,7 +142,7 @@ def evaluate(run,candidate,apply=False,allow_removals=False):
     if result['unresolved']:raise ValueError('Unresolved evidence conflicts prevent application; resolve them in candidate.json first.')
     if sha(PROFILE.read_bytes())!=metadata['profile_sha256'] or sha(SOURCES.read_bytes())!=metadata['sources_sha256']:raise ValueError('Content changed since preparation. Prepare a fresh run to avoid overwriting new work.')
     # Validate/build in a rollback-protected transaction, retaining originals on failure.
-    targets=[PROFILE,SOURCES]+[ROOT/f for f in ['index.html','research.html','profile.html']]
+    targets=[PROFILE,SOURCES]+[ROOT/f for f in ['index.html','research.html','profile.html','work.html','recognition.html','speaking.html']]
     backups={p:p.read_bytes() if p.exists() else None for p in targets}
     try:
         sources=json.loads(SOURCES.read_text());ids={s['id'] for s in sources}

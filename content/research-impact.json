@@ -91,6 +91,20 @@
       "evidence": "The official workshop reflection names all four co-authors and describes stepwise confirmation and escalation in the proposed system. It discusses human agency in algorithmically managed work environments.",
       "publication_title": "Structuring the Last Mile with ReActV: Tool-Augmented Delivery Planning with Verification",
       "source": "research-impact-gi"
+    },
+    {
+      "id": "public-health",
+      "organization": "University of Macau",
+      "context": "Macau · 2023",
+      "category": "Public health communication",
+      "title": "Conversational AI and patient companionship",
+      "summary": "A Journal of Public Health commentary cites our conversational AI paper when discussing intelligent patient companionship and the safeguards needed in public health communication.",
+      "source_title": "ChatGPT, public health communication and ‘intelligent patient companionship’",
+      "url": "https://doi.org/10.1093/pubmed/fdad028",
+      "evidence": "The commentary by Jan Gresil Kahambing quotes the title of our Patterns paper as reference 2. Published by Oxford University Press in April 2023. This is engagement with the work in a scholarly discussion, not evidence of clinical deployment.",
+      "publication_title": "This new conversational AI model can be your friend, philosopher, and guide, and even your worst enemy",
+      "source": "research-impact-public-health",
+      "verified_on": "2026-11-14"
     }
   ]
 }

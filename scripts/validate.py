@@ -98,7 +98,7 @@ def profile_record(profile,reference):
 def validate_coverage(profile):
     for item in json.loads((ROOT/'content/coverage.json').read_text()):
         profile_record(profile,item['record'])
-        if item['surface'] not in ['index.html','profile.html','research.html']:raise ValueError('Invalid coverage surface')
+        if item['surface'] not in ['index.html','profile.html','research.html','work.html','recognition.html','speaking.html']:raise ValueError('Invalid coverage surface')
 
 def validate_showcase(showcase,profile):
     check(showcase,json.loads((ROOT/'content/showcase.schema.json').read_text()))
