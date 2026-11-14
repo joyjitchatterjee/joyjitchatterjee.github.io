@@ -53,3 +53,10 @@ selection decisions; no claim of literally complete internet coverage is allowed
 original event images/source links and compatibility redirects. All six generated
 files pass local link/anchor/image checks. Rebuild is deterministic and HTML nesting
 is valid. No connected browser was available; rendered visual QA remains unavailable.
+
+## Follow-up: keep the award photographs together
+
+The standing portrait was present under Recent events, but Recognition showed
+only the screen photograph. Added the standing portrait beside the screen in
+Recognition and made it the lead image in the detailed award entry. The Recent
+events portrait remains. Recorded the placement requirement in AGENTS.md.
