@@ -317,8 +317,12 @@ new items added, already-covered items, verification dates and access limitation
 Do not promise literally complete internet coverage: report the actual scope and
 unresolved gaps candidly. Preserve these instructions during later CV imports.
 
-Keep photographs from the same event together in the relevant main section.
-In particular, the Innovation Awards standing portrait and awards-screen photo
-must both appear in Recognition, with the standing portrait leading the award
-entry. A portrait placed only in the later Recent events section is insufficient.
-The user should not have to search a second section for the other event images.
+Present an event as one coherent feature with one shared title and caption,
+using a strong lead photograph and supporting images where they add value.
+Do not create separate near-identical cards for every photograph or repeat the
+same event prominently in multiple sections. The user delegates these editorial
+choices: use judgement to preserve visual impact, completeness and readability.
+For Innovation Awards, group the standing portrait and awards-screen photograph
+in one Recognition feature. `supporting_media_id` in spotlight recognition_photos
+attaches the second image to the lead photo. Both remain individually enlargeable.
+The detailed historical award record may retain its normal single thumbnail.

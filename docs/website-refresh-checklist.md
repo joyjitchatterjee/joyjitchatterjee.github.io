@@ -26,7 +26,10 @@ For every requested update:
 6. For each new event, inspect every available attached photograph and select
    useful originals. Download local assets, record dimensions, source post, source
    image URL, dates, caption and alt text. Show a suitable image with the event on
-   the homepage. Keep access to the full post and remaining photographs. Do not
+   the homepage. Group related photos under one shared event title and caption,
+   selecting a lead and supporting images instead of duplicate event cards. Avoid
+   repeating the same event across prominent sections. Keep access to the full
+   post and remaining photographs. Do not
    substitute generic images or treat search thumbnails as a full post review.
 7. Preserve anonymous role-only feedback, the financial evaluation basis, exact
    credentials, publication authorship and all prior source corrections. Avoid

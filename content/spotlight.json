@@ -116,14 +116,11 @@
       "media_id": "hull-ke-ceremony"
     },
     {
-      "media_id": "innovation-awards-portrait"
-    },
-    {
-      "media_id": "innovation-awards-2026"
+      "media_id": "innovation-awards-portrait",
+      "supporting_media_id": "innovation-awards-2026"
     }
   ],
   "recent_media": [
-    "barclays-panel-2026",
-    "innovation-awards-portrait"
+    "barclays-panel-2026"
   ]
 }
