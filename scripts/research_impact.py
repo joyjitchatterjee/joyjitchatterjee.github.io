@@ -16,6 +16,7 @@ def load_impact(profile):
     publications = {x['title'] for x in profile['publications']}
     ids = set()
     for item in data['entries']:
+        dt.date.fromisoformat(item.get('verified_on',data['verified_on']))
         for field in ('id', 'organization', 'context', 'category', 'title', 'summary',
                       'source_title', 'url', 'evidence', 'publication_title', 'source'):
             if not isinstance(item.get(field), str) or not item[field].strip():

@@ -513,5 +513,45 @@
     "kind": "public web",
     "url": "https://en.uit.no/ub/kurs/sub?p_document_id=769894",
     "accessed": "2026-11-08"
+  },
+  {
+    "id": "barclays-panel-completed-20261112",
+    "label": "Barclays Innovation Hub panel: post-event account",
+    "kind": "public web",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3n24caf3iak25",
+    "accessed": "2026-11-14",
+    "notes": "Own post published 12 November 2026 confirms delivered panel participation. Event date 10 November retained from the prior announcement."
+  },
+  {
+    "id": "innovation-awards-finalist-20261114",
+    "label": "Innovation Awards 2026: Young Innovator of the Year finalist",
+    "kind": "public web",
+    "url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3n2azgtu67c2z",
+    "accessed": "2026-11-14",
+    "notes": "Own post reports being among five finalists, representing EPAM Systems. Finalist, not winner."
+  },
+  {
+    "id": "aaai-2026-official-pc",
+    "label": "AAAI 2026 official program committee",
+    "kind": "public web",
+    "url": "https://aaai.org/conference/aaai/aaai-26/2026-program-committee/",
+    "accessed": "2026-11-14",
+    "notes": "Lists Joyjit Chatterjee (EPAM Systems, Inc., UK) under Program Committee. Does not establish senior program committee membership."
+  },
+  {
+    "id": "researchgate-20261114",
+    "label": "ResearchGate profile: reads snapshot",
+    "kind": "public web",
+    "url": "https://www.researchgate.net/profile/Joyjit-Chatterjee",
+    "accessed": "2026-11-14",
+    "notes": "40,203 reads observed 14 November 2026. Google Scholar was inaccessible; its earlier dated snapshot is retained."
+  },
+  {
+    "id": "research-impact-public-health",
+    "label": "ChatGPT, public health communication and intelligent patient companionship",
+    "kind": "public web",
+    "url": "https://doi.org/10.1093/pubmed/fdad028",
+    "accessed": "2026-11-14",
+    "notes": "Journal of Public Health (2023), Jan Gresil Kahambing, University of Macau. The discussion quotes the title of Chatterjee and Dethlefs’s Patterns paper (reference 2) when considering conversational AI and safeguards. A scholarly discussion, not evidence of clinical adoption."
   }
 ]

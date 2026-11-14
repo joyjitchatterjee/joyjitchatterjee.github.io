@@ -16,6 +16,34 @@
     "gallery": true
   },
   {
+    "id": "innovation-awards-2026",
+    "title": "Innovation Awards 2026 finalist",
+    "caption": "Named among five finalists for Young Innovator of the Year, representing EPAM Systems.",
+    "date": "Nov 2026",
+    "image": "assets/images/innovation-awards-2026.jpg",
+    "alt": "Innovation Awards screen naming Joyjit Chatterjee as a Young Innovator of the Year finalist.",
+    "width": 3640,
+    "height": 2048,
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3n2azgtu67c2z",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreietmfelja2uppp7jsmiurg4c6hq33bpweymxq7x2xmpj7rqpoanhm",
+    "accessed": "2026-11-14",
+    "gallery": false
+  },
+  {
+    "id": "barclays-panel-2026",
+    "title": "Agentic AI at Barclays Innovation Hub",
+    "caption": "Panellist at the Cyber London and Barclays event in London, discussing agentic AI in factories, connected labs and tactical procurement.",
+    "date": "10 Nov 2026",
+    "image": "assets/images/barclays-panel-2026.jpg",
+    "alt": "Panel and audience photographs at Barclays Innovation Hub, with Joyjit seated on the panel.",
+    "width": 2160,
+    "height": 2700,
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3n24caf3iak25",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreicwmqsgeykxbfnkmxojudl6hdwvcfgr33wj6v3cjjfxb7auxhusfa",
+    "accessed": "2026-11-14",
+    "gallery": true
+  },
+  {
     "id": "glow",
     "title": "Knowledge graphs for power-line inspection",
     "caption": "Presenting research on a graph-grounded multimodal agent for trustworthy power-line operations and maintenance at the GLOW workshop, ISWC 2026, Bari.",

@@ -14,6 +14,8 @@ class ResearchReachTests(unittest.TestCase):
         self.assertIn('2026 is a partial year',rendered)
         self.assertIn('Google Scholar citations',rendered)
         self.assertIn('ResearchGate reads',rendered)
+        self.assertIn('40,203 ResearchGate reads',rendered)
+        self.assertIn('observed 14 November 2026',rendered)
         self.assertIn('not unique readers',rendered)
         self.assertEqual(rendered.count('class="citation-year"'),len(data['scholar']['years']))
 

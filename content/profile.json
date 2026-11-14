@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-14",
   "name": "Dr. Joyjit Chatterjee",
   "role": "Lead Data Scientist at EPAM Systems",
   "location": "United Kingdom",
@@ -1250,9 +1250,17 @@
       "title": "Can we trust AI?",
       "venue": "Barclays Eagle Labs & Cyber London, London",
       "date": "10 Nov 2026",
-      "status": "upcoming",
-      "source": "linkedin-profile-2026",
-      "details": []
+      "status": "completed",
+      "source": "barclays-panel-completed-20261112",
+      "details": [
+        {
+          "heading": "Panel contribution",
+          "points": [
+            "Discussed agentic AI in factories of the future, connected labs and tactical procurement at Barclays Innovation Hub, London, in a panel organised by Cyber London and Barclays."
+          ],
+          "source": "barclays-panel-completed-20261112"
+        }
+      ]
     },
     {
       "title": "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance",
@@ -1553,6 +1561,14 @@
     }
   ],
   "awards": [
+    {
+      "title": "Innovation Awards: Young Innovator of the Year Finalist",
+      "organization": "Innovation Awards",
+      "date": "2026",
+      "summary": "One of five finalists for Young Innovator of the Year, representing EPAM Systems.",
+      "source": "innovation-awards-finalist-20261114",
+      "details": []
+    },
     {
       "title": "British Data Awards: Data Leader of the Year (Partner) Finalist",
       "organization": "British Data Awards",
@@ -2088,6 +2104,13 @@
                 "Reviewer for IEEE SPIN 2021, 2023 and 2024; CSAE 2021; ASME Energy Sustainability 2021; and ECIS 2019."
               ],
               "source": "cv-full-2026"
+            },
+            {
+              "heading": "AAAI 2026 official committee listing",
+              "points": [
+                "Listed on the official AAAI 2026 Program Committee with EPAM Systems, Inc., UK affiliation."
+              ],
+              "source": "aaai-2026-official-pc"
             }
           ]
         },

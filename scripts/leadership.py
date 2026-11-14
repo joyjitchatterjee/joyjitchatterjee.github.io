@@ -37,7 +37,7 @@ def render_engagements(data):
         ref = item['record']
         url = 'profile.html#'+record_anchor(ref['section'].removeprefix('additional.'), ref['title'])
         cards += f'<article><p class="eyebrow">{e(item["role"])}</p><h3>{e(item["title"])}</h3><p>{e(item["text"])}</p><a class="text-link" href="{e(url)}">Explore the context →</a></article>'
-    return f'<section class="executive-section wrap" id="executive-engagement"><div class="section-heading"><div><p class="eyebrow">Executive engagement & industry dialogue</p><h2>AI in the conversations<br>that shape business.</h2></div><a class="text-link" href="#speaking">International panels & talks ↓</a></div><div class="executive-grid">{cards}</div></section>'
+    return f'<section class="executive-section wrap" id="executive-engagement"><div class="section-heading"><div><p class="eyebrow">Executive engagement & industry dialogue</p><h2>AI in the conversations<br>that shape business.</h2></div><a class="text-link" href="speaking.html">International panels & talks ↓</a></div><div class="executive-grid">{cards}</div></section>'
 
 def render_feedback(data, photo):
     cards = ''
