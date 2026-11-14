@@ -383,5 +383,19 @@
     "original_sha256": "2a008ef071aa8eb6aa79652899208037ac5146ab5fe318a19876022b58aef927",
     "accessed": "2026-11-04",
     "gallery": false
+  },
+  {
+    "id": "innovation-awards-portrait",
+    "title": "At the Innovation Awards 2026",
+    "caption": "At the Innovation Awards 2026, where I was one of five finalists for Young Innovator of the Year, representing EPAM Systems.",
+    "date": "Nov 2026",
+    "image": "assets/images/innovation-awards-portrait.jpg",
+    "alt": "Joyjit Chatterjee in a grey jacket and tie in front of the Innovation Awards 2026 backdrop.",
+    "width": 2680,
+    "height": 3352,
+    "source_url": "https://bsky.app/profile/joyjitchat.bsky.social/post/3n2azgtu67c2z",
+    "source_image_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4igrfuud3yloo55kfk2dzevx/bafkreifg6vat4v7iryxnmz7iowufmvuldqzflhop4lwytaylc6kfuh2ufe",
+    "accessed": "2026-11-14",
+    "gallery": false
   }
 ]

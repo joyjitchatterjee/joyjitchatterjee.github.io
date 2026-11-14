@@ -11,7 +11,7 @@ function element(textContent = '', kind) {
     addEventListener(type, fn) {this.handlers[type] = fn;},
     setAttribute(k, v) {this.attrs[k] = v;}, focus() {this.focused = true;}, select() {this.selected = true;}};
 }
-function setup(hash = '', routes = null) {
+function setup(hash = '') {
   const nodes = {'nav-links': element(), search: element(), kind: element(), 'result-count': element(), 'empty-results': element(), 'print-profile': element(), 'expand-details': element(), 'experience-lead-data-scientist': element()};
   const details = [element('', 'details'), element('', 'details')];
   nodes['experience-lead-data-scientist'].children = [details[0]];
@@ -22,7 +22,6 @@ function setup(hash = '', routes = null) {
   nodes.kind.value = 'all';
   const document = {handlers: {}, querySelector: () => menu, getElementById: id => nodes[id], querySelectorAll: selector => selector === '[data-cv-details]' ? details : selector === '[data-copy-pdf]' ? [copyButton] : papers, addEventListener(type, fn) {this.handlers[type] = fn;}};
   const window = {navigator: {clipboard: {async writeText(text) {window.copied = text;}}}, location: {hash}, handlers: {}, addEventListener(type, fn) {this.handlers[type] = fn;}, print() {window.printed = true;}};
-  if (routes) { nodes['legacy-routes'] = {textContent: JSON.stringify(routes)}; window.location.replace = target => {window.redirected = target;}; }
   vm.runInNewContext(fs.readFileSync('assets/site.js', 'utf8'), {document, window});
   return {nodes, menu, papers, document, window, details, copyButton};
 }
@@ -88,13 +87,4 @@ test('paper sharing selects the link when clipboard access is unavailable', asyn
   assert.equal(nodes['share-test'].selected, true);
   assert.equal(nodes['share-test'].focused, true);
   assert.match(nodes['share-test-status'].textContent, /Link selected/);
-});
-
-test('old homepage anchors follow relocated sections while new anchors stay local', () => {
-  const {window} = setup('#impact-ucl', {'impact-ucl': 'research.html#impact-ucl'});
-  assert.equal(window.redirected, 'research.html#impact-ucl');
-  window.redirected = null; window.location.hash = '#work'; window.handlers.hashchange();
-  assert.equal(window.redirected, null);
-  window.location.hash = '#%invalid';
-  assert.doesNotThrow(() => window.handlers.hashchange());
 });

@@ -110,7 +110,7 @@ appointment, public interviews, recordings, Wiley book and GitHub research.
 - `content/showcase.json` and its schema: curated case studies and public appearances.
 - `content/coverage.json`: selected important credentials protected against silent loss.
 - `docs/content-audit.md`: CV coverage, corrections, public sources and deliberate omissions.
-- `scripts/homepage.py`: concise homepage overview. `scripts/showcase.py`: complete visual sections shared across six static pages. Work, recognition, speaking/media, research and the full profile have dedicated navigation destinations.
+- `scripts/showcase.py`: the full visual homepage, with compact experience cards and complete recognition, feedback, media, research and speaking sections. Research and full career records retain dedicated pages; temporary topic URLs redirect back to the homepage. See `docs/website-refresh-checklist.md` for the required discovery and photo-review workflow.
 
 For future updates, the Codex workflow also reviews the curated homepage against
 the new CV. The standalone importer preserves curated cards and images, includes
