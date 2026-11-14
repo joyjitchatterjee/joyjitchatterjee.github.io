@@ -19,8 +19,9 @@ def load_spotlight(profile):
         for ref in data[group]: profile_record(profile, ref)
     media_ids = {x['id'] for x in json.loads((ROOT/'content/media.json').read_text())}
     for ref in data['awards'] + data['community'] + data.get('recognition_photos', []):
-        if 'media_id' in ref and ref['media_id'] not in media_ids:
-            raise ValueError('Unknown spotlight media')
+        for key in ['media_id', 'supporting_media_id']:
+            if key in ref and ref[key] not in media_ids:
+                raise ValueError('Unknown spotlight media')
     if any(id not in media_ids for id in data.get("recent_media", [])):raise ValueError("Unknown recent event media")
     return data
 
@@ -45,7 +46,11 @@ def render_awards(data, profile, certificate, media):
     moments = ''
     for ref in data.get('recognition_photos', []):
         m = media[ref['media_id']]
-        moments += f'<figure class="recognition-moment moment-{e(m["id"])}">{image_link(m)}<figcaption><p class="eyebrow">{e(m["date"])}</p><h3>{e(m["title"])}</h3><p>{e(m["caption"])}</p></figcaption></figure>'
+        if ref.get('supporting_media_id'):
+            supporting = media[ref['supporting_media_id']]
+            moments += f'<figure class="recognition-moment recognition-photo-story" id="recognition-{e(m["id"])}"><div class="recognition-photo-pair">{image_link(m,"View portrait ↗")}{image_link(supporting,"View awards screen ↗")}</div><figcaption><p class="eyebrow">{e(m["date"])}</p><h3>{e(m["title"])}</h3><p>{e(m["caption"])}</p><a class="text-link" href="{e(m["source_url"])}">Read the full post ↗</a></figcaption></figure>'
+        else:
+            moments += f'<figure class="recognition-moment moment-{e(m["id"])}">{image_link(m)}<figcaption><p class="eyebrow">{e(m["date"])}</p><h3>{e(m["title"])}</h3><p>{e(m["caption"])}</p></figcaption></figure>'
     return '<div class="recognition-moments">'+moments+'</div>'+feature+'<details class="award-archive"><summary>Explore the full recognition record: awards, citations & academic distinctions</summary><div class="award-timeline"><h3>A wider record of recognition.</h3><ol>'+cards+'</ol><a class="text-link" href="profile.html#awards">All awards & recognition →</a></div></details>'
 
 def render_forums(data, profile, media):
@@ -74,4 +79,5 @@ def render_recent(data, media):
     for id in data.get('recent_media', []):
         m=media[id]
         cards+=f'<figure class="recent-event photo-{e(id)}">{image_link(m, "View full photograph ↗")}<figcaption><p class="eyebrow">{e(m["date"])}</p><h3>{e(m["title"])}</h3><p>{e(m["caption"])}</p><a class="text-link" href="{e(m["source_url"])}">Read the full post & see its photographs ↗</a></figcaption></figure>'
-    return '<div class="latest-events" id="latest-events"><h3>Recent events, in pictures.</h3><div class="recent-event-grid">'+cards+'</div></div>'
+    layout = ' single-event' if len(data.get('recent_media', [])) == 1 else ''
+    return '<div class="latest-events" id="latest-events"><h3>Recent events, in pictures.</h3><div class="recent-event-grid'+layout+'">'+cards+'</div></div>'
